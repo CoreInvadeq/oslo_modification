@@ -1,0 +1,118 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "18358042760436159073": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "core_fdbarrier",
+                "Description": "Debug box with the dimension 1x1x1 meter",
+                "Tags": "debug"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": "",
+            "omp::DoorTriggerComponent": {
+                "Door": "4830246562430620258",
+                "Traffic Lights": [
+                    "6417686132565280205"
+                ]
+            },
+            "qsf::LinkComponent": "",
+            "qsf::game::SnowComponent": {
+                "Active": "false",
+                "SnowAmount": "0.68145155906677246"
+            }
+        },
+        "4830246562430620258": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "notaufnahme_schranke0"
+            },
+            "qsf::TransformComponent": {
+                "Position": "2.2274169921875 -0.36824047565460205 -2.764556884765625",
+                "Rotation": "1 -2.2351745343485163e-08 -9.2759739800385432e-07 2.0400353159684935e-14",
+                "Scale": "-1.398481011390686 1.1855961084365845 1.1855961084365845"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "9325",
+                "Materials": [
+                    "4873"
+                ]
+            },
+            "qsf::MeshAnimationTestComponent": {
+                "Active": "false",
+                "Restart": "true",
+                "Skeleton_A": "9388",
+                "Skeleton_B": "9378",
+                "Loop": "false",
+                "PrologLength": "5"
+            },
+            "em5::DoorComponent": {
+                "OpeningAnimation": "9388",
+                "ClosingAnimation": "9378",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAngle": "75",
+                "OpeningAnimationLength": "25000",
+                "ClosingAnimationLength": "1000000"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "18358042760436159073",
+                "LocalPosition": "2.2274169921875 -0.36824047565460205 -2.764556884765625",
+                "LocalRotation": "1 -2.2351745343485163e-08 -9.2759739800385432e-07 2.0400353159684935e-14",
+                "LocalScale": "-1.398481011390686 1.1855961084365845 1.1855961084365845"
+            }
+        },
+        "15437836509532295777": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_center1000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "CastShadows": "false",
+                "Color": "1 0.46666699647903442 0 1",
+                "Intensity": "6",
+                "Direction": "0 0 1",
+                "OcclusionScale": "1",
+                "Material": "239707",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "3"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "2.269744873046875 1.1213835477828979 -2.954193115234375",
+                "Rotation": "0.22747902572154999 -0.68946254253387451 -0.66188794374465942 0.18654513359069824"
+            },
+            "qsf::LightAnimationComponent": {
+                "Active": "false",
+                "AnimationType": "SWITCHING",
+                "MinIntensity": "0",
+                "StartDelay": "0.5"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_BLUE",
+                "LightMaterial": "26192",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "18358042760436159073",
+                "LocalPosition": "2.269744873046875 1.1213835477828979 -2.954193115234375",
+                "LocalRotation": "0.22747902572154999 -0.68946254253387451 -0.66188794374465942 0.18654513359069824"
+            }
+        }
+    }
+}

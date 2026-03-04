@@ -1,0 +1,1095 @@
+<rml>
+    <head>
+        <link type="text/css" href="../asset/styles_hud.rcss" />
+        <style>
+            scrollbarvertical {
+                width: 6px;
+                margin-top: 50px;
+            }
+			
+            scrollbarvertical sliderbar {
+                margin-left: 0px;
+                width: 6px;
+                min-height: 24px;
+                background-color: #8F8F8F;
+            }
+			
+            scrollbarvertical slidertrack {
+                margin-left: 0px;
+                width: 6px;
+                min-height: 24px;
+                background-color: #000000BF;
+            }
+
+            .body {
+                display: block;
+                margin: auto;
+                height: 850px;
+                width: 1282px;
+            }
+
+            .background {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100.5%;
+                height: 100%;
+                background-color: #0a1926CC;
+            }
+
+            .upperHeader {
+                position: absolute;
+                height: 25px;
+                width: 100.5%;
+                background-color: #089EDE;
+                line-height: 25px;
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+
+            .vehicleListSelector {
+                z-index: 1;
+                position: absolute;
+                height: 25px;
+                width: 100%;
+            }
+
+            .vehicleListSelectorText {
+                display: inline-block;
+                height: 100%;
+                width: 24.68%;
+                font-size: 14px;
+                background-color: #089EDE;
+                color: white;
+                text-align: center;
+                border-color: black;
+                border-width: 2px;
+                border-style: solid;
+            }
+
+            .vehicleList {
+                z-index: 0;
+                position: absolute;
+                top: -21px;
+                right: -6px;
+                height: 806px;
+                width: 100.5%;
+                overflow: auto;
+            }
+
+            .vehicleListStationLine {
+                display: block;
+                margin-top: 30px;
+				margin-right: 8px;
+            }
+			
+			.stationRow {
+				display: inline-block;
+                float: left;
+				width: 303px;
+			}
+
+            .stationBox {
+                display: inline-block;
+                float: left;
+                width: 283px;
+                margin-top: 4px;
+                margin-left: 2px;
+                margin-right: 2px;
+                padding-left: 8px;
+                padding-right: 8px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border-color: grey;
+                border-width: 1px;
+                border-style: solid;
+            }
+			
+			.stationBoxTitle {
+				display: inline-block;
+				width: 240px;
+			}
+			
+			.stationBoxTitle .stationBoxTitleText {
+                border-bottom-color: grey;
+                border-bottom-width: 2px;
+                border-bottom-style: solid;
+			}
+			
+			.stationDistance {
+				display: inline-block;
+				width: 43px;
+                font-size: 12px;
+				text-align: right;
+			}
+
+            .vehicleBox {
+                display: block;
+                font-size: 12px;
+                margin-left: 2.5px;
+                vertical-align: top;
+                height: 20px;
+            }
+
+            .vehicleName {
+                display: inline-block;
+                width: 60%;
+                height: 20px;
+                color: white;
+            }
+			
+			.vehicleName:hover {
+				color: grey;
+			}
+			
+			.vehicleName:checked:hover {
+				color: #F7BE81;
+			}
+			
+			.vehicleName:checked {
+				color: #FF8000;
+			}
+			
+			.vehicleNameWithReplaceUnit {
+				display: inline-block;
+                width: 60%;
+                height: 20px;
+                color: white;
+			}
+			
+			.vehicleNameWithReplaceUnit:hover {
+				color: grey;
+			}
+			
+			.vehicleNameWithReplaceUnit:checked:hover {
+				color: #F7BE81;
+			}
+			
+			.vehicleNameWithReplaceUnit:checked {
+				color: #FF8000;
+			}
+			
+			.replaceUnit {
+				display: inline-block;
+                width: 10%;
+                height: 20px;
+				color: white;
+			}
+			
+			.replaceUnit:hover {
+				color: grey;
+			}
+			
+			.replaceUnit:checked:hover {
+				color: #F7BE81;
+			}
+			
+			.replaceUnit:checked {
+				color: #FF8000;
+			}
+
+            .statusName {
+                display: inline-block;
+                width: 40%;
+                height: 20px;
+                text-align: right;
+            }
+
+            .statusName_disabled {
+                display: inline-block;
+                width: 30%;
+                height: 20px;
+                text-align: right;
+                color: grey;
+            }
+
+            .vehicleSeperator {
+                display: block;
+                margin-left: 20px;
+                height: 8px;
+            }
+
+            .alarm {
+                position: absolute;
+                bottom: 0px;
+                right: -0.5%;
+                width: 200px;
+                height: 40px;
+                text-align: center;
+                border-color: black;
+                border-width: 2px;
+                border-style: solid;
+                line-height: 40px;
+                background-color: #089EDE;
+            }
+			
+			.alarm:hover {
+				background-color: white;
+				color: black;
+			}
+			
+			.alarm:active {
+				background-color: black;
+				color: white;
+			}
+			
+			.patrol {
+				position: absolute;
+                bottom: 45px;
+                right: -0.5%;
+                width: 200px;
+                height: 40px;
+                text-align: center;
+                border-color: black;
+                border-width: 2px;
+                border-style: solid;
+                line-height: 40px;
+                background-color: #00000050;
+			}
+			
+			.patrol:hover {
+				background-color: #089EDE;
+				color: white;
+			}
+			
+			.patrol:active {
+				background-color: black;
+				color: white;
+			}
+			
+			.cityHelp {
+				position: absolute;
+                bottom: 90px;
+                right: -0.5%;
+                width: 200px;
+                height: 40px;
+                text-align: center;
+                border-color: black;
+                border-width: 2px;
+                border-style: solid;
+                line-height: 40px;
+                background-color: #00000050;
+			}
+			
+			.cityHelp:hover {
+				background-color: #089EDE;
+				color: white;
+			}
+			
+			.cityHelp:active {
+				background-color: black;
+				color: white;
+			}
+
+            .quit {
+                z-index: 1;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                width: 25px;
+                height: 25px;
+                background-decorator: image;
+                background-image-src: "../asset/close_icon.dds";
+            }
+			
+            .quit:hover {
+                background-image-src: "../asset/close_icon_hover.dds";
+            }
+
+            .switchAlarmMode {
+                z-index: 1;
+                position: absolute;
+                right: 30px;
+                top: 0px;
+                width: 25px;
+                height: 25px;
+            }
+			
+			.switchAlarmMode:hover {
+				background-color: black;
+			}
+
+            .vehicleBlock {
+				margin-top: 20px;
+                position: absolute;
+                left: 5%;
+            }
+
+            .speedDial {
+                position: absolute;
+                width: 5%;
+                height: 100%;
+                top: 50px;
+            }
+
+            .speedDialButton {
+                z-index: 2;
+                background-color: #089EDE;
+                color: white;
+                display: block;
+                width: 96%;
+                height: 40px;
+                border-color: black;
+                border-width: 2px;
+                border-style: solid;
+                text-align: center;
+                line-height: 40px;
+                font-size: 75%;
+            }
+			
+			.speedDialButton.small {
+                height: 30px;
+                line-height: 30px;
+			}
+			
+			.speedDialButton:hover {
+				background-color: white;
+				color: black;
+			}
+			
+			.speedDialButton:active {
+				background-color: black;
+				color: white;
+			}
+
+            .speedDialButtonSeperator {
+                display: block;
+                height: 8px;
+            }
+
+            .sosiCheckBox {
+                position: absolute;
+                bottom: 7px;
+                right: 360px;
+                width: 20px;
+                height: 20px;
+                border-color: black;
+                border-width: 2px;
+                border-style: solid;
+                background-decorator: image;
+                background-image-src: "../asset/close_icon.dds";
+            }
+			
+			.sosiCheckBox:hover {
+				background-decorator: image;
+				background-image-src: "../asset/close_icon_hover.dds";
+			}
+			
+			.sosiCheckBox:checked {
+				background-decorator: none;
+			}
+
+            .sosiTextBox {
+                position: absolute;
+                bottom: 5px;
+                right: 250px;
+                width: 100px;
+                height: 20px;
+                text-align: left;
+                line-height: 15px;
+            }
+			
+			.stationSirenCheckBox {
+                position: absolute;
+                bottom: 32px;
+                right: 360px;
+                width: 20px;
+                height: 20px;
+                border-color: black;
+                border-width: 2px;
+                border-style: solid;
+                background-decorator: image;
+                background-image-src: "../asset/close_icon.dds";
+			}
+			
+			.stationSirenCheckBox:hover {
+				background-decorator: image;
+				background-image-src: "../asset/close_icon_hover.dds";
+			}
+			
+			.stationSirenCheckBox:checked {
+				background-decorator: none;
+			}
+			
+			.stationSirenTextBox {
+                position: absolute;
+                bottom: 30px;
+                right: 250px;
+                width: 100px;
+                height: 20px;
+                text-align: left;
+                line-height: 15px;
+			}
+
+            .selectionWindow {
+                z-index: 0;
+                position: absolute;
+                top: 25px;
+                height: 830px;
+                width: 100.5%;
+            }
+
+            .keywordListLine {
+                display: inline-block;
+                position: relative;
+                height: 800px;
+                width: 25%;
+                overflow: auto;
+            }
+
+            .keywordbox {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 6px;
+                height: 56px;
+                width: 95%;
+                border-color: grey;
+                border-width: 2px;
+                border-style: solid;
+            }
+
+			.keywordbox:hover {
+				background-color: #00000055;
+				color: #FF8000;
+			}
+
+            .keywordImage {
+                position: absolute;
+                width: 95px;
+                height: 50px;
+                margin-top: 2.5px;
+            }
+
+            .keywordName {
+                position: absolute;
+                left: 97px;
+                font-size: 15px;
+            }
+
+            .keywordTooltip {
+                position: absolute;
+                left: 97px;
+                margin-top: 30px;
+                font-size: 12px;
+                line-height: 12px;
+            }
+        </style>
+    </head>
+    <body class="body" nohoversound="true" onshow="onshow">
+        <div class="background" />
+        <div class="upperHeader">
+            <div style="margin-left: 13px;">EM5_GUI_CHOOSEVEHICLE_ERS_STYLE</div>
+        </div>
+        <div onclick="quit" class="quit" id="quit" />
+        <img onclick="switchAlarmMode" class="switchAlarmMode" id="switchAlarmMode" tooltip="ID_TIPP_SWITCH_ALARM_MODE" src="../asset/group_button_gm.dds"/>
+
+        <div id="singleCall" class="selectionWindow">
+			<div class="vehicleListSelector">
+				<span id="list_fire_department" onclick="selectorClick" class="vehicleListSelectorText">ORDER_MENU_ERS_STYLE_FW_LIST</span>
+				<span id="list_medical_service" onclick="selectorClick" class="vehicleListSelectorText">ORDER_MENU_ERS_STYLE_RD_LIST</span>
+				<span id="list_police" onclick="selectorClick" class="vehicleListSelectorText">ORDER_MENU_ERS_STYLE_POL_LIST</span>
+				<span id="list_tech" onclick="selectorClick" class="vehicleListSelectorText">ORDER_MENU_ERS_STYLE_TECH_LIST</span>
+			</div>
+
+			<div id="vehicle_list_fire_department" class="vehicleList">
+				<div class="speedDial">
+					<div id="ELW" onclick="speedDial" class="speedDialButton">ID_ELW</div>
+					<div id="HLF" onclick="speedDial" class="speedDialButton">ID_HLF</div>
+					<div id="LF" onclick="speedDial" class="speedDialButton">ID_LF</div>
+					<div id="DLK" onclick="speedDial" class="speedDialButton">ID_DLK</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="TLF" onclick="speedDial" class="speedDialButton">ID_TLF</div>
+					<div id="RW" onclick="speedDial" class="speedDialButton">ID_RW</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="LZ" onclick="speedDial" class="speedDialButton">ID_LZ</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="RTW" onclick="speedDial" class="speedDialButton">ID_RTW</div>
+					<div id="NEF" onclick="speedDial" class="speedDialButton">ID_NEF</div>
+					<div id="RTH" onclick="speedDial" class="speedDialButton">ID_RTH</div>
+					<div id="RTW_NEF" onclick="speedDial" class="speedDialButton">ID_RTW_NEF</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="STW" onclick="speedDial" class="speedDialButton">ID_STW</div>
+					<div id="MTW" onclick="speedDial" class="speedDialButton">ID_MTW</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="SW" onclick="speedDial" class="speedDialButton">ID_SW</div>
+					<div id="SR" onclick="speedDial" class="speedDialButton">ID_SR</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="ASFOM" onclick="speedDial" class="speedDialButton">ID_OM_ASF</div>
+					<div id="BEST" onclick="speedDial" class="speedDialButton">ID_BEST</div>
+                </div>
+                <div class="vehicleBlock">
+                    <div class="vehicleListStationLine">
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Hovedbrannstasjonen</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st9_kdowa_o_01" tab="list_fire_department"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <span>Innsatsledelse</span>
+                            <div id="oi_st9_kdowa_o_01" class="vehicleBox" />
+                            <div id="oi_st9_elw_o_o_02" class="vehicleBox" />
+							<div id="oi_st6_elw3_o_03" class="vehicleBox" />
+                            <div class="vehicleSeperator" />
+                            <span>Beredksapsavdelingen</span>
+                            <div id="oi_st9_hlf_o_91" class="vehicleBox" />
+                            <div id="oi_st9_hlf_o_92" class="vehicleBox" />
+                            <div id="oi_st9_dlk_o_93" class="vehicleBox" />
+                            <div id="oi_st9_gtlf_o_94" class="vehicleBox" />
+                            <div id="oi_st9_tlf_o_95" class="vehicleBox" />
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st9_mtw_o_56" class="vehicleBox" />
+                            <div class="vehicleSeperator" />
+                            <span>OSSR | Spesialredning</span>
+                            <div id="oi_st9_asf_o_96" class="vehicleBox" />
+                            <div id="oi_st9_rw_o_97" class="vehicleBox" />
+                            <div id="oi_st9_kran_o_497" class="vehicleBox" />
+							<div class="vehicleSeperator" />
+							<span>OSSR | Innsatsstøtte</span>
+							<div id="oi_st9_oesf_o_58" class="vehicleBox" />
+                            <div id="oi_st9_gwl_o_98" class="vehicleBox" />
+                            <div id="oi_st9_wlf_o_55" class="vehicleBox" />
+							<div id="oi_st9_wasser_o_55a" class="vehicleBox" />
+							<div id="oi_st9_usar_o_55b" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Stasjon 6</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st6_elw3_o_03" tab="list_fire_department"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <span>Beredskapsavdelingen</span>
+                            <div id="oi_st6_hlf_o_61" class="vehicleBox" />
+                            <div id="oi_st6_hlf_o_62" class="vehicleBox" />
+                            <div id="oi_st6_dlk_o_63" class="vehicleBox" />
+                            <div id="oi_st6_gtlf_o_64" class="vehicleBox" />
+                            <div id="oi_st6_gwl_o_68" class="vehicleBox" />
+							<div class="vehicleSeperator" />
+                            <span>OSSR|Spesialredning</span>
+                            <div id="oi_st6_rw_t_o_66" class="vehicleBox" />
+                            <div id="oi_st6_rw_o_67" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Oslo Havnevesen</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st3_elw_h_h_01" tab="list_fire_department"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <span>Industrivern</span>
+                            <div id="oi_st3_elw_h_h_01" class="vehicleBox" />
+							<div class="vehicleSeperator" />
+                            <div id="oi_st3_wf_hlf_h_11" class="vehicleBox" />
+                            <div id="oi_st3_wf_hlf_h_12" class="vehicleBox" />
+                            <div id="oi_st3_dlk_h_13" class="vehicleBox" />
+                            <div id="oi_st3_wf_hlf_h_14" class="vehicleBox" />
+                            <div id="oi_st3_wf_hlf_h_15" class="vehicleBox" />
+                            <div class="vehicleSeperator" />
+							<div id="oi_st3_gtlf_h_24" class="vehicleBox" />
+                            <div id="oi_st3_tlf_h_25" class="vehicleBox" />
+							<div class="vehicleSeperator" />
+                            <span>CBRNE Avdelingen</span>
+                            <div id="oi_st3_rw_h_16" class="vehicleBox" />
+                            <div id="oi_st3_dekon_h_17" class="vehicleBox" />
+                        </div>
+						<div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Stasjon 2</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st2_elw_o_04" tab="list_fire_department"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <span>Innsatsledelse</span>
+                            <div id="oi_st2_elw_o_04" class="vehicleBox" />
+                            <div class="vehicleSeperator" />
+                            <span>Beredskapsavdelingen</span>
+                            <div id="oi_st2_hlf_o_21" class="vehicleBox" />
+                            <div id="oi_st2_lf_o_22" class="vehicleBox" />
+                            <div id="oi_st2_dlk_o_23" class="vehicleBox" />
+                            <div id="oi_st2_tlf_o_24" class="vehicleBox" />
+                            <div id="oi_st2_mtw_o_26" class="vehicleBox" />
+                            <div id="oi_st2_rw_o_27" class="vehicleBox" />
+                        </div>
+						<div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Stasjon 7</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st7_elw_o_04" tab="list_fire_department"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st7_elw_o_04" class="vehicleBox" />
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st7_hlf_o_71" class="vehicleBox" />
+                            <div id="oi_st7_hlf_o_72" class="vehicleBox" />
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st7_kef_o_78" class="vehicleBox" />
+                            <div id="oi_st7_mtw_o_75" class="vehicleBox" />
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st7_usar_o_76" class="vehicleBox" />
+                            <div id="oi_st7_rw_o_77" class="vehicleBox" />
+                        </div>
+                    </div>
+                    <div class="vehicleListStationLine">
+						<div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Stasjon 1</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_fd1_lf_o_11" tab="list_fire_department"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_fd1_lf_o_11" class="vehicleBox" />
+                            <div id="oi_fd1_hlf_o_12" class="vehicleBox" />
+                            <div id="oi_fd1_tlf_o_14" class="vehicleBox" />
+							<div id="oi_fd1_mtw_o_16" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Stasjon 4</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st4_lf_o_41" tab="list_fire_department"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st4_lf_o_41" class="vehicleBox" />
+                            <div id="oi_st4_hlf_o_42" class="vehicleBox" />
+                            <div id="oi_st4_dlk_o_43" class="vehicleBox" />
+							<div class="vehicleSeperator" />
+							<div id="oi_fd1_gwl_o_rvr_1" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Stasjon 5</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st5_hlf_o_52" tab="list_fire_department"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st5_hlf_o_52" class="vehicleBox" />
+                            <div id="oi_st5_dlk_o_53" class="vehicleBox" />
+                            <div id="oi_st5_rw_o_57" class="vehicleBox" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<div id="vehicle_list_medical_service" class="vehicleList">
+				<div class="speedDial">
+					<div id="ELW" onclick="speedDial" class="speedDialButton">ID_ELW</div>
+					<div id="HLF" onclick="speedDial" class="speedDialButton">ID_HLF</div>
+					<div id="LF" onclick="speedDial" class="speedDialButton">ID_LF</div>
+					<div id="DLK" onclick="speedDial" class="speedDialButton">ID_DLK</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="TLF" onclick="speedDial" class="speedDialButton">ID_TLF</div>
+					<div id="RW" onclick="speedDial" class="speedDialButton">ID_RW</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="LZ" onclick="speedDial" class="speedDialButton">ID_LZ</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="RTW" onclick="speedDial" class="speedDialButton">ID_RTW</div>
+					<div id="NEF" onclick="speedDial" class="speedDialButton">ID_NEF</div>
+					<div id="RTH" onclick="speedDial" class="speedDialButton">ID_RTH</div>
+					<div id="RTW_NEF" onclick="speedDial" class="speedDialButton">ID_RTW_NEF</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="STW" onclick="speedDial" class="speedDialButton">ID_STW</div>
+					<div id="MTW" onclick="speedDial" class="speedDialButton">ID_MTW</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="SW" onclick="speedDial" class="speedDialButton">ID_SW</div>
+					<div id="SR" onclick="speedDial" class="speedDialButton">ID_SR</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="ASFOM" onclick="speedDial" class="speedDialButton">ID_OM_ASF</div>
+					<div id="BEST" onclick="speedDial" class="speedDialButton">ID_BEST</div>
+				</div>
+                <div class="vehicleBlock">
+                    <div class="vehicleListStationLine">
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Innsatsleder Helse</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st9_lna_01" tab="list_medical_service"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st9_lna_01" class="vehicleBox" />
+							<div id="oi_st7_lna_0_3" class="vehicleBox" />
+							<div id="oi_st2_lna_2_1" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Ambulansestasjon 9</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st9_nef_9_1" tab="list_medical_service"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st9_nef_9_1" class="vehicleBox" />
+                            <div id="oi_st9_nef_9_2" class="vehicleBox" />
+                            <div class="vehicleSeperator" />
+							<div id="oi_st9_naw_9_1" class="vehicleBox" />
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st9_rtw_9_1" class="vehicleBox" />
+                            <div id="oi_st9_rtw_9_2" class="vehicleBox" />
+                            <div id="oi_st9_rtw_9_3" class="vehicleBox" />
+                            <div id="oi_st9_rtw_9_4" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Ambulansestasjon 6</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st6_nef_6_1" tab="list_medical_service"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st6_nef_6_1" class="vehicleBox" />
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st6_rtw_6_1" class="vehicleBox" />
+                            <div id="oi_st6_rtw_6_2" class="vehicleBox" />
+                            <div class="vehicleSeperator" />  
+                            <div id="oi_st6_manv_6_1" class="vehicleBox" />  						
+                        </div>
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Ambulansestasjon 3</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st3_naw_3_1" tab="list_medical_service"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st3_naw_3_1" class="vehicleBox" />
+							<div class="vehicleSeperator" />
+                            <div id="oi_st3_grtw_3_1_alt" class="vehicleBox" />
+							<div class="vehicleSeperator" />
+                            <div id="oi_st3_rtw_3_1" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Ambulansestasjon 7</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st7_lna_0_3" tab="list_medical_service"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st7_itw_7_1" class="vehicleBox" />
+							<div class="vehicleSeperator" />
+                            <div id="oi_st7_manv_7_1" class="vehicleBox" />
+                        </div>
+                    </div>
+                    <div class="vehicleListStationLine">
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Ambulansestasjon 1</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_ems1_nef_1_1" tab="list_medical_service"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_ems1_nef_1_1" class="vehicleBox" />
+                            <div class="vehicleSeperator" />
+                            <div id="oi_ems1_rtw_1_1" class="vehicleBox" />
+                            <div id="oi_ems1_iktw_1_1" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Ambulansestasjon 2</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st2_nef_2_1" tab="list_medical_service"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st2_nef_2_1" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Ambulansestasjon 4</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st4_nef_4_1" tab="list_medical_service"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st4_nef_4_1" class="vehicleBox" />
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st4_rtw_4_1" class="vehicleBox" />
+                            <div id="oi_st4_rtw_4_2" class="vehicleBox" />
+                            <div id="oi_st4_rtw_4_3" class="vehicleBox" />
+							<div class="vehicleSeperator" />
+                            <div id="oi_st4_ktw_4_1" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Ambulansestasjon OUS</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st8_nef_8_1" tab="list_medical_service"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st8_nef_8_1" class="vehicleBox" />
+							<div id="oi_st8_nef_8_2" class="vehicleBox" />
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st8_itw_8_1" class="vehicleBox" />
+							<div class="vehicleSeperator" />
+                            <div id="oi_st9_grtw_9_1_alt" class="vehicleBox" />
+							<div class="vehicleSeperator" />
+                            <div id="oi_st8_rtw_8_1" class="vehicleBox" />
+							<div class="vehicleSeperator" />
+                            <div id="oi_st8_irtw_8_1" class="vehicleBox" />
+							<div class="vehicleSeperator" />
+                            <div id="oi_st8_ktw_8_1" class="vehicleBox" />
+                        </div>
+
+                            <div class="stationBox">
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Norsk Luftambulanse</span>
+								</div>
+                                <div class="vehicleSeperator" />
+                                <div id="oi_rth_01" class="vehicleBox" />
+								<div class="vehicleSeperator" />
+								<div id="oi_rth_02" class="vehicleBox" />
+								<div class="vehicleSeperator" />
+								<div id="oi_rth_nef_01" class="vehicleBox" />
+								<div id="oi_rth_naw_01" class="vehicleBox" />
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+			<div id="vehicle_list_police" class="vehicleList">
+				<div class="speedDial">
+					<div id="ELW" onclick="speedDial" class="speedDialButton">ID_ELW</div>
+					<div id="HLF" onclick="speedDial" class="speedDialButton">ID_HLF</div>
+					<div id="LF" onclick="speedDial" class="speedDialButton">ID_LF</div>
+					<div id="DLK" onclick="speedDial" class="speedDialButton">ID_DLK</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="TLF" onclick="speedDial" class="speedDialButton">ID_TLF</div>
+					<div id="RW" onclick="speedDial" class="speedDialButton">ID_RW</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="LZ" onclick="speedDial" class="speedDialButton">ID_LZ</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="RTW" onclick="speedDial" class="speedDialButton">ID_RTW</div>
+					<div id="NEF" onclick="speedDial" class="speedDialButton">ID_NEF</div>
+					<div id="RTH" onclick="speedDial" class="speedDialButton">ID_RTH</div>
+					<div id="RTW_NEF" onclick="speedDial" class="speedDialButton">ID_RTW_NEF</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="STW" onclick="speedDial" class="speedDialButton">ID_STW</div>
+					<div id="MTW" onclick="speedDial" class="speedDialButton">ID_MTW</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="SW" onclick="speedDial" class="speedDialButton">ID_SW</div>
+					<div id="SR" onclick="speedDial" class="speedDialButton">ID_SR</div>
+					<div class="speedDialButtonSeperator" />
+					<div id="ASFOM" onclick="speedDial" class="speedDialButton">ID_OM_ASF</div>
+					<div id="BEST" onclick="speedDial" class="speedDialButton">ID_BEST</div>
+				</div>
+                <div class="vehicleBlock">
+                    <div class="vehicleListStationLine">
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Stasjon Vest</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st1_stw_1" tab="list_police"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st1_stw_1" class="vehicleBox" />
+                            <div id="oi_st1_stw_2" class="vehicleBox" />
+                            <div id="oi_st1_stw_3" class="vehicleBox" />
+                            <div id="oi_st1_stw_4" class="vehicleBox" />
+							<div id="oi_st1_dog_01" class="vehicleBox" />
+                            <div id="oi_st1_sek_stw_1" class="vehicleBox" />
+							<!-- <div id="oi_st1_stw_5" class="vehicleBox" /> -->
+                        </div>
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Stasjon Øst</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st2_stw_1" tab="list_police"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st2_stw_1" class="vehicleBox" />
+                            <div id="oi_st2_stw_2" class="vehicleBox" />
+                            <div id="oi_st2_stw_3" class="vehicleBox" />
+                            <div id="oi_st2_stw_4" class="vehicleBox" />
+							<div id="oi_st2_sek_stw_1" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Oslo Sentralbanestasjon</span>
+								</div>
+								<span class="stationDistance" mapstartup="oi_st3_stw_1" tab="list_police"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st3_stw_1" class="vehicleBox" />
+                            <div id="oi_st3_stw_2" class="vehicleBox" />
+							<div id="oi_st3_stw_3" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+							<div>
+								<div class="stationBoxTitle">
+									<span class="stationBoxTitleText">Stasjon Øst</span>
+								</div>
+								<span class="stationDistance" mapstartup="bst_alex_04_01" tab="list_police"></span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st4_stw_1" class="vehicleBox" />
+                            <div id="oi_st4_stw_2" class="vehicleBox" />
+							<div id="oi_st4_stw_3" class="vehicleBox" />
+							<!-- <div id="oi_st5_stw_1" class="vehicleBox" /> -->
+							<!-- <div id="oi_st5_stw_2" class="vehicleBox" /> -->
+							<!-- <div id="oi_st5_stw_3" class="vehicleBox" /> -->
+                        </div>
+                    </div>
+                    <div class="vehicleListStationLine">
+                        <div class="stationBox">
+                            <div class="stationBoxTitle">
+								<span class="stationBoxTitleText">Ordenspoliti</span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st2_mtw_m_12" class="vehicleBox" />
+                            <div id="oi_st4_mtw_m_13" class="vehicleBox" />
+                            <div id="oi_st1_mtw_m_14" class="vehicleBox" />
+                            <div id="oi_st1_g62" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+                            <div class="stationBoxTitle">
+								<span class="stationBoxTitleText">Delta</span>
+							</div>
+                            <div class="vehicleSeperator" />
+						    <div id="oi_st1_swat_d_1" class="vehicleBox" />
+                            <div id="oi_st1_swat_d_2" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+                            <div class="stationBoxTitle">
+								<span class="stationBoxTitleText">PNB Ressurser</span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_st1_gefkw_1" class="vehicleBox" />
+                            <div id="oi_st1_kmrd_1" class="vehicleBox" />
+                        </div>
+                        <!-- <div class="stationBox">
+                            <span class="stationBoxTitle">ID_bst_helibase_pol</span>
+                            <div class="vehicleSeperator" />
+                            <div id="bst_rth_bundespolizei" class="vehicleBox" />
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="vehicle_list_tech" class="vehicleList">
+                <div class="speedDial">
+                    <div id="ELW" onclick="speedDial" class="speedDialButton">ID_ELW</div>
+                    <div id="HLF" onclick="speedDial" class="speedDialButton">ID_HLF</div>
+                    <div id="LF" onclick="speedDial" class="speedDialButton">ID_LF</div>
+                    <div id="DLK" onclick="speedDial" class="speedDialButton">ID_DLK</div>
+                    <div class="speedDialButtonSeperator" />
+                    <div id="TLF" onclick="speedDial" class="speedDialButton">ID_TLF</div>
+                    <div id="RW" onclick="speedDial" class="speedDialButton">ID_RW</div>
+                    <div class="speedDialButtonSeperator" />
+                    <div id="LZ" onclick="speedDial" class="speedDialButton">ID_LZ</div>
+                    <div class="speedDialButtonSeperator" />
+                    <div id="RTW" onclick="speedDial" class="speedDialButton">ID_RTW</div>
+                    <div id="NEF" onclick="speedDial" class="speedDialButton">ID_NEF</div>
+                    <div id="RTH" onclick="speedDial" class="speedDialButton">ID_RTH</div>
+                    <div id="RTW_NEF" onclick="speedDial" class="speedDialButton">ID_RTW_NEF</div>
+                    <div class="speedDialButtonSeperator" />
+                    <div id="STW" onclick="speedDial" class="speedDialButton">ID_STW</div>
+                    <div id="MTW" onclick="speedDial" class="speedDialButton">ID_MTW</div>
+                    <div class="speedDialButtonSeperator" />
+                    <div id="SW" onclick="speedDial" class="speedDialButton">ID_SW</div>
+                    <div id="SR" onclick="speedDial" class="speedDialButton">ID_SR</div>
+                    <div class="speedDialButtonSeperator" />
+                    <div id="ASFOM" onclick="speedDial" class="speedDialButton">ID_OM_ASF</div>
+                    <div id="BEST" onclick="speedDial" class="speedDialButton">ID_BEST</div>
+                </div>
+                <div class="vehicleBlock">
+                    <div class="vehicleListStationLine">
+                        <div class="stationBox">
+                            <div class="stationBoxTitle">
+								<span class="stationBoxTitleText">Nettpartner</span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_ek_ekw" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+                            <div class="stationBoxTitle">
+								<span class="stationBoxTitleText">Vei og Vedlikehold</span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_tech_sr_1" class="vehicleBox" />
+							<div id="oi_tech_sr_2" class="vehicleBox" />
+							<div class="vehicleSeperator" />
+							<div id="oi_tech_bsr_1" class="vehicleBox" />
+							<div id="oi_tech_bsr_2" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+                            <div class="stationBoxTitle">
+								<span class="stationBoxTitleText">Havarikommisjonen</span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_tech_bfu_1" class="vehicleBox" />
+                        </div>
+                    </div>
+                    <div class="vehicleListStationLine">
+                        <div class="stationBox">
+                            <div class="stationBoxTitle">
+								<span class="stationBoxTitleText">Likbil</span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_tech_best_1" class="vehicleBox" />
+                            <div id="oi_tech_best_2" class="vehicleBox" />
+                            <div id="oi_tech_lbest_1" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+                            <div class="stationBoxTitle">
+								<span class="stationBoxTitleText">NAF</span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_naf_asf_1" class="vehicleBox" />
+                            <div id="oi_naf_asf_2" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+                            <div class="stationBoxTitle">
+								<span class="stationBoxTitleText">Falck</span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_falck_asf_1" class="vehicleBox" />
+                            <div id="oi_falck_asf_2" class="vehicleBox" />
+                            <div id="oi_falck_asf_3" class="vehicleBox" />
+                        </div>
+                        <div class="stationBox">
+                            <div class="stationBoxTitle">
+								<span class="stationBoxTitleText">Viking</span>
+							</div>
+                            <div class="vehicleSeperator" />
+                            <div id="oi_viking_asf_1" class="vehicleBox" />
+                            <div id="oi_viking_asf_2" class="vehicleBox" />
+                            <div id="oi_viking_asf_3" class="vehicleBox" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="groupCall" class="selectionWindow">
+            <div id="keywords_fire_department" class="keywordListLine" />
+            <div id="keywords_ambulance" class="keywordListLine" />
+            <div id="keywords_police" class="keywordListLine" />
+            <div id="keywords_tech" class="keywordListLine" />
+        </div>
+
+        <input type="checkbox" id="sosi_checkBox" class="sosiCheckBox" onclick="changeSoSi" />
+        <div class="sosiTextBox" onclick="changeSoSiText">ORDER_MENU_ERS_STYLE_SONDERRECHTE</div>
+		
+        <input type="checkbox" id="station_siren_checkBox" class="stationSirenCheckBox" onclick="changeStationSiren" />
+        <div class="stationSirenTextBox" onclick="changeStationSirenText">ORDER_MENU_ERS_STYLE_STATION_SIREN</div>
+		
+        <div id="cityHelp" class="cityHelp" onclick="cityHelp">ORDER_MENU_ERS_STYLE_CITY_HELP</div>
+        <div id="patrol" class="patrol" onclick="patrol">ORDER_MENU_ERS_STYLE_PATROL</div>
+        <div id="alarm" class="alarm" onclick="alarm">ORDER_MENU_ERS_STYLE_ALARM</div>
+    </body>
+</rml>

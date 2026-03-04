@@ -1,0 +1,104 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "6161608972802605722": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "core_rb_pump"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "1395532429"
+            },
+            "qsf::TransformComponent": "",
+            "qsf::LinkComponent": {
+                "LocalPosition": "0.82318878173828125 0.42024540901184082 2.9609146118164063"
+            },
+            "qsf::game::EquipmentComponent": {
+                "EquipmentName": "pump"
+            },
+            "wmp::WaterPumpComponent": {
+                "Couplings": [
+                    "5313794089408414363",
+                    "16230029375767200410",
+                    "6615231014740574874"
+                ],
+                "Hoses Connected": "false",
+                "Delivery Rate": "20"
+            },
+            "qsf::BulletBoxCollisionComponent": {
+                "CollisionMask": "0",
+                "CollisionFilterGroup": "0",
+                "CollisionTypeId": "-2086644930",
+                "HalfExtents": "0.40000000596046448 0.43999999761581421 0.5"
+            }
+        },
+        "5313794089408414363": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "target_coupling000",
+                "Description": "yop"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "1395530559"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.0093841552734375 0.40995246171951294 0.4669189453125",
+                "Scale": "0.99189639091491699 0.99189639091491699 0.99189639091491699"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6161608972802605722",
+                "LocalPosition": "-0.0093841552734375 0.40995246171951294 0.4669189453125",
+                "LocalScale": "0.99189639091491699 0.99189639091491699 0.99189639091491699"
+            },
+            "wmp::CouplingComponent": {
+                "Used": "true"
+            }
+        },
+        "6615231014740574874": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "schlauchkupplung000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "1395530559"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.240753173828125 0.53828173875808716 0.3172454833984375",
+                "Rotation": "0.68898379802703857 0.15906383097171783 -0.68898355960845947 0.15906502306461334"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6161608972802605722",
+                "LocalPosition": "-0.240753173828125 0.53828173875808716 0.3172454833984375",
+                "LocalRotation": "0.68898379802703857 0.15906383097171783 -0.68898355960845947 0.15906502306461334"
+            },
+            "wmp::CouplingComponent": {
+                "Coupling Type": "COUPLING_OUTPUT"
+            }
+        },
+        "16230029375767200410": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "schlauchkupplung000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "1395530559"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.21746824681758881 0.53647518157958984 0.3172454833984375",
+                "Rotation": "0.18896688520908356 0.68138939142227173 -0.18896688520908356 0.68138939142227173"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6161608972802605722",
+                "LocalPosition": "0.21746824681758881 0.53647518157958984 0.3172454833984375",
+                "LocalRotation": "0.18896688520908356 0.68138939142227173 -0.18896688520908356 0.68138939142227173"
+            },
+            "wmp::CouplingComponent": {
+                "Coupling Type": "COUPLING_OUTPUT"
+            }
+        }
+    }
+}

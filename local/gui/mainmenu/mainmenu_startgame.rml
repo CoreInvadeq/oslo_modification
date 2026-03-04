@@ -1,0 +1,80 @@
+<rml>
+	<head>
+		<link type="text/css" href="../asset/styles_mainmenu.rcss" />
+		<style>
+			.mainmenu .left .menuupgrade {
+				position: absolute;
+				top: 490px;
+				right: 0px;
+				width: 240px;
+				height: 220px;
+				padding-top: 15px;
+				margin-right: 107px;
+			}
+			.menuupgrade:hover
+			{
+				background: #089EDE;
+			}				
+			.menuupgradetext {
+				width: 210px;
+				display: block;
+				font-size: 12px;
+				text-align: left;
+				line-height: 16px;
+				margin-left: 55px;
+			}
+			
+			.dev_freeplay.hidden
+			{
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body onshow="onshow">
+		<div class="mainmenu">
+			<div class="left bgblue65">
+				<div class="menuheader">
+					<span>EM5_GUI_MAINEVENT_02</span>
+				</div>
+				<div id="menubuttons" class="menubuttons">
+					<!--<br />
+
+					<a id="freeplay" onclick="freeplay" class="button big" tooltip="EM5_GUI_PLAY_06">EM5_GUI_PLAY_05</a>-->
+					
+					<br />
+
+					<a id="user_freeplay" onclick="user_freeplay" class="button big" tooltip="ID_gui_singleplayer_start_luedenscheid" map="em5/map/luedenscheid/luedenscheid" header="ID_gui_singleplayer_start_luedenscheid" msg="ID_gui_singleplayer_start_luedenscheid_tipp">LDS Freeplay</a>
+					
+					<a id="user_freeplay" onclick="user_freeplay" class="button big" tooltip="ID_gui_singleplayer_start_linzing" map="em5/map/linzing/linzing" header="ID_gui_singleplayer_start_linzing" msg="ID_gui_singleplayer_start_linzing_tipp">LNZ Freeplay</a>
+					
+					<a id="user_freeplay" onclick="user_freeplay" class="button big" tooltip="Start test" map="em5/map/oslo_map/oslo_map" header="Start test" msg="Start test">Test Freeplay</a>
+					
+					<br/> 
+					
+					<a id="dev_freeplay" onclick="dev_freeplay" class="button big dev_freeplay" tooltip="ID_gui_singleplayer_start_development" map="em5/map/tutorial/tutorial" header="ID_gui_singleplayer_start_development" msg="ID_gui_singleplayer_start_development_tipp">DEV Freeplay</a>
+					
+					<br/> 
+					
+					<!--<a id="cp_campaign" onclick="cp_campaign" class="button big" tooltip="GUI_CP_CAMPAIGN">GUI_CP_CAMPAIGN</a>-->
+					
+					<a id="external_lst" onclick="external_lst" class="button big" tooltip="ID_gui_mainmenu_start_control_center_tipp">ID_gui_mainmenu_start_control_center</a>
+					
+					<a id="multiplayer" onclick="multiplayer" class="button big" tooltip="EM5_GUI_PLAY_08">EM5_GUI_PLAY_07</a>
+					
+					<br />
+					
+					<!--<a id="tutorial" onclick="tutorial" class="button big" tooltip="ID_gui_mainmenu_start_tutorial_tipp">ID_gui_mainmenu_start_tutorial</a>-->
+				</div>
+
+				<div id="back" class="menubuttonend">
+					<a id="back" onclick="back" class="button big">
+						<span id="back">EM5_GUI_STARTMENU_34</span>
+					</a>
+				</div>
+			</div>
+			<div class="right">
+			</div>
+		</div>
+	</body>
+</rml>

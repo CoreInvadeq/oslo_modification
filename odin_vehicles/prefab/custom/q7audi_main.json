@@ -1,0 +1,303 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "9122893816763954991": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "q7audi_main"
+            },
+            "qsf::TransformComponent": "",
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "3704988330",
+                "Materials": [
+                    "2401989672"
+                ]
+            },
+            "em5::RoadVehicleComponent": {
+                "VehicleDoors": [
+                    "5888735502450997039",
+                    "1564318865537808176",
+                    "7161500424435276230"
+                ],
+                "Resistances": "0.000000,0.000000",
+                "VehicleWheels": [
+                    "10610450602952668978",
+                    "9724116752040900401",
+                    "1231493367210358577",
+                    "8529138983506196272"
+                ],
+                "VehicleLights": [
+                    "3178380881184235320",
+                    "11934634345100287800"
+                ],
+                "SignalAudio": "18446744073709551615"
+            },
+            "qsf::LinkComponent": "",
+            "qsf::game::SelectableComponent": "",
+            "em5::CommandableComponent": {
+                "CommandArray": [
+                    "omp::ExitVehicleCommand",
+                    "omp::ReturnToBaseCommand",
+                    "omp::TidyUpCommand",
+                    "omp::MoveCommand",
+                    "omp::TurnToPointerCommand"
+                ],
+                "UnitType": "-1",
+                "PlayerId": "-1"
+            },
+            "em5::RoadVehiclePlacementComponent": "",
+            "qsf::MovableComponent": "",
+            "qsf::ai::NavigationComponent": {
+                "MaxSpeed": "22",
+                "MaxTurningChange": "1.25",
+                "GearChangingDuration": "1000000",
+                "DesiredAcceleration": "6",
+                "AdditionalNavMapId": "1",
+                "AvoidCollisionTypes": "20",
+                "AvoidCollisionMeasures": "7",
+                "MayMoveBackward": "true",
+                "MayManeuver": "true",
+                "MayReduceTurningRadius": "true",
+                "CollisionMask": "37",
+                "PrioritySearch": "true",
+                "AdditionalCollisionLookaheadDistance": "10"
+            },
+            "qsf::ActionComponent": "",
+            "qsf::BulletBoxCollisionComponent": {
+                "CollisionMask": "3",
+                "CollisionFilterGroup": "6144",
+                "HalfExtents": "1.0700000524520874 0.8399999737739563 2.3499999046325684"
+            },
+            "em5::FireComponent": {
+                "Active": "true",
+                "FireMaterial": "default"
+            },
+            "em5::HighlightComponent": "",
+            "qsf::ai::StuckResolverComponent": {
+                "SwitchDelay": "1000000",
+                "RegardTrafficImpedimentsAsStuck": "true"
+            },
+            "em5::SwingComponent": {
+                "AnimationType": "CARACCELERATION"
+            },
+            "pth::VehicleLightGuiComponent": {
+                "Bluelight": "true",
+                "Headlight": "true",
+                "Siren": "true",
+                "Debug Lights": "0"
+            }
+        },
+        "1231493367210358577": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5_vs_firejeep_tire_frontleft000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "33168"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.7880859375 0.33937501907348633 -1.491455078125",
+                "Scale": "-0.8936077356338501 0.8936077356338501 0.89360779523849487"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_FRONT_RIGHT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9122893816763954991",
+                "LocalPosition": "0.7880859375 0.33937501907348633 -1.491455078125",
+                "LocalScale": "-0.8936077356338501 0.8936077356338501 0.89360779523849487"
+            }
+        },
+        "1564318865537808176": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "q7audi_left_door000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.86871337890625 0.6959456205368042 -0.962127685546875"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "3704988336",
+                "Materials": [
+                    "2401989672"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9122893816763954991",
+                "LocalPosition": "-0.86871337890625 0.6959456205368042 -0.962127685546875"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_DRIVER",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAxis": "0 -1 0",
+                "RotationAngle": "75",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            }
+        },
+        "3178380881184235320": {
+            "qsf::MetadataComponent": {
+                "Prefab": "63200",
+                "Prototype": "16135520840581916907",
+                "Name": "light_vehicle_headlight01000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.6541748046875 0.8217395544052124 -2.114837646484375"
+            },
+            "qsf::game::LightControllerComponent": {
+                "Active": "false"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "9122893816763954991",
+                "LocalPosition": "0.6541748046875 0.8217395544052124 -2.114837646484375",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "5888735502450997039": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "q7audi_right_door000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.871856689453125 0.70585602521896362 -0.951446533203125"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "3704988334",
+                "Materials": [
+                    "2401989672"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9122893816763954991",
+                "LocalPosition": "0.871856689453125 0.70585602521896362 -0.951446533203125"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_CODRIVER",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAngle": "75",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            }
+        },
+        "7161500424435276230": {
+            "qsf::MetadataComponent": {
+                "Prefab": "3704988356",
+                "Prototype": "1750372541",
+                "Name": "q7audi_trunk_fix00"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.00688934326171875 1.4932427406311035 1.7265625"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Active": "true",
+                "Materials": [
+                    "2401989672"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "9122893816763954991",
+                "LocalPosition": "0.00688934326171875 1.4932427406311035 1.7265625",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_TRUNK",
+                "RotationAxis": "-1.2000000476837158 0 0"
+            }
+        },
+        "8529138983506196272": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5_vs_firejeep_tire_frontleft000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "33168"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.7573089599609375 0.33937501907348633 -1.491455078125",
+                "Scale": "1.1063921451568604 0.8936077356338501 0.89360779523849487"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_FRONT_LEFT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9122893816763954991",
+                "LocalPosition": "-0.7573089599609375 0.33937501907348633 -1.491455078125",
+                "LocalScale": "1.1063921451568604 0.8936077356338501 0.89360779523849487"
+            }
+        },
+        "9724116752040900401": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5_vs_firejeep_tire_frontleft000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "33168"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.7573089599609375 0.33937501907348633 1.25958251953125",
+                "Scale": "1.1063921451568604 0.8936077356338501 0.89360779523849487"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_BACK_LEFT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9122893816763954991",
+                "LocalPosition": "-0.7573089599609375 0.33937501907348633 1.25958251953125",
+                "LocalScale": "1.1063921451568604 0.8936077356338501 0.89360779523849487"
+            }
+        },
+        "10610450602952668978": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5_vs_firejeep_tire_frontleft000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "33168"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.7880859375 0.33937501907348633 1.25958251953125",
+                "Scale": "-0.8936077356338501 0.8936077356338501 0.89360779523849487"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_BACK_RIGHT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9122893816763954991",
+                "LocalPosition": "0.7880859375 0.33937501907348633 1.25958251953125",
+                "LocalScale": "-0.8936077356338501 0.8936077356338501 0.89360779523849487"
+            }
+        },
+        "11934634345100287800": {
+            "qsf::MetadataComponent": {
+                "Prefab": "63200",
+                "Prototype": "16135520840581916907",
+                "Name": "light_vehicle_headlight01000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.6505126953125 0.82449257373809814 -2.08843994140625"
+            },
+            "qsf::game::LightControllerComponent": {
+                "Active": "false"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "9122893816763954991",
+                "LocalPosition": "-0.6505126953125 0.82449257373809814 -2.08843994140625",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            }
+        }
+    }
+}

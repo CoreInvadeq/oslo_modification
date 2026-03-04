@@ -1,0 +1,103 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "4446235430851495578": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "core_volvo_xc60_elwo4_v2",
+                "Tags": "vehicle;firefighters;nosnow"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "2401992836"
+            },
+            "qsf::TransformComponent": {
+                "Scale": "1.0695300102233887 1.0695300102233887 1.0695300102233887"
+            },
+            "em5::RoadVehicleComponent": {
+                "Resistances": "0.000000,0.000000",
+                "SignalAudio": "2401992713",
+                "TooBigToTow": "true"
+            },
+            "qsf::LinkComponent": "",
+            "qsf::game::SelectableComponent": "",
+            "qsf::ai::StuckResolverComponent": {
+                "SwitchDelay": "1000000",
+                "RegardTrafficImpedimentsAsStuck": "true"
+            },
+            "qsf::ActionComponent": "",
+            "em5::SwingComponent": {
+                "AnimationType": "CARACCELERATION",
+                "VelocitySkew": "0.039999999105930328"
+            },
+            "pth::VehicleLightGuiComponent": {
+                "Bluelight": "true",
+                "Headlight": "true",
+                "Siren": "true",
+                "WithSoRe": "false"
+            },
+            "pth::VehicleSirenGuiComponent": {
+                "MainAudioAsset": "2401992713",
+                "SecondaryAudioAsset": "8000000748"
+            },
+            "qsf::BulletBoxCollisionComponent": {
+                "CollisionMask": "37",
+                "CollisionFilterGroup": "20",
+                "CollisionTypeId": "885726410",
+                "HalfExtents": "0.97000002861022949 0.85000002384185791 2.440000057220459"
+            },
+            "qsf::ai::NavigationComponent": {
+                "MaxSpeed": "22",
+                "MaxTurningChange": "1.25",
+                "GearChangingDuration": "100000",
+                "DesiredAcceleration": "6",
+                "AdditionalNavMapId": "1",
+                "AvoidCollisionTypes": "20",
+                "AvoidCollisionMeasures": "7",
+                "MayMoveBackward": "true",
+                "MayManeuver": "true",
+                "MayReduceTurningRadius": "true",
+                "CollisionMask": "37",
+                "PrioritySearch": "true",
+                "AdditionalCollisionLookaheadDistance": "10"
+            },
+            "em5::RoadVehiclePlacementComponent": "",
+            "qsf::MovableComponent": "",
+            "em5::InventoryComponent": {
+                "InventoryArray": [
+                    "em5\/prefab\/equipment\/equipment_wrench",
+                    "em5\/prefab\/equipment\/equipment_firefighter_chainsaw",
+                    "em5\/prefab\/equipment\/equipment_firefighter_axe",
+                    "em5\/prefab\/equipment\/equipment_ambulance_medic_case_closed",
+                    "em5\/prefab\/equipment\/equipment_traffic_cone",
+                    "em5\/prefab\/wuppertal_equipment\/equipment_firefighter_extinguisher",
+                    "em5\/prefab\/equipment\/equipment_traffic_cone_2"
+                ]
+            },
+            "em5::CommandableComponent": {
+                "CommandArray": [
+                    "omp::ExitVehicleCommand",
+                    "omp::ReturnToBaseCommand",
+                    "omp::TidyUpCommand",
+                    "omp::MoveCommand",
+                    "omp::TurnToPointerCommand",
+                    "csp::AddControlledVehiclesCommand",
+                    "csp::SendAllUnitsHomeCommand",
+                    "csp::AbspannenCommand",
+                    "wmp::SelectLeaderPersonCommand"
+                ],
+                "UnitType": "-1",
+                "PlayerId": "-1"
+            },
+            "inventory::EquipmentInventoryComponent": {
+                "MedicBag Equipment": "1",
+                "FireExtinguisher Equipment": "2",
+                "Wrench Equipment": "1"
+            },
+            "em5::HighlightComponent": ""
+        }
+    }
+}

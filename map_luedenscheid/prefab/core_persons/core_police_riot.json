@@ -1,0 +1,133 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "10360617284923444465": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "core_police_riot",
+                "Description": "Police man",
+                "Tags": "person;police;bepo"
+            },
+            "qsf::TransformComponent": "",
+            "qsf::MovableComponent": {
+                "GroundSpeedCategory": "squad"
+            },
+            "qsf::ai::NavigationComponent": {
+                "MoverType": "1",
+                "MaxSpeed": "3.2999999523162842",
+                "MaxTurningChange": "6",
+                "BackwardSpeedFactor": "0.40000000596046448",
+                "DesiredAcceleration": "5",
+                "MainNavMapId": "1",
+                "AvoidCollisionTypes": "20",
+                "AvoidCollisionMeasures": "3",
+                "LimitDirectionChange": "true",
+                "CurveSmoothing": "0",
+                "DistanceToKeepAhead": "0",
+                "CollisionMask": "37",
+                "PrioritySearch": "true",
+                "AdditionalCollisionLookaheadDistance": "10"
+            },
+            "em5::HealthComponent": {
+                "HealthEnergy": "1000",
+                "MaximumHealthEnergy": "1000",
+                "LifeEnergy": "1000",
+                "MaximumLifeEnergy": "1000",
+                "Resistances": "0.660000,0.500000,0.350000"
+            },
+            "qsf::game::SelectableComponent": "",
+            "em5::CommandableComponent": {
+                "CommandArray": [
+                    "aps::ArrestGangsterCommand",
+                    "aps::PlacePersonCommand",
+                    "aps::ShotAtTargetCommand",
+                    "em5::ArrestGangsterCommand",
+                    "em5::DisableMegaphoneCommand",
+                    "em5::EnableMegaphoneCommand",
+                    "em5::GetHandcuffsCommand",
+                    "em5::GetMegaphoneCommand",
+                    "em5::GetPepperSprayCommand",
+                    "em5::GetPistolCommand",
+                    "em5::MoveCommand",
+                    "em5::SpeakToPersonCommand",
+                    "em5::UsePepperSprayCommand",
+                    "evt::AdvancedBuildingEventEnterBuildingCommand",
+                    "evt::EndDisturbanceOfPeaceCommand",
+                    "evt::ModularEventGaperTalkCommand",
+                    "evt::ModularEventInvestigateEvidenceCommand",
+                    "evt::ModularEventSecureEvidenceCommand",
+                    "evt::ModularEventWitnessTalkCommand",
+                    "evt::TalkToCallerCommand",
+                    "omp::EnterVehicleCommand",
+                    "pms::TreatPersonCommand",
+                    "evt::CheckEMACommand"
+                ],
+                "UnitType": "-1",
+                "PlayerId": "0"
+            },
+            "qsf::ActionComponent": "",
+            "em5::PersonComponent": {
+                "Gender": "GENDER_MALE"
+            },
+            "em5::PersonPlacementComponent": "",
+            "qsf::BulletBoxCollisionComponent": {
+                "CollisionMask": "37",
+                "CollisionFilterGroup": "20",
+                "HalfExtents": "0.40000000596046448 1 0.30000001192092896"
+            },
+            "em5::FireReceiverComponent": "",
+            "em5::HighlightComponent": "",
+            "qsf::ai::StuckResolverComponent": {
+                "SwitchDelay": "1000000",
+                "RegardTrafficImpedimentsAsStuck": "true"
+            },
+            "qsf::GameLogicComponent": {
+                "GameLogicArray": [
+                    {
+                        "LogicTypeId": "em5::PolicemanLogic"
+                    }
+                ]
+            },
+            "qsf::LinkComponent": "",
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "672608",
+                "Materials": [
+                    "2401989581"
+                ]
+            },
+            "qsf::game::EventTagComponent": {
+                "EventTags": "Policeman"
+            },
+            "inventory::PresetComponent": {
+                "PersonPreset": "polizist-bepo"
+            }
+        },
+        "16020237944474455282": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "schubert_p100n000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "1395530873"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7209014892578125 0.011322021484375",
+                "Rotation": "0.7069517970085144 -0.014780928380787373 -0.70695281028747559 0.014780868776142597"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10360617284923444465",
+                "LocalPosition": "0 1.7209014892578125 0.011322021484375",
+                "LocalRotation": "0.7069517970085144 -0.014780928380787373 -0.70695281028747559 0.014780868776142597"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "Bip01_Head",
+                "LocalPosition": "-3.4694469519536142e-18 0 0",
+                "LocalRotation": "0.70710700750350952 0 0 -0.70710700750350952"
+            }
+        }
+    }
+}

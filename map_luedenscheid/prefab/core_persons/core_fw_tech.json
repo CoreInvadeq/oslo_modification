@@ -1,0 +1,207 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "281825420706294165": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "core_fw_tech",
+                "Description": "firefighter",
+                "Tags": "firefighter"
+            },
+            "qsf::TransformComponent": "",
+            "qsf::MovableComponent": {
+                "GroundSpeedCategory": "squad"
+            },
+            "qsf::ai::NavigationComponent": {
+                "MoverType": "1",
+                "MaxSpeed": "3.2999999523162842",
+                "MaxTurningChange": "6",
+                "BackwardSpeedFactor": "0.40000000596046448",
+                "DesiredAcceleration": "5",
+                "MainNavMapId": "1",
+                "AvoidCollisionTypes": "20",
+                "AvoidCollisionMeasures": "3",
+                "CurveSmoothing": "0",
+                "DistanceToKeepAhead": "0",
+                "CollisionMask": "37",
+                "PrioritySearch": "true",
+                "AdditionalCollisionLookaheadDistance": "10"
+            },
+            "em5::HealthComponent": {
+                "HealthEnergy": "1000",
+                "MaximumHealthEnergy": "1000",
+                "LifeEnergy": "1000",
+                "MaximumLifeEnergy": "1000",
+                "Resistances": "0.660000,0.150000,0.250000"
+            },
+            "qsf::game::SelectableComponent": "",
+            "em5::CommandableComponent": {
+                "CommandArray": [
+                    "em5::MoveCommand",
+                    "omp::EnterVehicleCommand",
+                    "wmp::ExtinguishCommand",
+                    "wmp::CoolCommand",
+                    "em5::ExtinguishWithExtinguisherCommand",
+                    "em5::CoolWithExtinguisherCommand",
+                    "em5::CutTreeCommand",
+                    "evt::CutRoadVehicleCommand",
+                    "wmp::StartPullPersonCommand",
+                    "wmp::StopPullPersonCommand",
+                    "em5::StartPullObjectCommand",
+                    "em5::StopPullObjectCommand",
+                    "em5::PickupContaminatedPersonCommand",
+                    "em5::BreakBuildingDoorOpenCommand",
+                    "wmp::OpenLockedBuildingDoorCommand",
+                    "em5::RescuePersonFromBuildingCommand",
+                    "wmp::DisconnectHoseCommand",
+                    "wmp::DisconnectHoseBetweenCommand",
+                    "wmp::ConnectHoseFirstCommand",
+                    "wmp::ConnectHoseBetweenCommand",
+                    "wmp::GroundHydrantOffCommand",
+                    "wmp::WaterSwitchOffCommand",
+                    "wmp::ConnectHoseFirstToInputCommand",
+                    "inventory::DropEquipmentCommand",
+                    "pms::TreatPersonCommand",
+                    "avc::EnterDLK",
+                    "evt::PumpWaterCommand",
+                    "inventory::GetMedicBagCommand",
+                    "inventory::GetFireExtinguisherCommand",
+                    "inventory::GetHoseCommand",
+                    "wmp::SetWaterSwitchCommand",
+                    "inventory::GetChainSawMenuCommand",
+                    "inventory::GetAxeMenuCommand",
+                    "inventory::GetRescueCutterMenuCommand",
+                    "inventory::GetTuerOffnungKofferMenuCommand",
+                    "inventory::GetWaterVacMenuCommand",
+                    "inventory::GetSubmersibleWaterPumpMenuCommand",
+                    "wmp::ShowFirefighterEquipmentGuiCommand",
+                    "wmp::ShowPsaEquipmentGuiCommand",
+                    "wmp::GetPaSuitCommand",
+                    "wmp::GetDekonSuitCommand",
+                    "wmp::ShowUSEquipmentGuiCommand",
+                    "inventory::GetOilSorberFluidMenuCommand",
+                    "inventory::GetOilSorberPowderMenuCommand",
+                    "inventory::GetSealingMassMenuCommand",
+                    "inventory::GetManholeCoverBarrierMenuCommand",
+                    "evt::FireBridgeChangeStateCommand",
+                    "evt::ModularEventRemoveOilPuddleCommand",
+                    "evt::ModularEventCloseOilLeakCommand",
+                    "evt::ModularEventCoverManholeCommand",
+                    "evt::AdvancedBuildingEventEnterBuildingCommand",
+                    "aps::RemoveTrafficConeCommand",
+                    "aps::RemoveTrafficConeGroupCommand",
+                    "aps::RemoveTrafficBlinkerCommand",
+                    "aps::RemoveTrafficBlinkerGroupCommand",
+                    "aps::RemoveTrafficBakeCommand",
+                    "aps::RemoveTrafficBakeGroupCommand",
+                    "aps::SetTrafficConeMenuCommand",
+                    "aps::SetTrafficBlinkerMenuCommand",
+                    "aps::SetTrafficBakeMenuCommand",
+                    "aps::ShowPoliceBarrierGuiCommand",
+                    "evt::ModularEventVehicleInvestigateCommand",
+                    "inventory::GetShovelMenuCommand",
+                    "evt::ModularEventUseShovelCommand",
+                    "wmp::GuidePersonCommand",
+                    "wmp::StopGuidePersonCommand",
+                    "evt::ModularEventDisconnectBatterieCommand",
+                    "inventory::GetWrenchMenuCommand"
+                ],
+                "UnitType": "-1",
+                "PlayerId": "-1"
+            },
+            "qsf::ActionComponent": "",
+            "em5::PersonComponent": {
+                "Gender": "GENDER_MALE"
+            },
+            "em5::PersonPlacementComponent": "",
+            "qsf::BulletBoxCollisionComponent": {
+                "CollisionMask": "37",
+                "CollisionFilterGroup": "20",
+                "HalfExtents": "0.40000000596046448 1 0.30000001192092896"
+            },
+            "em5::FireReceiverComponent": "",
+            "em5::HighlightComponent": "",
+            "qsf::ai::StuckResolverComponent": {
+                "SwitchDelay": "1000000",
+                "RegardTrafficImpedimentsAsStuck": "true"
+            },
+            "qsf::GameLogicComponent": {
+                "GameLogicArray": [
+                    {
+                        "LogicTypeId": "em5::FiremanLogic"
+                    }
+                ]
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395539994",
+                "Materials": [
+                    "8000000377",
+                    "8000000356"
+                ]
+            },
+            "qsf::LinkComponent": "",
+            "wmp::SuperFireFightersComponent": {
+                "Firefighting Helmet": "14907911654709635477",
+                "Chainsaw Helmet": "17186377928198302101"
+            },
+            "pms::DoctorLogicComponent": {
+                "Skilllevel": "FirstAid"
+            },
+            "pth::PersonAnimationHelper": ""
+        },
+        "14907911654709635477": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "draeger_hps_7000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-9.5367431640625e-07 1.7409074306488037 -0.03989410400390625",
+                "Rotation": "-0.48943799734115601 0.51034271717071533 0.48944017291069031 -0.5103420615196228"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395535846",
+                "Materials": [
+                    "2228269484"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "281825420706294165",
+                "LocalPosition": "-9.5367431640625e-07 1.7409074306488037 -0.03989410400390625",
+                "LocalRotation": "-0.48943799734115601 0.51034271717071533 0.48944017291069031 -0.5103420615196228"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "Bip01_Head",
+                "LocalPosition": "0.029999999329447746 0.05000000074505806 0",
+                "LocalRotation": "1 0 0 0"
+            }
+        },
+        "17186377928198302101": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "fm_saw_helmet000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7013603448867798 -0.028228759765625",
+                "Rotation": "-0.48943799734115601 0.51034271717071533 0.48944017291069031 -0.5103420615196228"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "281825420706294165",
+                "LocalPosition": "0 1.7013603448867798 -0.028228759765625",
+                "LocalRotation": "-0.48943799734115601 0.51034271717071533 0.48944017291069031 -0.5103420615196228"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "Bip01_Head",
+                "LocalPosition": "-0.0099999997764825821 0.039999999105930328 0",
+                "LocalRotation": "1 0 0 0"
+            },
+            "wmp::HideAtStartupComponent": "",
+            "qsf::MeshComponent": {
+                "Mesh": "27846"
+            }
+        }
+    }
+}

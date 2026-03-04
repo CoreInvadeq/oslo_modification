@@ -1,0 +1,403 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "5763279016710123739": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "crafter_low_main_extra"
+            },
+            "qsf::TransformComponent": {
+                "Scale": "1.0607649087905884 1.0607649087905884 1.0607649087905884"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "3704988318",
+                "Materials": [
+                    "2401989661"
+                ]
+            },
+            "em5::RoadVehicleComponent": {
+                "VehicleDoors": [
+                    "1321077067822411997",
+                    "14780642028089258205",
+                    "15558549940714615005",
+                    "13288514473279631582",
+                    "4645390125817671900"
+                ],
+                "Resistances": "0.000000,0.000000",
+                "VehicleWheels": [
+                    "10680469739688964317",
+                    "15091442161028706524",
+                    "9637663323876503771",
+                    "7399136681417781468"
+                ],
+                "VehicleLights": [
+                    "5657617894901035230",
+                    "12042608472902611166"
+                ],
+                "SignalAudio": "18446744073709551615"
+            },
+            "qsf::LinkComponent": "",
+            "qsf::game::SelectableComponent": "",
+            "em5::CommandableComponent": {
+                "CommandArray": [
+                    "omp::ExitVehicleCommand",
+                    "omp::ReturnToBaseCommand",
+                    "omp::TidyUpCommand",
+                    "omp::MoveCommand",
+                    "omp::TurnToPointerCommand"
+                ],
+                "UnitType": "-1",
+                "PlayerId": "-1"
+            },
+            "em5::RoadVehiclePlacementComponent": "",
+            "qsf::MovableComponent": "",
+            "qsf::ai::NavigationComponent": {
+                "MaxSpeed": "22",
+                "MaxTurningChange": "1.25",
+                "GearChangingDuration": "1000000",
+                "DesiredAcceleration": "6",
+                "AdditionalNavMapId": "1",
+                "AvoidCollisionTypes": "20",
+                "AvoidCollisionMeasures": "7",
+                "MayMoveBackward": "true",
+                "MayManeuver": "true",
+                "MayReduceTurningRadius": "true",
+                "CollisionMask": "37",
+                "CorrectStartToIdealPos": "true",
+                "PrioritySearch": "true",
+                "AdditionalCollisionLookaheadDistance": "10"
+            },
+            "qsf::ActionComponent": "",
+            "qsf::BulletBoxCollisionComponent": {
+                "CollisionMask": "3",
+                "CollisionFilterGroup": "6144",
+                "HalfExtents": "1.1200000047683716 1.2999999523162842 2.9600000381469727"
+            },
+            "em5::FireComponent": {
+                "Active": "true",
+                "FireMaterial": "default"
+            },
+            "em5::HighlightComponent": "",
+            "qsf::ai::StuckResolverComponent": {
+                "SwitchDelay": "1000000",
+                "RegardTrafficImpedimentsAsStuck": "true"
+            },
+            "em5::SwingComponent": {
+                "AnimationType": "CARACCELERATION"
+            },
+            "pth::VehicleLightGuiComponent": {
+                "Bluelight": "true",
+                "Headlight": "true",
+                "Siren": "true"
+            }
+        },
+        "1321077067822411997": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "crafter_high_right_door000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.0200328826904297 1.1087108850479126 -2.0280718803405762",
+                "Scale": "1.0607649087905884 1.0607649087905884 1.0607649087905884"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "3704988320",
+                "Materials": [
+                    "2401989661"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5763279016710123739",
+                "LocalPosition": "0.96160125732421875 1.0451993942260742 -1.911895751953125"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_CODRIVER",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAngle": "75",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            }
+        },
+        "4645390125817671900": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "crafter_high_slide_door000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.0848541259765625 1.3277850151062012 -0.186248779296875",
+                "Scale": "1.0607649087905884 1.0607649087905884 1.0607649087905884"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "3704988324",
+                "Materials": [
+                    "2401989661"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5763279016710123739",
+                "LocalPosition": "-1.0227092504501343 1.2517241239547729 -0.17557969689369202"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_EQUIPMENTLEFT",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAxis": "0 0 0",
+                "RotationAngle": "75",
+                "SlideOffset": "-0.05000000074505806 0 1.3999999761581421",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            }
+        },
+        "5657617894901035230": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "light_vehicle_headlight01000",
+                "Description": "Spot light",
+                "Tags": "light"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.81568598747253418 0.95686298608779907 1",
+                "DiffuseIntensity": "5",
+                "Texture": "78208",
+                "Range": "12.5",
+                "SpotlightOuterAngle": "64",
+                "SpotlightInnerAngle": "36"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.780914306640625 0.98362326622009277 -2.939300537109375"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_HEAD"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5763279016710123739",
+                "LocalPosition": "0.73618036508560181 0.9272773265838623 -2.7709255218505859",
+                "LocalScale": "0.94271594285964966 0.94271594285964966 0.94271594285964966"
+            }
+        },
+        "7399136681417781468": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "vw_t5_wheel_02000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "1395529237"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.96024322509765625 0.36499103903770447 -2.2652587890625",
+                "Scale": "-0.99900197982788086 0.99900197982788086 0.99900197982788086"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_FRONT_RIGHT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5763279016710123739",
+                "LocalPosition": "0.90523660182952881 0.34408286213874817 -2.135495662689209",
+                "LocalScale": "-0.94177508354187012 0.94177508354187012 0.94177508354187012"
+            }
+        },
+        "9637663323876503771": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "vw_t5_wheel_02000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "1395529237"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.96024322509765625 0.36499103903770447 1.344696044921875",
+                "Scale": "-0.99900197982788086 0.99900197982788086 0.99900197982788086"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_BACK_RIGHT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5763279016710123739",
+                "LocalPosition": "0.90523660182952881 0.34408286213874817 1.2676664590835571",
+                "LocalScale": "-0.94177508354187012 0.94177508354187012 0.94177508354187012"
+            }
+        },
+        "10680469739688964317": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "vw_t5_wheel_02000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "1395529237"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.0493316650390625 0.36499103903770447 -2.2652587890625",
+                "Scale": "0.99900197982788086 0.99900197982788086 0.99900197982788086"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_FRONT_LEFT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5763279016710123739",
+                "LocalPosition": "-0.98922169208526611 0.34408286213874817 -2.135495662689209",
+                "LocalScale": "0.94177508354187012 0.94177508354187012 0.94177508354187012"
+            }
+        },
+        "12042608472902611166": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "light_vehicle_headlight01000",
+                "Description": "Spot light",
+                "Tags": "light"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.81568598747253418 0.95686298608779907 1",
+                "DiffuseIntensity": "5",
+                "Texture": "78208",
+                "Range": "12.5",
+                "SpotlightOuterAngle": "64",
+                "SpotlightInnerAngle": "36"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.90738677978515625 0.96499365568161011 -2.9261167049407959"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_HEAD"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5763279016710123739",
+                "LocalPosition": "-0.85540801286697388 0.90971493721008301 -2.7584969997406006",
+                "LocalScale": "0.94271594285964966 0.94271594285964966 0.94271594285964966"
+            }
+        },
+        "13288514473279631582": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "crafter_high_left_door000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.1033178567886353 1.1348109245300293 -2.0280718803405762",
+                "Scale": "1.0607649087905884 1.0607649087905884 1.0607649087905884"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "3704988322",
+                "Materials": [
+                    "2401989661"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5763279016710123739",
+                "LocalPosition": "-1.0401153564453125 1.069804310798645 -1.911895751953125"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_DRIVER",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAxis": "0 -1 0",
+                "RotationAngle": "75",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            }
+        },
+        "14780642028089258205": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "crafter_high_right_backdoor000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.84196269512176514 1.4198316335678101 2.5545051097869873",
+                "Scale": "1.0607649087905884 1.0607649087905884 1.0607649087905884"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "3704988328",
+                "Materials": [
+                    "2401989661"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5763279016710123739",
+                "LocalPosition": "0.793731689453125 1.3384978771209717 2.408172607421875"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_PASSENGER",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAxis": "0 3 0",
+                "RotationAngle": "75",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            }
+        },
+        "15091442161028706524": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "vw_t5_wheel_02000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "1395529237"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.0493316650390625 0.36499103903770447 1.344696044921875",
+                "Scale": "0.99900197982788086 0.99900197982788086 0.99900197982788086"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_BACK_LEFT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5763279016710123739",
+                "LocalPosition": "-0.98922169208526611 0.34408286213874817 1.2676664590835571",
+                "LocalScale": "0.94177508354187012 0.94177508354187012 0.94177508354187012"
+            }
+        },
+        "15558549940714615005": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "crafter_high_left_backdoor000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.93943476676940918 1.4091814756393433 2.5583896636962891",
+                "Scale": "1.0607649087905884 1.0607649087905884 1.0607649087905884"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "3704988326",
+                "Materials": [
+                    "2401989661"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5763279016710123739",
+                "LocalPosition": "-0.8856201171875 1.3284578323364258 2.411834716796875"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_PASSENGER",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAxis": "0 -3 0",
+                "RotationAngle": "75",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            }
+        }
+    }
+}

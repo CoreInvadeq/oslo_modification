@@ -1,0 +1,67 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "13373389100643627512": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "polizist_combined",
+                "Description": "Police man",
+                "Tags": "person;police"
+            },
+            "qsf::TransformComponent": "",
+            "qsf::BulletBoxCollisionComponent": {
+                "CollisionMask": "37",
+                "CollisionFilterGroup": "20",
+                "HalfExtents": "0.40000000596046448 1 0.30000001192092896"
+            },
+            "qsf::LinkComponent": "",
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "672608",
+                "Materials": [
+                    "1395537791"
+                ]
+            },
+            "qsf::MeshAnimationTestComponent": {
+                "Restart": "true",
+                "Skeleton_A": "3610141011",
+                "Skeleton_B": "18446744073709551615"
+            }
+        },
+        "14540913266423607800": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "facemask000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.00061377091333270073 1.6243972778320313 -0.016127593815326691",
+                "Rotation": "0.98171204328536987 -0.14997905492782593 0.11678639799356461 0.010428584180772305"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13373389100643627512",
+                "LocalPosition": "0.00061377091333270073 1.6243972778320313 -0.016127593815326691",
+                "LocalRotation": "0.98171204328536987 -0.14997905492782593 0.11678639799356461 0.010428584180772305"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "Bip01_Head",
+                "LocalPosition": "-0.032000001519918442 0.054000001400709152 0",
+                "LocalRotation": "0.5 0.5 0.5 -0.5"
+            },
+            "pth::UnitVariationComponent": {
+                "Suit Materials": [
+                    "1395537827",
+                    "1395537835"
+                ]
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395537831",
+                "Materials": [
+                    "1395537827"
+                ]
+            }
+        }
+    }
+}

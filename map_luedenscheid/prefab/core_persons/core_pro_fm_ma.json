@@ -1,0 +1,150 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "18312516416184841211": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "core_pro_fm_ma",
+                "Description": "vehicle_operator",
+                "Tags": "person;vehicle_operator"
+            },
+            "qsf::TransformComponent": "",
+            "qsf::MovableComponent": {
+                "GroundSpeedCategory": "squad"
+            },
+            "qsf::ai::NavigationComponent": {
+                "MoverType": "1",
+                "MaxSpeed": "3.2999999523162842",
+                "MaxTurningChange": "6",
+                "BackwardSpeedFactor": "0.40000000596046448",
+                "DesiredAcceleration": "5",
+                "MainNavMapId": "1",
+                "AvoidCollisionTypes": "20",
+                "AvoidCollisionMeasures": "3",
+                "CurveSmoothing": "0",
+                "DistanceToKeepAhead": "0",
+                "CollisionMask": "37",
+                "PrioritySearch": "true",
+                "AdditionalCollisionLookaheadDistance": "10"
+            },
+            "em5::HealthComponent": {
+                "HealthEnergy": "1000",
+                "MaximumHealthEnergy": "1000",
+                "LifeEnergy": "1000",
+                "MaximumLifeEnergy": "1000",
+                "Immunities": "IMMUNITY_ILLNESS,IMMUNITY_CONTAMINATION_RADIOACTIVE,IMMUNITY_CONTAMINATION_CHEMICAL,IMMUNITY_CONTAMINATION_BIOLOGICAL,IMMUNITY_CONTAMINATION_PLAGUE",
+                "Resistances": "1.000000,0.150000,0.250000"
+            },
+            "qsf::game::SelectableComponent": "",
+            "em5::CommandableComponent": {
+                "CommandArray": [
+                    "avc::OperatorPrepareDLK",
+                    "em5::MoveCommand",
+                    "evt::AdvancedBuildingEventEnterBuildingCommand",
+                    "omp::EnterVehicleCommand",
+                    "wmp::DebugVehicleCommand"
+                ],
+                "UnitType": "-1",
+                "PlayerId": "-1"
+            },
+            "qsf::ActionComponent": "",
+            "em5::PersonComponent": {
+                "Gender": "GENDER_MALE"
+            },
+            "em5::PersonPlacementComponent": "",
+            "qsf::BulletBoxCollisionComponent": {
+                "CollisionMask": "37",
+                "CollisionFilterGroup": "20",
+                "HalfExtents": "0.40000000596046448 1 0.30000001192092896"
+            },
+            "em5::FireReceiverComponent": "",
+            "em5::HighlightComponent": "",
+            "qsf::ai::StuckResolverComponent": {
+                "SwitchDelay": "1000000",
+                "RegardTrafficImpedimentsAsStuck": "true"
+            },
+            "qsf::GameLogicComponent": {
+                "GameLogicArray": [
+                    {
+                        "LogicTypeId": "em5::FiremanLogic"
+                    }
+                ]
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "LodFactor": "5",
+                "Mesh": "1395539994",
+                "Materials": [
+                    "8000000352",
+                    "8000000355"
+                ]
+            },
+            "qsf::LinkComponent": "",
+            "wmp::SuperFireFightersComponent": {
+                "Person Type": "PERSON_TYPE_OPERATOR",
+                "Firefighting Helmet": "11826915189892379643",
+                "Chainsaw Helmet": "2625697165581022203"
+            },
+            "pms::DoctorLogicComponent": {
+                "Skilllevel": "FirstAid"
+            },
+            "wmp::ScbaMonitoringComponent": "",
+            "inventory::PresetComponent": {
+                "PersonPreset": "fm-ma"
+            }
+        },
+        "2625697165581022203": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "fm_saw_helmet000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7130235433578491 0.011322021484375",
+                "Rotation": "-0.48943799734115601 0.51034271717071533 0.48944017291069031 -0.5103420615196228"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "18312516416184841211",
+                "LocalPosition": "0 1.7130235433578491 0.011322021484375",
+                "LocalRotation": "-0.48943799734115601 0.51034271717071533 0.48944017291069031 -0.5103420615196228"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "Bip01_Head",
+                "LocalPosition": "0 0 0",
+                "LocalRotation": "1 0 0 0"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "18446744073709551615"
+            },
+            "wmp::HideAtStartupComponent": ""
+        },
+        "11826915189892379643": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "draeger_hps_7000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7409074306488037 -0.03989410400390625",
+                "Rotation": "-0.48943799734115601 0.51034271717071533 0.48944017291069031 -0.5103420615196228"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395535846",
+                "Materials": [
+                    "2228269487"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "18312516416184841211",
+                "LocalPosition": "0 1.7409074306488037 -0.03989410400390625",
+                "LocalRotation": "-0.48943799734115601 0.51034271717071533 0.48944017291069031 -0.5103420615196228"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "Bip01_Head",
+                "LocalPosition": "0.029999999329447746 0.05000000074505806 0",
+                "LocalRotation": "1 0 0 0"
+            }
+        }
+    }
+}

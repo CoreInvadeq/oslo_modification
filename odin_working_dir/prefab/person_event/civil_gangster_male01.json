@@ -1,0 +1,74 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "1488336035580062522": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "civil_gangster_male01"
+            },
+            "qsf::TransformComponent": "",
+            "qsf::MovableComponent": "",
+            "qsf::ai::NavigationComponent": {
+                "MoverType": "3",
+                "MaxSpeed": "1",
+                "MaxTurningChange": "6",
+                "DesiredAcceleration": "30",
+                "AvoidCollisionTypes": "20",
+                "AvoidCollisionMeasures": "3",
+                "LimitDirectionChange": "true",
+                "DistanceToKeepAhead": "0.10000000149011612",
+                "CollisionMask": "5",
+                "MoveToClosestOnFailure": "false",
+                "AdditionalCollisionLookaheadDistance": "10"
+            },
+            "em5::HealthComponent": {
+                "HealthEnergy": "1000",
+                "MaximumHealthEnergy": "1000",
+                "LifeEnergy": "1000",
+                "MaximumLifeEnergy": "1000",
+                "Resistances": "0.000000,0.000000,0.000000"
+            },
+            "qsf::game::SelectableComponent": "",
+            "qsf::ActionComponent": "",
+            "em5::PersonComponent": {
+                "Gender": "GENDER_MALE",
+                "Age": "AGE_YOUTH"
+            },
+            "qsf::BulletBoxCollisionComponent": {
+                "CollisionMask": "5",
+                "CollisionFilterGroup": "20",
+                "HalfExtents": "0.40000000596046448 1 0.30000001192092896"
+            },
+            "em5::PersonPlacementComponent": "",
+            "em5::FireReceiverComponent": "",
+            "qsf::ai::StuckResolverComponent": {
+                "ObjectCanBeDeleted": "true"
+            },
+            "qsf::GameLogicComponent": {
+                "GameLogicArray": [
+                    {
+                        "LogicTypeId": "em5::EvadePlayerUnitsLogic"
+                    }
+                ]
+            },
+            "qsf::ai::AspectComponent": {
+                "Tags": "civil"
+            },
+            "qsf::compositing::TintableMeshComponent": {
+                "Mesh": "4260892717",
+                "TintPalette": "72937",
+                "TintPaletteIndex": "6"
+            },
+            "em5::MoveToDespawnComponent": {
+                "Priority": "20"
+            },
+            "qsf::MeshAnimationTestComponent": {
+                "Skeleton_A": "1829706924"
+            }
+        }
+    }
+}

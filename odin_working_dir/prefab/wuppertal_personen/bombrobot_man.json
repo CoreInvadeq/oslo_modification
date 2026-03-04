@@ -1,0 +1,251 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "8819003107965913701": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "bombrobot_man",
+                "Description": "firefighter"
+            },
+            "qsf::TransformComponent": "",
+            "qsf::MovableComponent": {
+                "GroundSpeedCategory": "squad"
+            },
+            "qsf::ai::NavigationComponent": {
+                "MoverType": "1",
+                "MaxSpeed": "1.2999999523162842",
+                "MaxTurningChange": "6",
+                "BackwardSpeedFactor": "0.40000000596046448",
+                "DesiredAcceleration": "5",
+                "MainNavMapId": "1",
+                "AvoidCollisionTypes": "20",
+                "AvoidCollisionMeasures": "3",
+                "CurveSmoothing": "0",
+                "DistanceToKeepAhead": "0",
+                "CollisionMask": "37",
+                "PrioritySearch": "true",
+                "AdditionalCollisionLookaheadDistance": "10"
+            },
+            "em5::HealthComponent": {
+                "HealthEnergy": "1000",
+                "MaximumHealthEnergy": "10000",
+                "LifeEnergy": "1000",
+                "MaximumLifeEnergy": "10000",
+                "Resistances": "1.000000,0.150000,0.250000"
+            },
+            "qsf::game::SelectableComponent": "",
+            "em5::CommandableComponent": {
+                "CommandArray": [
+                    "em5::MoveCommand",
+                    "omp::EnterVehicleCommand",
+                    "wmp::StartPullPersonCommand",
+                    "wmp::StopPullPersonCommand",
+                    "em5::StartPullObjectCommand",
+                    "em5::StopPullObjectCommand",
+                    "pth::DefuseBombCommand",
+                    "evt::DefuseBombCommand",
+                    "evt::RemoveBombCommand",
+                    "inventory::DropEquipmentCommand"
+                ],
+                "UnitType": "-1",
+                "PlayerId": "-1"
+            },
+            "qsf::ActionComponent": "",
+            "em5::PersonComponent": {
+                "Gender": "GENDER_MALE"
+            },
+            "em5::PersonPlacementComponent": "",
+            "qsf::BulletBoxCollisionComponent": {
+                "CollisionMask": "37",
+                "CollisionFilterGroup": "20",
+                "HalfExtents": "0.40000000596046448 1 0.30000001192092896"
+            },
+            "em5::FireReceiverComponent": "",
+            "em5::HighlightComponent": "",
+            "qsf::ai::StuckResolverComponent": {
+                "SwitchDelay": "1000000",
+                "RegardTrafficImpedimentsAsStuck": "true"
+            },
+            "qsf::GameLogicComponent": {
+                "GameLogicArray": [
+                    {
+                        "LogicTypeId": "em5::FiremanLogic"
+                    }
+                ]
+            },
+            "qsf::LinkComponent": "",
+            "qsf::MeshComponent": {
+                "Mesh": "1263",
+                "LodFactor": "5"
+            }
+        },
+        "4400449708571478630": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5_vs_sekbot_track_left000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "20144"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.00022125244140625 -9.1567635536193848e-06 0.00018310546875",
+                "Scale": "1.2000000476837158 1.2000000476837158 1.2000000476837158"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8819003107965913701",
+                "LocalPosition": "0.00022125244140625 -9.1567635536193848e-06 0.00018310546875",
+                "LocalScale": "1.2000000476837158 1.2000000476837158 1.2000000476837158"
+            },
+            "em5::WheelComponent": ""
+        },
+        "4913860044616878695": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5_vs_sekbot_center_wheel_left000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "20161"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.001373291015625 0.12599083781242371 -0.044647216796875",
+                "Scale": "1.2000000476837158 1.2000000476837158 1.2000000476837158"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_BACK_LEFT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8819003107965913701",
+                "LocalPosition": "-0.001373291015625 0.12599083781242371 -0.044647216796875",
+                "LocalScale": "1.2000000476837158 1.2000000476837158 1.2000000476837158"
+            }
+        },
+        "7790392345045748327": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5_vs_sekbot_center_wheel_left000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "20161"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.001373291015625 0.12239084392786026 -0.044647216796875",
+                "Scale": "-1.2000000476837158 1.2000000476837158 1.2000000476837158"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_BACK_RIGHT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8819003107965913701",
+                "LocalPosition": "-0.001373291015625 0.12239084392786026 -0.044647216796875",
+                "LocalScale": "-1.2000000476837158 1.2000000476837158 1.2000000476837158"
+            }
+        },
+        "8137938225304947304": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5_vs_sekbot_back_wheel_left000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "20164"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.001373291015625 0.16799086332321167 0.34771728515625",
+                "Scale": "-1.2000000476837158 1.2000000476837158 1.2000000476837158"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_BACK_RIGHT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8819003107965913701",
+                "LocalPosition": "-0.001373291015625 0.16799086332321167 0.34771728515625",
+                "LocalScale": "-1.2000000476837158 1.2000000476837158 1.2000000476837158"
+            }
+        },
+        "9525184229229447783": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5_vs_sekbot_back_wheel_left000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "20164"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.001373291015625 0.16799086332321167 0.34771728515625",
+                "Scale": "1.2000000476837158 1.2000000476837158 1.2000000476837158"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_BACK_LEFT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8819003107965913701",
+                "LocalPosition": "-0.001373291015625 0.16799086332321167 0.34771728515625",
+                "LocalScale": "1.2000000476837158 1.2000000476837158 1.2000000476837158"
+            }
+        },
+        "11608107917405833831": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5_vs_sekbot_front_wheel_left000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "20147"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.00186920166015625 0.16799142956733704 -0.3494873046875",
+                "Scale": "1.2000000476837158 1.2000000476837158 1.2000000476837158"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_BACK_LEFT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8819003107965913701",
+                "LocalPosition": "-0.00186920166015625 0.16799142956733704 -0.3494873046875",
+                "LocalScale": "1.2000000476837158 1.2000000476837158 1.2000000476837158"
+            }
+        },
+        "13028819859824167526": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5_vs_sekbot_track_left000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "20144"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.00022125244140625 -9.1567635536193848e-06 0.00018310546875",
+                "Scale": "-1.2000000476837158 1.2000000476837158 1.2000000476837158"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8819003107965913701",
+                "LocalPosition": "0.00022125244140625 -9.1567635536193848e-06 0.00018310546875",
+                "LocalScale": "-1.2000000476837158 1.2000000476837158 1.2000000476837158"
+            },
+            "em5::WheelComponent": ""
+        },
+        "17902796550310972006": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5_vs_sekbot_front_wheel_left000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "20147"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.00186920166015625 0.16799142956733704 -0.3494873046875",
+                "Scale": "-1.2000000476837158 1.2000000476837158 1.2000000476837158"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_BACK_RIGHT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8819003107965913701",
+                "LocalPosition": "-0.00186920166015625 0.16799142956733704 -0.3494873046875",
+                "LocalScale": "-1.2000000476837158 1.2000000476837158 1.2000000476837158"
+            }
+        }
+    }
+}

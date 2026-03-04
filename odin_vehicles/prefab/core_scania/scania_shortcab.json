@@ -1,0 +1,69 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "2188731415": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "scania_shortcab"
+            },
+            "qsf::TransformComponent": "",
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "3704989049"
+            },
+            "em5::RoadVehicleComponent": {
+                "VehicleDoors": [
+                    "7058529953245072079",
+                    "5238517280729500367"
+                ],
+                "Resistances": "0.000000,0.000000",
+                "SignalAudio": "18446744073709551615"
+            },
+            "qsf::LinkComponent": ""
+        },
+        "5238517280729500367": {
+            "qsf::MetadataComponent": {
+                "Prefab": "3704989054",
+                "Prototype": "730863557",
+                "Name": "scania_shortcab_door_200"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.173431396484375 1.4491136074066162 -4.016815185546875"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "2188731415",
+                "LocalPosition": "1.173431396484375 1.4491136074066162 -4.016815185546875",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_CODRIVER"
+            }
+        },
+        "7058529953245072079": {
+            "qsf::MetadataComponent": {
+                "Prefab": "3704989052",
+                "Prototype": "1368560174",
+                "Name": "scania_shortcab_door_100"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.1868133544921875 1.4474127292633057 -4.0274658203125"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "2188731415",
+                "LocalPosition": "-1.1868133544921875 1.4474127292633057 -4.0274658203125",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_DRIVER",
+                "RotationAngle": "-75"
+            }
+        }
+    }
+}

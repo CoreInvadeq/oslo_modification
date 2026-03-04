@@ -1,0 +1,723 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "127825197": {
+            "qsf::MetadataComponent": {
+                "Prefab": "3675000",
+                "Prototype": "2463745721",
+                "Name": "civil_taxi"
+            },
+            "em5::RoadVehicleComponent": {
+                "SpecialEntity": "18446744073709551615",
+                "VehicleDoors": [
+                    "1932326441569928597",
+                    "424468384355108245",
+                    "14241222830914979221",
+                    "15654163283414271381"
+                ],
+                "MainDoorType": "DOORTYPE_DRIVER",
+                "VehicleWheels": [
+                    "5495184929532593557",
+                    "16878490397433578901",
+                    "6615378495581111701",
+                    "3468017622029641629"
+                ],
+                "VehicleLights": [
+                    "4117094554665673954",
+                    "8395351275378238690",
+                    "217029928752780834",
+                    "3962256864157111842",
+                    "6102166942921419019",
+                    "15138372572828559627"
+                ]
+            },
+            "qsf::TransformComponent": {
+                "Scale": "1 1 1"
+            },
+            "em5::FireComponent": {
+                "FireMaterial": "civil_car_small",
+                "HardRadius": "5",
+                "SoftRadius": "10",
+                "FireParticles": [
+                    "14462019050247973131",
+                    "15515281718561368331",
+                    "15465511203743623436",
+                    "11023648226559813900",
+                    "364128044630567179",
+                    "14580228460178204939",
+                    "11023138014509820171",
+                    "4477402117882407180",
+                    "8002514491922606347",
+                    "13522950285205858571"
+                ]
+            },
+            "em5::MoveToDespawnComponent": {
+                "Priority": "20"
+            },
+            "qsf::BulletBoxCollisionComponent": {
+                "HalfExtents": "1 0.75 2.2999999523162842"
+            },
+            "qsf::GameLogicComponent": {
+                "GameLogicArray": [
+                    {
+                        "LogicTypeId": "3729070267"
+                    }
+                ]
+            },
+            "qsf::LinkComponent": {
+                "LocalPosition": "0 0 0",
+                "LocalRotation": "1 0 0 0"
+            },
+            "qsf::compositing::TintableMeshComponent": {
+                "Mesh": "2991",
+                "TintPalette": "638055",
+                "TintPaletteIndex": "1"
+            }
+        },
+        "217029928752780834": {
+            "qsf::MetadataComponent": {
+                "Prefab": "4260893096",
+                "Prototype": "13967747827208639298",
+                "Name": "light_vehicle_headlight01000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.68938064575195313 0.86948037147521973 -2.12969970703125"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "2983"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "0.68938064575195313 0.86948037147521973 -2.12969970703125",
+                "LocalRotation": "0.9902680516242981 -0.13917310535907745 0 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "364128044630567179": {
+            "qsf::MetadataComponent": {
+                "Prefab": "618697",
+                "Prototype": "5632722851337363899",
+                "Name": "smoke_02_heavy_dark_carsmoke_4000"
+            },
+            "qsf::ParticlesComponent": {
+                "Active": "false",
+                "EmitterEnabled": "false",
+                "DelayTime": "14"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.53971290588378906 -0.48576158285140991 1.267242431640625",
+                "Rotation": "-4.3047322151323897e-08 0.17364811897277832 0.98480784893035889 -7.5904003082882809e-09",
+                "Scale": "0.070000000298023224 0.070000000298023224 0.070000000298023224"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "0.53971290588378906 -0.48576158285140991 1.267242431640625",
+                "LocalRotation": "-4.3047322151323897e-08 0.17364811897277832 0.98480784893035889 -7.5904003082882809e-09",
+                "LocalScale": "0.070000000298023224 0.070000000298023224 0.070000000298023224"
+            }
+        },
+        "424468384355108245": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5_vc_taxi_door_frontleft000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.87318801879882813 0.58600002527236938 -0.94449937343597412"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "127825197",
+                "LocalPosition": "-0.87318801879882813 0.58600002527236938 -0.94449937343597412"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_DRIVER",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "66267",
+                "RotationAngle": "-75",
+                "DoorOffset": "-1.5638809204101563 0 0.451141357421875",
+                "DoorRotation": "0.94264101982116699 0 -0.33380699157714844 0",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            },
+            "qsf::compositing::TintableMeshComponent": {
+                "Mesh": "42362",
+                "MinLodDetailIndex": "0",
+                "TintPalette": "638055",
+                "TintPaletteIndex": "1",
+                "InheritTintColor": "true"
+            }
+        },
+        "5819977401434154624": {
+            "qsf::MetadataComponent": {
+                "Prefab": "296422",
+                "Prototype": "15668890275651438567",
+                "Name": "blinker_left_emissive000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.76436233520507813 -2.2411346435546875e-05 -0.32870042324066162",
+                "Rotation": "1 0 0 0",
+                "Scale": "1 1 1"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "AnimationType": "SWITCHING",
+                "LightMaterial": "278161",
+                "LightMaterialIsInTopParent": "true"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "424468384355108245",
+                "LocalPosition": "0.10882568359375 -0.58602243661880493 0.6157989501953125",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "1932326441569928597": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5_vc_taxi_door_backright000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.87633323669433594 0.68481415510177612 0.142364501953125"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "127825197",
+                "LocalPosition": "0.87633323669433594 0.68481415510177612 0.142364501953125"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_PASSENGER",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAngle": "75",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "InheritTintColor": "true",
+                "Mesh": "3940953428",
+                "MinLodDetailIndex": "0",
+                "TintPalette": "638055",
+                "TintPaletteIndex": "1",
+                "Materials": [
+                    "2401989580"
+                ]
+            }
+        },
+        "3468017622029641629": {
+            "qsf::MetadataComponent": {
+                "Prefab": "3940953480",
+                "Prototype": "3311298316"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "3940953476"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.74004936218261719 0.32899999618530273 1.2366943359375",
+                "Rotation": "1 0 0 0",
+                "Scale": "1 1 1"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_BACK_LEFT"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "-0.74004936218261719 0.32899999618530273 1.2366943359375",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "3962256864157111842": {
+            "qsf::MetadataComponent": {
+                "Prefab": "4260893096",
+                "Prototype": "14373673174992769858",
+                "Name": "light_vehicle_headlight01000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.75762557983398438 0.86948037147521973 -2.12969970703125"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "2983"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "-0.75762557983398438 0.86948037147521973 -2.12969970703125",
+                "LocalRotation": "0.9902680516242981 -0.13917310535907745 0 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "4117094554665673954": {
+            "qsf::MetadataComponent": {
+                "Prefab": "296423",
+                "Prototype": "18187568847325187746",
+                "Name": "blinker_right_emissive000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.669921875 -2.2411346435546875e-05 -0.7577972412109375"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "AnimationType": "SWITCHING",
+                "LightMaterial": "278162",
+                "LightMaterialIsInTopParent": "true"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "0.669921875 -2.2411346435546875e-05 -0.7577972412109375",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "4477402117882407180": {
+            "qsf::MetadataComponent": {
+                "Prefab": "618697",
+                "Prototype": "5632722851337363899",
+                "Name": "smoke_02_heavy_dark_carsmoke_1000"
+            },
+            "qsf::ParticlesComponent": {
+                "Active": "false",
+                "EmitterEnabled": "false",
+                "DelayTime": "20"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.76555824279785156 -9.5367431640625e-07 1.267242431640625",
+                "Rotation": "0.98480784893035889 0 0 0.17364814877510071",
+                "Scale": "0.070000000298023224 0.070000000298023224 0.070000000298023224"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "-0.76555824279785156 -9.5367431640625e-07 1.267242431640625",
+                "LocalRotation": "0.98480784893035889 0 0 0.17364814877510071",
+                "LocalScale": "0.070000000298023224 0.070000000298023224 0.070000000298023224"
+            }
+        },
+        "5495184929532593557": {
+            "qsf::MetadataComponent": {
+                "Prefab": "3940953480",
+                "Prototype": "3311298316",
+                "Name": "em5_vc_taxi_tire_frontleft000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.74795150756835938 0.32899999618530273 1.2366943359375",
+                "Rotation": "1 0 0 0",
+                "Scale": "-1 1 1"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_BACK_RIGHT"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "0.74795150756835938 0.32899999618530273 1.2366943359375",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "-1 1 1"
+            }
+        },
+        "6102166942921419019": {
+            "qsf::MetadataComponent": {
+                "Prefab": "4260893096",
+                "Prototype": "7307385627344188525",
+                "Name": "light_vehicle_breaklight01000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.85291481018066406 0.8831518292427063 2.260711669921875"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "278163"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "-0.85291481018066406 0.8831518292427063 2.260711669921875",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "6615378495581111701": {
+            "qsf::MetadataComponent": {
+                "Prefab": "3940953480",
+                "Prototype": "3311298316",
+                "Name": "em5_vc_taxi_tire_frontleft000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.744049072265625 0.32699999213218689 -1.504302978515625"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_FRONT_LEFT"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "-0.744049072265625 0.32699999213218689 -1.504302978515625",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "8002514491922606347": {
+            "qsf::MetadataComponent": {
+                "Prefab": "618694",
+                "Prototype": "10891902535699448568",
+                "Name": "window_explosion_03_wide_car000"
+            },
+            "qsf::ParticlesComponent": {
+                "Active": "false",
+                "EmitterEnabled": "false"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.013246536254882813 0.19996672868728638 -1.53912353515625",
+                "Rotation": "0 0 1 0"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "-0.013246536254882813 0.19996672868728638 -1.53912353515625",
+                "LocalRotation": "0 0 1 0",
+                "LocalScale": "0.25 0.25 0.25"
+            }
+        },
+        "8395351275378238690": {
+            "qsf::MetadataComponent": {
+                "Prefab": "296422",
+                "Prototype": "15668890275651438567",
+                "Name": "blinker_left_emissive000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.76434326171875 -2.2411346435546875e-05 -0.7010345458984375"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "AnimationType": "SWITCHING",
+                "LightMaterial": "278161",
+                "LightMaterialIsInTopParent": "true"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "-0.76434326171875 -2.2411346435546875e-05 -0.7010345458984375",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "11023138014509820171": {
+            "qsf::MetadataComponent": {
+                "Prefab": "618695",
+                "Prototype": "13319741737313935564",
+                "Name": "window_explosion_01_cubic_car000"
+            },
+            "qsf::ParticlesComponent": {
+                "Active": "false",
+                "ScaleVelocity": "0.25",
+                "EmitterEnabled": "false",
+                "DelayTime": "0.5"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.50482749938964844 1.0349302291870117 0.4997100830078125",
+                "Rotation": "-4.3711388286737929e-08 0 -1 0",
+                "Scale": "0.20000000298023224 0.20000000298023224 0.20000000298023224"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "-0.50482749938964844 1.0349302291870117 0.4997100830078125",
+                "LocalRotation": "-4.3711388286737929e-08 0 -1 0",
+                "LocalScale": "0.20000000298023224 0.20000000298023224 0.20000000298023224"
+            }
+        },
+        "11023648226559813900": {
+            "qsf::MetadataComponent": {
+                "Prefab": "618696",
+                "Prototype": "7848930460024259048",
+                "Name": "smoke_02_heavy_dark_carsmoke_largefire000"
+            },
+            "qsf::ParticlesComponent": {
+                "Active": "false",
+                "EmitterEnabled": "false"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.13293266296386719 -1.2609741687774658 0.587554931640625"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "0.13293266296386719 -1.2609741687774658 0.587554931640625",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "0.25 0.25 0.25"
+            }
+        },
+        "13522950285205858571": {
+            "qsf::MetadataComponent": {
+                "Prefab": "618695",
+                "Prototype": "13319741737313935564",
+                "Name": "window_explosion_01_cubic_car000"
+            },
+            "qsf::ParticlesComponent": {
+                "Active": "false",
+                "ScaleVelocity": "0.30000001192092896",
+                "EmitterEnabled": "false"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.51172065734863281 0.77636063098907471 -0.194122314453125",
+                "Scale": "0.25 0.25 0.25"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "0.51172065734863281 0.77636063098907471 -0.194122314453125",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "0.25 0.25 0.25"
+            }
+        },
+        "14241222830914979221": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5_vc_taxi_door_backleft000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.87583798170089722 0.68400001525878906 0.13929960131645203"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "127825197",
+                "LocalPosition": "-0.87583798170089722 0.68400001525878906 0.13929960131645203"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_PASSENGER",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAngle": "75",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            },
+            "qsf::compositing::TintableMeshComponent": {
+                "Mesh": "3940953422",
+                "MinLodDetailIndex": "0",
+                "TintPalette": "638055",
+                "TintPaletteIndex": "1",
+                "InheritTintColor": "true"
+            }
+        },
+        "14462019050247973131": {
+            "qsf::MetadataComponent": {
+                "Prefab": "618697",
+                "Prototype": "5632722851337363899",
+                "Name": "smoke_02_heavy_dark_carsmoke_3000"
+            },
+            "qsf::ParticlesComponent": {
+                "Active": "false",
+                "EmitterEnabled": "false",
+                "DelayTime": "8"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.63218307495117188 -0.152488112449646 -1.2935638427734375",
+                "Rotation": "0.98480784893035889 0 0 0.17364814877510071",
+                "Scale": "0.070000000298023224 0.070000000298023224 0.070000000298023224"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "-0.63218307495117188 -0.152488112449646 -1.2935638427734375",
+                "LocalRotation": "0.98480784893035889 0 0 0.17364814877510071",
+                "LocalScale": "0.070000000298023224 0.070000000298023224 0.070000000298023224"
+            }
+        },
+        "14580228460178204939": {
+            "qsf::MetadataComponent": {
+                "Prefab": "618697",
+                "Prototype": "5632722851337363899",
+                "Name": "smoke_02_heavy_dark_carsmoke_6000"
+            },
+            "qsf::ParticlesComponent": {
+                "Active": "false",
+                "EmitterEnabled": "false",
+                "DelayTime": "0"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.4498748779296875 0.54609978199005127 -0.235107421875",
+                "Rotation": "-1.9904964787542667e-08 -0.25881907343864441 0.96592581272125244 -7.4286326423589344e-08",
+                "Scale": "0.10000000149011612 0.10000000149011612 0.10000000149011612"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "-0.4498748779296875 0.54609978199005127 -0.235107421875",
+                "LocalRotation": "-1.9904964787542667e-08 -0.25881907343864441 0.96592581272125244 -7.4286326423589344e-08",
+                "LocalScale": "0.10000000149011612 0.10000000149011612 0.10000000149011612"
+            }
+        },
+        "15138372572828559627": {
+            "qsf::MetadataComponent": {
+                "Prefab": "4260893096",
+                "Prototype": "13654286820457133165",
+                "Name": "light_vehicle_breaklight01000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.67803764343261719 0.8831518292427063 2.260711669921875"
+            },
+            "qsf::game::LightControllerComponent": {
+                "Active": "false",
+                "LightMaterial": "278163"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "0.67803764343261719 0.8831518292427063 2.260711669921875",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "15465511203743623436": {
+            "qsf::MetadataComponent": {
+                "Prefab": "42417",
+                "Prototype": "3220306611",
+                "Name": "ground_fire_08_areal_8000"
+            },
+            "qsf::ParticlesComponent": {
+                "Active": "false",
+                "ScaleVelocity": "0.20000000298023224",
+                "EmitterEnabled": "false",
+                "DelayTime": "4"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.16574287414550781 0.75756287574768066 -0.4859466552734375",
+                "Scale": "0.15000000596046448 0.15000000596046448 0.15000000596046448"
+            },
+            "em5::FireParticleOptionsComponent": {
+                "ShowOnDamageLevel1": "true",
+                "ShowOnDamageLevel3": "false",
+                "ShowOnLargeFireState": "false",
+                "FireLightEntity": "15168484966497937676"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "-0.16574287414550781 0.75756287574768066 -0.4859466552734375",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "0.15000000596046448 0.15000000596046448 0.15000000596046448"
+            }
+        },
+        "15168484966497937676": {
+            "qsf::MetadataComponent": {
+                "Prefab": "42417",
+                "Prototype": "2529052287809897324"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.16672249138355255 1.2553280591964722 -0.48611146211624146"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "15465511203743623436"
+            }
+        },
+        "15515281718561368331": {
+            "qsf::MetadataComponent": {
+                "Prefab": "625939",
+                "Prototype": "14343745563693577682",
+                "Name": "explosion_01_large_car000"
+            },
+            "qsf::ParticlesComponent": {
+                "Active": "false",
+                "EmitterEnabled": "false"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.051836013793945313 0.31401616334915161 -0.381866455078125"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "0.051836013793945313 0.31401616334915161 -0.381866455078125",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "0.20000000298023224 0.20000000298023224 0.20000000298023224"
+            }
+        },
+        "15654163283414271381": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5_vc_taxi_door_frontright000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.87568092346191406 0.58826994895935059 -0.93701171875"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "127825197",
+                "LocalPosition": "0.87568092346191406 0.58826994895935059 -0.93701171875"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_CODRIVER",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAngle": "75",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "InheritTintColor": "true",
+                "Mesh": "66265",
+                "MinLodDetailIndex": "0",
+                "TintPalette": "638055",
+                "TintPaletteIndex": "1",
+                "Materials": [
+                    "2401989580"
+                ]
+            }
+        },
+        "3625444684513977984": {
+            "qsf::MetadataComponent": {
+                "Prefab": "296423",
+                "Prototype": "18187568847325187746",
+                "Name": "blinker_right_emissive000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.66993141174316406 -2.2411346435546875e-05 -0.41480255126953125",
+                "Rotation": "1 0 0 0",
+                "Scale": "1 1 1"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "AnimationType": "SWITCHING",
+                "LightMaterial": "278162",
+                "LightMaterialIsInTopParent": "true"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "15654163283414271381",
+                "LocalPosition": "-0.20574951171875 -0.58829236030578613 0.52220916748046875",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "16878490397433578901": {
+            "qsf::MetadataComponent": {
+                "Prefab": "3940953480",
+                "Prototype": "3311298316",
+                "Name": "em5_vc_taxi_tire_frontleft000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.75195121765136719 0.32699999213218689 -1.5283203125",
+                "Rotation": "1 0 0 0",
+                "Scale": "-1 1 1"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_FRONT_RIGHT"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "127825197",
+                "LocalPosition": "0.75195121765136719 0.32699999213218689 -1.5283203125",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "-1 1 1"
+            }
+        }
+    }
+}

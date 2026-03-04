@@ -1,0 +1,80 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "17826982926141639778": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "core_nettpartner",
+                "Tags": "person;cleaner"
+            },
+            "qsf::TransformComponent": "",
+            "qsf::MovableComponent": {
+                "GroundSpeedCategory": "civilian"
+            },
+            "qsf::ai::NavigationComponent": {
+                "MoverType": "3",
+                "MaxSpeed": "1",
+                "MaxTurningChange": "6",
+                "DesiredAcceleration": "3",
+                "AvoidCollisionTypes": "20",
+                "AvoidCollisionMeasures": "3",
+                "LimitDirectionChange": "true",
+                "DistanceToKeepAhead": "0.10000000149011612",
+                "CollisionMask": "5",
+                "MoveToClosestOnFailure": "false",
+                "AdditionalCollisionLookaheadDistance": "10"
+            },
+            "em5::HealthComponent": {
+                "HealthEnergy": "1000",
+                "MaximumHealthEnergy": "1000",
+                "LifeEnergy": "1000",
+                "MaximumLifeEnergy": "1000",
+                "Resistances": "0.660000,0.200000,0.300000"
+            },
+            "qsf::game::SelectableComponent": "",
+            "qsf::ActionComponent": "",
+            "em5::PersonComponent": {
+                "Gender": "GENDER_MALE"
+            },
+            "qsf::BulletBoxCollisionComponent": {
+                "CollisionMask": "5",
+                "CollisionFilterGroup": "20",
+                "HalfExtents": "0.40000000596046448 1 0.30000001192092896"
+            },
+            "em5::PersonPlacementComponent": "",
+            "em5::FireReceiverComponent": "",
+            "qsf::ai::StuckResolverComponent": "",
+            "qsf::GameLogicComponent": "",
+            "em5::CommandableComponent": {
+                "CommandArray": [
+                    "em5::MoveCommand",
+                    "evt::ModularEventCleanupDebrisCommand",
+                    "evt::ModularEventRemoveGraffitiCommand",
+                    "inventory::DropEquipmentCommand",
+                    "evt::RemoveBombCommand",
+                    "evt::RemoveDogCommand",
+                    "omp::EnterVehicleCommand"
+                ],
+                "UnitType": "-1",
+                "PlayerId": "-1"
+            },
+            "em5::HighlightComponent": "",
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "3940953904",
+                "TintPalette": "72937",
+                "TintPaletteIndex": "12",
+                "Materials": [
+                    "1395538118"
+                ]
+            },
+            "qsf::LinkComponent": "",
+            "inventory::PresetComponent": {
+                "PersonPreset": "cleaner"
+            }
+        }
+    }
+}

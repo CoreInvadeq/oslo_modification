@@ -1,0 +1,198 @@
+//[-------------------------------------------------------]
+//[ LDS Freeplay Events Definitions    			          ]
+//[-------------------------------------------------------]
+{
+    "Format":
+    {
+        "Type": "em5_eventpool",
+        "Version": "1"
+	},
+	"LDS_Events_Definitions":
+	{
+		"ModularEvent": {
+			"Core": "EM5_General_Definitions/General_Event",
+			"FactoryClass": "evt::ModularEventFactory",
+			
+			"EventLayer": "modular_event",
+			"EventName": "MODULAR_EVENT_TITLE",
+			"SupervisorInitialMessage": "SUPERVISOR_MODULAR_EVENT", // empty = no message
+			"SupervisorInitialAudio": "beep", // empty = no audio
+			
+			"UseAlarmKitForAudio": true, // checks first if the file exists in alert_audio_[EN/DE], if not found for german a fallback with words will be used, if false the audio will be search where all SUPERVISOR audio files are located! ONLY DE
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "", // empty = no message
+			"SupervisorArrivalAudio": "", // empty = no audio
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		"AdvancedBombEventFactory": {
+			"Core": "EM5_General_Definitions/General_Event",
+			"FactoryClass": "evt::AdvancedBombEventFactory",
+			
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_EVENT", // empty = no message
+			"SupervisorInitialAudio": "beep", // empty = no audio
+			"SupervisorBombMessage": "SUPERVISOR_ADVANCED_BOMB_EVENT_EXPLOSION", // empty = no message
+			"SupervisorBombAudio": "", // empty = no audio
+			"SupervisorDefuseFailMessage": "SUPERVISOR_ADVANCED_BOMB_EVENT_DEFUSE_FAILED", // empty = no message
+			"SupervisorDefuseFailAudio": "", // empty = no audio
+			"SupervisorArrivalMessage": "", // empty = no message
+			"SupervisorArrivalAudio": "", // empty = no audio
+		
+			"UseAlarmKitForAudio": true, // checks first if the file exists in alert_audio_[EN/DE], if not found for german a fallback with words will be used, if false the audio will be search where all SUPERVISOR audio files are located! ONLY DE
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		"AdvancedBuildingFireEvent": {
+			"Core": "EM5_General_Definitions/General_Event",
+			"FactoryClass": "evt::AdvancedBuildingFireEventFactory",
+			
+			"BuildingType": "all", // all, suburb, office, industry, apartment, petrolstation (all can be combined with ;)
+			"EventName": "ADVANCED_BUILDING_FIRE_EVENT_TITLE",
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_FIRE_EVENT", // empty = no message
+			"SupervisorInitialAudio": "beep", // empty = no audio
+			
+			"ForcePersonInside": false,
+			"ForcePersonWindow": false,
+			"ForceBlockedDoor": false,
+			
+			"BlockPersonInside": false,
+			"BlockPersonWindow": false,
+			"BlockBlockedDoor": false,
+			
+			"TrappedPersonMin": 1,
+			"TrappedPersonMax": 5,
+			
+			"TrappedHealthyPersonMin": 1,
+			"TrappedHealthyPersonMax": 5,
+			
+			"StartFireRadiusMin": 5.0,
+			"StartFireRadiusMax": 25.0,
+			"Explosion": false,
+			
+			"RecloseDoorNeeded": false,
+			"AllowSideEvents": false,
+			"UseAlarmKitForAudio": true, // checks first if the file exists in alert_audio_[EN/DE], if not found for german a fallback with words will be used, if false the audio will be search where all SUPERVISOR audio files are located! ONLY DE
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "", // empty = no message
+			"SupervisorArrivalAudio": "", // empty = no audio
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		"AdvancedBuildingEvent": {
+			"Core": "EM5_General_Definitions/General_Event",
+			"FactoryClass": "evt::AdvancedBuildingEventFactory",
+			
+			"BuildingType": "all", // all, suburb, office, industry, apartment, petrolstation (all can be combined with ;)
+			"EventName": "ADVANCED_BUILDING_EVENT_TITLE",
+			"EventType": "simple", // simple,
+			"NeededPersons": "paramedic;paramedic", // police, firefighter, leader, vehicle_operator, doctor, paramedic, stretcher (combined with ;) <-- please max 20
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_EVENT", // empty = no message
+			"SupervisorInitialAudio": "beep", // empty = no audio
+			
+			// all building audio files must be the local asset id from the audio source: e.g. "em5/audio/sfx_unitvehicles/osf"
+			"BuildingInitialAudioLoop": "", // empty = no audio, audio file plays in loop until units arrive
+			"BuildingArrivalAudioLoop": "", // empty = no audio, audio file plays in loop when units arrive and until all needed units are in the building
+			"BuildingUnitsInBuildingAudioLoop": "", // empty = no audio, audio file plays in loop when all needed units are in the building
+			"BuildingUnitsInBuildingFollowUpAudioLoop": "", // empty = no audio, audio file plays in loop when all needed units are in the building but follow up is now active
+			"BuildingUnitsExitBuildingAudio": "", // empty = no audio, audio file plays when all units exists the building and the event is finished
+			
+			"FollowUpAlarmNeededPersons": "",
+			"FollowUpAlarmEventType": "",
+			"SupervisorFollowUpAlarmMessage": "", // empty = no message
+			"SupervisorFollowUpAlarmAudio": "", // empty = no audio
+			"FollowUpAlarmChange": 0.0,
+			
+			"RecloseDoorNeeded": false,
+			"UseAlarmKitForAudio": true, // checks first if the file exists in alert_audio_[EN/DE], if not found for german a fallback with words will be used, if false the audio will be search where all SUPERVISOR audio files are located! ONLY DE
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "", // empty = no message
+			"SupervisorArrivalAudio": "", // empty = no audio
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		"SmokeDetectorEvent": {
+			"Core": "EM5_General_Definitions/General_Event",
+			"FactoryClass": "evt::SmokeDetectorEventFactory",
+			
+			"SupervisorInitialMessage": "SUPERVISOR_SMOKEDETECTOR_EVENT", // empty = no message
+			"SupervisorInitialAudio": "beep", // empty = no audio
+			"SupervisorCallMessage": "SUPERVISOR_SMOKEDETECTOR_EVENT_ANOTHER_CALL", // empty = no message
+			"SupervisorCallAudio": "beep", // empty = no audio
+			"SupervisorCallFireMessage": "SUPERVISOR_SMOKEDETECTOR_EVENT_ANOTHER_CALL_FIRE", // empty = no message
+			"SupervisorCallFireAudio": "beep", // empty = no audio
+			"SupervisorArrivalMessage": "", // empty = no message
+			"SupervisorArrivalAudio": "", // empty = no audio
+		
+			"UseAlarmKitForAudio": true, // checks first if the file exists in alert_audio_[EN/DE], if not found for german a fallback with words will be used, if false the audio will be search where all SUPERVISOR audio files are located! ONLY DE
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		"CityHelp": {
+			"Core": "EM5_General_Definitions/General_Event",
+			"FactoryClass": "evt::CityHelpEventFactory",
+			
+			// possible nef;rtw;ktw;elw;hlf;dlk;tlf
+			"Type1": "rtw",
+			"Type2": "nef;rtw",
+			"Type3": "hlf",
+			"Type4": "tlf",
+			"Type5": "elw;hlf;hlf;dlk",
+			"Type6": "rtw;rtw",
+			"Type7": "ktw",
+			"Type8": "hlf;dlk",
+			
+			"MultiplayerPointGain": "1000",
+			"NormalPointGain": "1000",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		"EmaEvent": {
+			"Core": "EM5_General_Definitions/General_Event",
+			"FactoryClass": "evt::EMAEventFactory",
+			
+			"EventName": "EMA_EVENT_TITLE",
+			"SupervisorInitialMessage": "SUPERVISOR_EMA_EVENT", // empty = no message
+			"SupervisorInitialAudio": "", // empty = no audio
+			
+			"RecloseDoorNeeded": false,
+			"UseAlarmKitForAudio": true, // checks first if the file exists in alert_audio_[EN/DE], if not found for german a fallback with words will be used, if false the audio will be search where all SUPERVISOR audio files are located! ONLY DE
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "", // empty = no message
+			"SupervisorArrivalAudio": "", // empty = no audio
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		}
+	}
+}

@@ -1,0 +1,122 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "12591185554847030829": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "core_helse_il",
+                "Tags": "person;doctor;special"
+            },
+            "qsf::TransformComponent": "",
+            "qsf::MovableComponent": {
+                "GroundSpeedCategory": "squad"
+            },
+            "qsf::ai::NavigationComponent": {
+                "MoverType": "1",
+                "MaxSpeed": "2.25",
+                "MaxTurningChange": "6",
+                "BackwardSpeedFactor": "0.40000000596046448",
+                "DesiredAcceleration": "5",
+                "MainNavMapId": "1",
+                "AvoidCollisionTypes": "20",
+                "AvoidCollisionMeasures": "3",
+                "LimitDirectionChange": "true",
+                "CurveSmoothing": "0",
+                "DistanceToKeepAhead": "0",
+                "CollisionMask": "37",
+                "PrioritySearch": "true",
+                "AdditionalCollisionLookaheadDistance": "10"
+            },
+            "em5::HealthComponent": {
+                "HealthEnergy": "1000",
+                "MaximumHealthEnergy": "1000",
+                "LifeEnergy": "1000",
+                "MaximumLifeEnergy": "1000",
+                "Resistances": "0.660000,0.000000,0.100000"
+            },
+            "em5::PersonPlacementComponent": "",
+            "qsf::game::SelectableComponent": "",
+            "em5::CommandableComponent": {
+                "CommandArray": [
+                    "em5::GuidePlagueVictimsCommand",
+                    "em5::MoveCommand",
+                    "em5::PlaceGuidedPersonCommand",
+                    "evt::AdvancedBuildingEventEnterBuildingCommand",
+                    "inventory::DropEquipmentCommand",
+                    "inventory::GetMedicBagCommand",
+                    "omp::CallMorticianCommand",
+                    "omp::EnterVehicleCommand",
+                    "pms::EnterTentCommand",
+                    "pms::RemovePatientenAblageCommand",
+                    "pms::SendRTWToHQWhenRTHIsNeededCommand",
+                    "pms::SendRTWToHQWithoutDocCommand",
+                    "pms::SetPatientenAblageCommand",
+                    "pms::TreatPersonCommand",
+                    "pms::TriagePatientsCommand",
+                    "aps::RemoveLandingZoneCommand",
+                    "aps::SetLandingZoneCommand"
+                ],
+                "UnitType": "-1",
+                "PlayerId": "-1"
+            },
+            "qsf::ActionComponent": "",
+            "em5::PersonComponent": {
+                "Gender": "GENDER_MALE"
+            },
+            "qsf::BulletBoxCollisionComponent": {
+                "CollisionMask": "37",
+                "CollisionFilterGroup": "20",
+                "HalfExtents": "0.40000000596046448 1 0.30000001192092896"
+            },
+            "em5::FireReceiverComponent": "",
+            "em5::HighlightComponent": "",
+            "qsf::ai::StuckResolverComponent": {
+                "SwitchDelay": "1000000",
+                "RegardTrafficImpedimentsAsStuck": "true"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "12345742",
+                "TintPalette": "162489",
+                "TintPaletteIndex": "1",
+                "Materials": [
+                    "8000000370"
+                ]
+            },
+            "pms::DoctorLogicComponent": {
+                "Skilllevel": "Doctor"
+            },
+            "qsf::LinkComponent": "",
+            "inventory::PresetComponent": ""
+        },
+        "2312250460900154926": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "draeger_hps_7000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-9.5367431640625e-07 1.7487850189208984 -0.03989410400390625",
+                "Rotation": "0.4894387423992157 -0.5103420615196228 -0.48943957686424255 0.51034277677536011"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395535846",
+                "Materials": [
+                    "8000000446"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12591185554847030829",
+                "LocalPosition": "-9.5367431640625e-07 1.7487850189208984 -0.03989410400390625",
+                "LocalRotation": "0.4894387423992157 -0.5103420615196228 -0.48943957686424255 0.51034277677536011"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "Bip01_Head",
+                "LocalPosition": "0.029999999329447746 0.05000000074505806 0",
+                "LocalRotation": "1 0 0 0"
+            }
+        }
+    }
+}

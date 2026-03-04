@@ -1,0 +1,3266 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "11448414827319249857": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "core_kodiaq",
+                "Tags": "vehicle;rescue"
+            },
+            "qsf::TransformComponent": "",
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "3704988870",
+                "Materials": [
+                    "2401990546"
+                ]
+            },
+            "em5::RoadVehicleComponent": {
+                "VehicleDoors": [
+                    "10860761029465197526",
+                    "8841909195259104215",
+                    "9649237835725523927",
+                    "1399243540062391252",
+                    "3343838778449841110"
+                ],
+                "Resistances": "0.000000,0.000000",
+                "VehicleWheels": [
+                    "4034422313661090775",
+                    "13225050907125599169",
+                    "14878859198668327894",
+                    "3548716187417168855"
+                ],
+                "VehicleLights": [
+                    "6121273354292677588",
+                    "15608327937553451969",
+                    "13283818540909841347",
+                    "11030273935601665635",
+                    "10002175381891648352",
+                    "5139259954473929569",
+                    "12686195432472038338",
+                    "11638004733988162517"
+                ],
+                "SignalAudio": "8000002115",
+                "TooBigToTow": "true"
+            },
+            "qsf::LinkComponent": "",
+            "em5::CommandableComponent": {
+                "CommandArray": [
+                    "omp::ExitVehicleCommand",
+                    "omp::ReturnToBaseCommand",
+                    "omp::MoveCommand",
+                    "omp::TurnToPointerCommand",
+                    "pms::ExitVehicleAndTreatPersonCommand",
+                    "wmp::SelectDoctorPersonCommand",
+                    "pms::GetOrSelectMedicBagFromCrewCarCommand"
+                ],
+                "UnitType": "-1",
+                "PlayerId": "-1"
+            },
+            "qsf::game::SelectableComponent": "",
+            "em5::RoadVehiclePlacementComponent": "",
+            "qsf::MovableComponent": "",
+            "qsf::ai::NavigationComponent": {
+                "MaxSpeed": "22",
+                "MaxTurningChange": "1.25",
+                "GearChangingDuration": "1000000",
+                "DesiredAcceleration": "6",
+                "AdditionalNavMapId": "1",
+                "AvoidCollisionTypes": "20",
+                "AvoidCollisionMeasures": "7",
+                "MayMoveBackward": "true",
+                "MayManeuver": "true",
+                "MayReduceTurningRadius": "true",
+                "CollisionMask": "37",
+                "PrioritySearch": "true",
+                "AdditionalCollisionLookaheadDistance": "10"
+            },
+            "qsf::ActionComponent": "",
+            "qsf::BulletBoxCollisionComponent": {
+                "CollisionMask": "37",
+                "CollisionFilterGroup": "20",
+                "CollisionTypeId": "885726410",
+                "HalfExtents": "1 1 2.6099998950958252"
+            },
+            "em5::HighlightComponent": "",
+            "qsf::ai::StuckResolverComponent": {
+                "SwitchDelay": "1000000",
+                "RegardTrafficImpedimentsAsStuck": "true"
+            },
+            "em5::SwingComponent": {
+                "AnimationType": "CARACCELERATION",
+                "VelocitySkew": "0.039999999105930328"
+            },
+            "qsf::GameLogicComponent": "",
+            "inventory::EquipmentInventoryComponent": {
+                "MedicBag Equipment": "-1",
+                "FireExtinguisher Equipment": "2"
+            },
+            "em5::InventoryComponent": {
+                "InventoryArray": [
+                    "em5\/prefab\/wuppertal_equipment\/equipment_firefighter_extinguisher",
+                    "em5\/prefab\/equipment\/equipment_ambulance_medic_case_closed"
+                ]
+            },
+            "pth::VehicleLightGuiComponent": {
+                "Bluelight": "true",
+                "Headlight": "true",
+                "Warninglight": "true",
+                "Siren": "true",
+                "Debug Lights": "0",
+                "WithSoRe": "false"
+            },
+            "pth::VehicleSirenGuiComponent": {
+                "MainAudioAsset": "8000002115",
+                "SecondaryAudioAsset": "8000002961"
+            }
+        },
+        "762906691635104707": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "pax_wasserkuppe_l_tr2000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "27572"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.37091064453125 1.0132567882537842 1.245635986328125",
+                "Rotation": "0.70710235834121704 0.70711123943328857 0 0"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "-0.37091064453125 1.0132567882537842 1.245635986328125",
+                "LocalRotation": "0.70710235834121704 0.70711123943328857 0 0"
+            }
+        },
+        "1399243540062391252": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "kodiaq_vrs__door_3000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.89687347412109375 0.875130295753479 -1.08343505859375"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "3704988888",
+                "Materials": [
+                    "2401990546"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "0.89687347412109375 0.875130295753479 -1.08343505859375"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_CODRIVER",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAngle": "75",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            }
+        },
+        "3343838778449841110": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "kodiaq_vrs__door_5000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.00579071044921875 1.6167080402374268 1.66522216796875"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "3704988892",
+                "Materials": [
+                    "2401990546"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "-0.00579071044921875 1.6167080402374268 1.66522216796875"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_EQUIPMENTRIGHT",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAxis": "-1 0 0",
+                "RotationAngle": "75",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            }
+        },
+        "4320235830266730748": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "12063918133920345732"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.0033437013626098633 0.99417150020599365 2.2601165771484375",
+                "Rotation": "0.99144488573074341 -0.13052605092525482 -1.1818945466757214e-07 -1.555991957502556e-08",
+                "Scale": "1.1820508241653442 1.1820505857467651 1.1820507049560547"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "3343838778449841110",
+                "LocalPosition": "0.0024470090866088867 -0.62253654003143311 0.5948944091796875",
+                "LocalRotation": "0.99144488573074341 -0.13052605092525482 -1.1818945466757214e-07 -1.555991957502556e-08",
+                "LocalScale": "1.1820508241653442 1.1820505857467651 1.1820507049560547"
+            }
+        },
+        "12156713535119202556": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "11401743844572081796"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.22420263290405273 1.0061274766921997 2.2612497806549072"
+            },
+            "pth::LicensePlateComponent": {
+                "Chars": [
+                    "1011331611690965245",
+                    "16057697171750164733",
+                    "4036659841454217470",
+                    "16007559480178284797",
+                    "11265901442066979069",
+                    "4223122638269487356",
+                    "1102080886221215998"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "4320235830266730748"
+            }
+        },
+        "1011331611690965245": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "14256373924915261062"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.18283085525035858 1.0061274766921997 2.2612497806549072"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12156713535119202556"
+            }
+        },
+        "1102080886221215998": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "3582705390568550022"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.23088693618774414 1.0061274766921997 2.2612497806549072"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12156713535119202556"
+            }
+        },
+        "4036659841454217470": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "18005808639779483268"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.0055232346057891846 1.0061274766921997 2.2612497806549072"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12156713535119202556"
+            }
+        },
+        "4223122638269487356": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "13937101122875895429"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.17178440093994141 1.0061274766921997 2.2612497806549072"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12156713535119202556"
+            }
+        },
+        "11265901442066979069": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "15119487387328523909"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.11268183588981628 1.0061274766921997 2.2612497806549072"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12156713535119202556"
+            }
+        },
+        "16007559480178284797": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "14314827390431735429"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.05357930064201355 1.0061274766921997 2.2612497806549072"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12156713535119202556"
+            }
+        },
+        "16057697171750164733": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "8183750399886831238"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.12372831255197525 1.0061274766921997 2.2612497806549072"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12156713535119202556"
+            }
+        },
+        "3548716187417168855": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "kodiaq_wheel_1000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "3704988908"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.76532745361328125 0.38784593343734741 -1.573455810546875",
+                "Scale": "0.96291345357894897 0.96291345357894897 0.96291345357894897"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "0.76532745361328125 0.38784593343734741 -1.573455810546875",
+                "LocalScale": "0.96291345357894897 0.96291345357894897 0.96291345357894897"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_FRONT_RIGHT"
+            }
+        },
+        "4034422313661090775": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "kodiaq_wheel_1000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "3704988908"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.75861358642578125 0.38784593343734741 1.289031982421875",
+                "Scale": "-0.96291297674179077 0.96291297674179077 0.96291297674179077"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "-0.75861358642578125 0.38784593343734741 1.289031982421875",
+                "LocalScale": "-0.96291297674179077 0.96291297674179077 0.96291297674179077"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_BACK_LEFT"
+            }
+        },
+        "5139259954473929569": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "haensch_sputnik_sl000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "36130"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.93461132049560547 1.2444748878479004 -0.85691070556640625",
+                "Rotation": "0.96592581272125244 6.170738231503492e-08 -0.25881946086883545 2.3029467399737769e-07",
+                "Scale": "0.67823678255081177 0.67823678255081177 0.67823678255081177"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "0.93461132049560547 1.2444748878479004 -0.85691070556640625",
+                "LocalRotation": "0.96592581272125244 6.170738231503492e-08 -0.25881946086883545 2.3029467399737769e-07",
+                "LocalScale": "0.67823678255081177 0.67823678255081177 0.67823678255081177"
+            }
+        },
+        "17118413751541762913": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_left_type_b000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "Active": "false",
+                "Color": "0.0078431395813822746 0.18431399762630463 0.57647097110748291 1",
+                "Intensity": "0",
+                "WidthHeight": "1.2999999523162842 1.2999999523162842",
+                "OcclusionScale": "1",
+                "Material": "78208",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "2"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0 0.67451000213623047 0.74901998043060303 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.94018948078155518 1.2444748878479004 -0.86657232046127319",
+                "Rotation": "-0.68301248550415039 0.18301303684711456 0.18301309645175934 -0.68301296234130859",
+                "Scale": "0.33911839127540588 0.47476574778556824 0.33911839127540588"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_BLUE"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5139259954473929569",
+                "LocalPosition": "0 0 -0.016448974609375",
+                "LocalRotation": "-0.70710676908493042 6.1817232221983431e-08 6.1817239327410789e-08 -0.70710688829421997",
+                "LocalScale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "MinIntensity": "0.029999999329447746",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true",
+                "AnimationType": "CUSTOM",
+                "AnimationCycle": "0.5",
+                "Active": "false",
+                "LightMaterial": "36126",
+                "LightMaterialIsInTopParent": "true"
+            }
+        },
+        "15625055984954575713": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_center1000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "CastShadows": "false",
+                "Active": "false",
+                "BillboardType": "PERPENDICULAR",
+                "Color": "0.0039215697906911373 0.18039199709892273 0.5607839822769165 1",
+                "Intensity": "3",
+                "WidthHeight": "1.2000000476837158 1",
+                "Direction": "0 0 1",
+                "OcclusionScale": "1",
+                "Material": "8560",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.94045853614807129 1.2444748878479004 -0.86703836917877197",
+                "Rotation": "8.9406967163085938e-08 0.25881955027580261 1.0430812835693359e-07 -0.96592581272125244",
+                "Scale": "0.33911839127540588 0.47476574778556824 0.33911839127540588"
+            },
+            "qsf::LightAnimationComponent": {
+                "Active": "false",
+                "AnimationType": "CUSTOM",
+                "AnimationCycle": "0.5",
+                "MinIntensity": "0",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_BLUE"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "17118413751541762913",
+                "LocalPosition": "1.3877787807814457e-17 1.9818917340597153e-10 -0.0015869140625",
+                "LocalRotation": "0.70710694789886475 -7.9674612583511759e-15 2.1316282072803006e-14 0.70710659027099609"
+            }
+        },
+        "16188429289007287138": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "point_light_blue000"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.070588201284408569 0.22745099663734436 0.79607802629470825",
+                "DiffuseIntensity": "40",
+                "Texture": "78208",
+                "Range": "10",
+                "FalloffSmooth": "0.20000000298023224",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "70",
+                "SpotlightNearClipDistance": "-0.20000000298023224"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.12941199541091919 0.11764699965715408 0.49019598960876465 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.93085664510726929 1.2397453784942627 -0.85028320550918579",
+                "Rotation": "-0.68301248550415039 0.18301303684711456 0.18301309645175934 -0.68301296234130859",
+                "Scale": "0.67823678255081177 0.67823678255081177 0.67823678255081177"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "17118413751541762913",
+                "LocalPosition": "-0.013946532271802425 -0.0001307949423789978 0.05535888671875",
+                "LocalRotation": "1 -3.5527136788005009e-15 3.5527136788005009e-15 0",
+                "LocalScale": "2 1.4285714626312256 2"
+            },
+            "qsf::LightAnimationComponent": {
+                "Active": "false",
+                "AnimationType": "CUSTOM",
+                "AnimationCycle": "0.5",
+                "MinIntensity": "0",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_BLUE"
+            }
+        },
+        "6121273354292677588": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "light_vehicle_headlight01000",
+                "Description": "Spot light",
+                "Tags": "light"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.81568598747253418 0.95686298608779907 1",
+                "DiffuseIntensity": "5",
+                "Texture": "78208",
+                "Range": "12.5",
+                "SpotlightOuterAngle": "64",
+                "SpotlightInnerAngle": "36"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.66983795166015625 0.92970669269561768 -2.1767578125",
+                "Rotation": "-0.99619477987289429 0.087155759334564209 0 0"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_HEAD",
+                "LightMaterial": "3704988867"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "-0.66983795166015625 0.92970669269561768 -2.1767578125",
+                "LocalRotation": "-0.99619477987289429 0.087155759334564209 0 0"
+            }
+        },
+        "6124841299745303738": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "12063918133920345732"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.0033437013626098633 0.62402915954589844 -2.4979438781738281",
+                "Rotation": "1.3311833413354179e-07 0 1 0",
+                "Scale": "1.1820508241653442 1.1820505857467651 1.1820507049560547"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "-0.0033437013626098633 0.62402915954589844 -2.4979438781738281",
+                "LocalRotation": "1.3311833413354179e-07 0 1 0",
+                "LocalScale": "1.1820508241653442 1.1820505857467651 1.1820507049560547"
+            }
+        },
+        "11358154869978819770": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "11401743844572081796"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.21751523017883301 0.635284423828125 -2.5021328926086426"
+            },
+            "pth::LicensePlateComponent": {
+                "Chars": [
+                    "14065855029658905787",
+                    "15481210254505929916",
+                    "13254495747068783803",
+                    "9739623163472768188",
+                    "17466020963902942395",
+                    "8587641569508977852",
+                    "236179079499738300"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6124841299745303738"
+            }
+        },
+        "236179079499738300": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "3582705390568550022"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.23757451772689819 0.635284423828125 -2.5021331310272217"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11358154869978819770"
+            }
+        },
+        "8587641569508977852": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "13937101122875895429"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.17847186326980591 0.635284423828125 -2.5021328926086426"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11358154869978819770"
+            }
+        },
+        "9739623163472768188": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "14314827390431735429"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.060266762971878052 0.635284423828125 -2.5021328926086426"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11358154869978819770"
+            }
+        },
+        "13254495747068783803": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "18005808639779483268"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.0011642277240753174 0.635284423828125 -2.5021328926086426"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11358154869978819770"
+            }
+        },
+        "14065855029658905787": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "14256373924915261062"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.17614343762397766 0.635284423828125 -2.5021328926086426"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11358154869978819770"
+            }
+        },
+        "15481210254505929916": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "8183750399886831238"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.11704088002443314 0.635284423828125 -2.5021328926086426"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11358154869978819770"
+            }
+        },
+        "17466020963902942395": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401992174",
+                "Prototype": "15119487387328523909"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.11936935782432556 0.635284423828125 -2.5021328926086426"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11358154869978819770"
+            }
+        },
+        "8841909195259104215": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "kodiaq_vrs__door_2000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.888946533203125 0.90394079685211182 -0.004638671875"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "3704988879",
+                "Materials": [
+                    "2401990546"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "-0.888946533203125 0.90394079685211182 -0.004638671875"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_PASSENGER",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAxis": "0 -1 0",
+                "RotationAngle": "75",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            }
+        },
+        "9649237835725523927": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "kodiaq_vrs__door_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.89102935791015625 0.84721952676773071 -1.084716796875"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "3704988872",
+                "Materials": [
+                    "2401990546"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "-0.89102935791015625 0.84721952676773071 -1.084716796875"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_DRIVER",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAxis": "0 -1 0",
+                "RotationAngle": "75",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            }
+        },
+        "10002175381891648352": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "haensch_sputnik_sl000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "36130"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.93326663970947266 1.2424170970916748 -0.86214447021484375",
+                "Rotation": "0 0.25881949067115784 0 0.96592581272125244",
+                "Scale": "0.67823678255081177 0.67823678255081177 0.67823678255081177"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "-0.93326663970947266 1.2424170970916748 -0.86214447021484375",
+                "LocalRotation": "0 0.25881949067115784 0 0.96592581272125244",
+                "LocalScale": "0.67823678255081177 0.67823678255081177 0.67823678255081177"
+            }
+        },
+        "4813530665537440608": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_left_type_b000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "Active": "false",
+                "Color": "0.0078431395813822746 0.18431399762630463 0.57647097110748291 1",
+                "Intensity": "0",
+                "WidthHeight": "1.2999999523162842 1.2999999523162842",
+                "OcclusionScale": "1",
+                "Material": "78208",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "2"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0 0.67451000213623047 0.74901998043060303 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.93884479999542236 1.2424170970916748 -0.87180608510971069",
+                "Rotation": "0.68301278352737427 -0.18301306664943695 0.18301311135292053 -0.68301266431808472",
+                "Scale": "0.33911839127540588 0.47476574778556824 0.33911839127540588"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_BLUE"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10002175381891648352",
+                "LocalPosition": "0 0 -0.016448974609375",
+                "LocalRotation": "-0.70710676908493042 6.1817232221983431e-08 6.1817239327410789e-08 -0.70710688829421997",
+                "LocalScale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "MinIntensity": "0.029999999329447746",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true",
+                "AnimationType": "CUSTOM",
+                "AnimationCycle": "0.5",
+                "Active": "false",
+                "LightMaterial": "36126",
+                "LightMaterialIsInTopParent": "true"
+            }
+        },
+        "829147972428041056": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_center1000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "CastShadows": "false",
+                "Active": "false",
+                "BillboardType": "PERPENDICULAR",
+                "Color": "0.0039215697906911373 0.18039199709892273 0.5607839822769165 1",
+                "Intensity": "3",
+                "WidthHeight": "1.2000000476837158 1",
+                "Direction": "0 0 1",
+                "OcclusionScale": "1",
+                "Material": "8560",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.93911385536193848 1.2424170970916748 -0.87227213382720947",
+                "Rotation": "0.96592581272125244 -2.9802308176840597e-08 0.258819580078125 -1.4901161193847656e-07",
+                "Scale": "0.33911839127540588 0.47476574778556824 0.33911839127540588"
+            },
+            "qsf::LightAnimationComponent": {
+                "Active": "false",
+                "AnimationType": "CUSTOM",
+                "AnimationCycle": "0.5",
+                "MinIntensity": "0",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_BLUE"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "4813530665537440608",
+                "LocalPosition": "1.3877787807814457e-17 1.9818917340597153e-10 -0.0015869140625",
+                "LocalRotation": "0.70710694789886475 -7.9674612583511759e-15 2.1316282072803006e-14 0.70710659027099609"
+            }
+        },
+        "15592998731309321056": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "point_light_blue000"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.070588201284408569 0.22745099663734436 0.79607802629470825",
+                "DiffuseIntensity": "40",
+                "Texture": "78208",
+                "Range": "10",
+                "FalloffSmooth": "0.20000000298023224",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "70",
+                "SpotlightNearClipDistance": "-0.20000000298023224"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.12941199541091919 0.11764699965715408 0.49019598960876465 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.92951196432113647 1.2471466064453125 -0.85551697015762329",
+                "Rotation": "0.68301278352737427 -0.18301306664943695 0.18301311135292053 -0.68301266431808472",
+                "Scale": "0.67823678255081177 0.67823678255081177 0.67823678255081177"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "4813530665537440608",
+                "LocalPosition": "-0.013946532271802425 -0.0001307949423789978 0.05535888671875",
+                "LocalRotation": "1 -3.5527136788005009e-15 3.5527136788005009e-15 0",
+                "LocalScale": "2 1.4285714626312256 2"
+            },
+            "qsf::LightAnimationComponent": {
+                "Active": "false",
+                "AnimationType": "CUSTOM",
+                "AnimationCycle": "0.5",
+                "MinIntensity": "0",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_BLUE"
+            }
+        },
+        "10860761029465197526": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "kodiaq_vrs__door_4000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.888671875 0.87383472919464111 -0.005706787109375"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "3704988890",
+                "Materials": [
+                    "2401990546"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "0.888671875 0.87383472919464111 -0.005706787109375"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_PASSENGER",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAngle": "75",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            }
+        },
+        "11030273935601665635": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "25543399809830032"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.0049762725830078125 1.7204103469848633 0.1184844970703125",
+                "Rotation": "0.99997389316558838 0 -0.0072299139574170113 0",
+                "Scale": "0.67278212308883667 1.0725791454315186 0.86154824495315552"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "0.0049762725830078125 1.7204103469848633 0.1184844970703125",
+                "LocalRotation": "0.99997389316558838 0 -0.0072299139574170113 0",
+                "LocalScale": "0.67278212308883667 1.0725791454315186 0.86154824495315552"
+            }
+        },
+        "317657168936011369": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "6078181123455011994"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.26220783591270447 1.7204103469848633 0.11496259272098541"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "2139962537943860854": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "17147511163324812437"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.15478479862213135 1.7204103469848633 0.11617419868707657"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "6252391271437534838": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "18132390101085670549"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.15422287583351135 1.7611029148101807 0.0095293372869491577"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "2139962537943860854"
+            }
+        },
+        "728925344367216247": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "11913164000621579413"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.15446950495243073 1.7546111345291138 0.033375442028045654"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6252391271437534838"
+            }
+        },
+        "16528621502355572343": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "4085387920985640086"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.15421299636363983 1.7611029148101807 0.0088458070531487465"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6252391271437534838"
+            }
+        },
+        "2320829009552311923": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "15331928423157550239"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.076650425791740417 1.7204103469848633 0.11986280977725983"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "2352817084159329913": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "17365708116280560806"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.47853556275367737 1.7204103469848633 0.12533262372016907"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "12123423570056021625": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "10642704660055805094"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.47909748554229736 1.7611029148101807 0.018687762320041656"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "2352817084159329913"
+            }
+        },
+        "6926538121425815161": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "17895005424684715174"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.47885087132453918 1.7546111345291138 0.042533867061138153"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12123423570056021625"
+            }
+        },
+        "14403866902890382969": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "17205065125250550951"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.47910737991333008 1.7611029148101807 0.01800423301756382"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12123423570056021625"
+            }
+        },
+        "4153447522750793324": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "572024911019986070"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.0050404011271893978 1.7204103469848633 0.11404988914728165"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "4675582681131091559": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "3724035610655411354"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.55678671598434448 1.7213547229766846 0.12633140385150909"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "1846986776980850279": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "832447611608059034"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.55678671598434448 1.7213547229766846 0.12633140385150909"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "4675582681131091559"
+            }
+        },
+        "4976984145726637684": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "12317501713744743580"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.55520015954971313 1.7204103469848633 0.12644127011299133"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "5138744128901318247": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "2631185932422040732"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.38891714811325073 1.7204103469848633 0.12403665482997894"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "5714641944136222311": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "4437572546313145502"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.43163692951202393 1.7204103469848633 0.11251248419284821"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "5716137473223525990": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "3401414769939664023"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.54702305793762207 1.7204103469848633 0.11050205677747726"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "5720228738810611312": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "12812204958955162778"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.4155086874961853 1.7204103469848633 0.12476302683353424"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "6775148349672228453": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "1908956210590469284"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.32068243622779846 1.7204103469848633 0.12304991483688354"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "421589673782642277": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "17110287154216783012"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.32124435901641846 1.7611029148101807 0.016405053436756134"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6775148349672228453"
+            }
+        },
+        "6745170285400000102": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "15251960903814696101"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.32099774479866028 1.7546111345291138 0.040251158177852631"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "421589673782642277"
+            }
+        },
+        "7816827860555499110": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "2628793223321308324"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.32125425338745117 1.7611029148101807 0.015721524134278297"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "421589673782642277"
+            }
+        },
+        "6815337896259192442": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "15490185521199926432"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.52723419666290283 1.7204103469848633 0.11057785898447037"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "6102894974671095418": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "4239248003309063330"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.57675379514694214 1.7576311826705933 0.17262831330299377"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6815337896259192442"
+            }
+        },
+        "5713249979595327099": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "5401172300534205602"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.55859512090682983 1.7511394023895264 0.15716995298862457"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6102894974671095418"
+            }
+        },
+        "7667161319875380858": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "2485439013255990434"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.57727617025375366 1.7576311826705933 0.17306928336620331"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6102894974671095418"
+            }
+        },
+        "12706637595791689339": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "9952930545791224993"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.57953578233718872 1.7576311826705933 0.04815959557890892"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6815337896259192442"
+            }
+        },
+        "4618191434041362043": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "11591360066980498593"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.56284850835800171 1.7511394023895264 0.065195813775062561"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12706637595791689339"
+            }
+        },
+        "8526216480575555195": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "2610281965815155873"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.58001214265823364 1.7576311826705933 0.047669276595115662"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12706637595791689339"
+            }
+        },
+        "16655479666454922876": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "14630358503337053344"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.61158418655395508 1.7576311826705933 0.10943715274333954"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6815337896259192442"
+            }
+        },
+        "96588446227334780": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "16029156122451856544"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.58773809671401978 1.7511394023895264 0.10968351364135742"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "16655479666454922876"
+            }
+        },
+        "1768586074592478844": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "6687161117560884384"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.61226773262023926 1.7576311826705933 0.10942727327346802"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "16655479666454922876"
+            }
+        },
+        "6896754327114319467": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "7788393373660171415"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.16499918699264526 1.7204103469848633 0.12079858034849167"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "11060421440628688491": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "6241235562528066712"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.16556110978126526 1.7611029148101807 0.014153718948364258"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6896754327114319467"
+            }
+        },
+        "3189356368436495979": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "4441724074586360984"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.16557098925113678 1.7611029148101807 0.013470188714563847"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11060421440628688491"
+            }
+        },
+        "14819169955283043947": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "6012896735792549016"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.16531448066234589 1.7546111345291138 0.037999823689460754"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11060421440628688491"
+            }
+        },
+        "7372931952447948394": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "7266642322795089058"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.14972405135631561 1.7207492589950562 0.11588218063116074"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "3618364824679450218": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "17564908884152634531"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.15485115349292755 1.7633585929870605 0.22777263820171356"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "7372931952447948394"
+            }
+        },
+        "1185793312134104682": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "13786553762187660451"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.15459661185741425 1.7593951225280762 0.20337864756584167"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "3618364824679450218"
+            }
+        },
+        "5302748421466719850": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "11708250380784979107"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.15486098825931549 1.7632871866226196 0.22845242917537689"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "3618364824679450218"
+            }
+        },
+        "7703415413698823799": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "17271985882567888028"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.55790597200393677 1.7204103469848633 0.12648040056228638"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "7719119841357563511": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "15444186176646630558"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.32329416275024414 1.7207491397857666 0.12271954864263535"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "13346203890258380408": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "13522826161574726815"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.3181670606136322 1.763358473777771 0.23461000621318817"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "7719119841357563511"
+            }
+        },
+        "3399996240535586424": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "7834611555387133087"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.31842160224914551 1.7593950033187866 0.21021601557731628"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13346203890258380408"
+            }
+        },
+        "5277072591575156344": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "17344946149882416287"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.31815722584724426 1.7632870674133301 0.2352897971868515"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13346203890258380408"
+            }
+        },
+        "8618321435762984559": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "710176253537504412"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.46962699294090271 1.7204103469848633 0.11162127554416656"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "10766155785022572143": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "11682450198705294493"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.46906507015228271 1.7611029148101807 0.0049764141440391541"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8618321435762984559"
+            }
+        },
+        "4268459862105097840": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "7471359233129532573"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.46905517578125 1.7611029148101807 0.0042928839102387428"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10766155785022572143"
+            }
+        },
+        "11642549977804801647": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "1157670936217210013"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.46931168437004089 1.7546111345291138 0.028822517022490501"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10766155785022572143"
+            }
+        },
+        "8711539045178115697": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "14914884607634918550"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.31177389621734619 1.7204103469848633 0.11390398442745209"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "6564349121401554546": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "2414581020763704470"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.3112119734287262 1.7611029148101807 0.0072591230273246765"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8711539045178115697"
+            }
+        },
+        "7286130976928401010": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "1057098538905062551"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.31145858764648438 1.7546111345291138 0.031105225905776024"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6564349121401554546"
+            }
+        },
+        "16736960066552956530": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "6562080631835413655"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.31120207905769348 1.7611029148101807 0.0065755927935242653"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6564349121401554546"
+            }
+        },
+        "9703662583450011244": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "8840367689223720081"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.54994475841522217 1.7204103469848633 0.12636525928974152"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "5358930068326942316": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "737469490803330194"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.60224622488021851 1.7576311826705933 0.18878363072872162"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9703662583450011244"
+            }
+        },
+        "11148718718329652845": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "7785635832857447571"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.58555901050567627 1.7511394023895264 0.1717473566532135"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5358930068326942316"
+            }
+        },
+        "13185492480399345261": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "14105541855139941522"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.60272258520126343 1.7576311826705933 0.18927395343780518"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5358930068326942316"
+            }
+        },
+        "13819348877839009389": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "10591686405698964627"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.59946447610855103 1.7576311826705933 0.06431492418050766"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9703662583450011244"
+            }
+        },
+        "5934459783389742702": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "16455397159467306131"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.59998685121536255 1.7576311826705933 0.063873946666717529"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13819348877839009389"
+            }
+        },
+        "11744743038076421741": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "16018103895993961619"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.58130580186843872 1.7511394023895264 0.07977323979139328"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13819348877839009389"
+            }
+        },
+        "14262063884688524910": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "8361610699805641873"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.63429468870162964 1.7576311826705933 0.12750615179538727"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9703662583450011244"
+            }
+        },
+        "8173436959327880814": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "7918030282815786130"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.63497823476791382 1.7576311826705933 0.12751603126525879"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "14262063884688524910"
+            }
+        },
+        "18157867756400772718": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "11408196810070903953"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.61044859886169434 1.7511394023895264 0.12725973129272461"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "14262063884688524910"
+            }
+        },
+        "9965478171996948072": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "227133535298079888"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.48182195425033569 1.7207491397857666 0.12501201033592224"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "14178303118949320296": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "11849720002150485136"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.47669485211372375 1.763358473777771 0.23690247535705566"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9965478171996948072"
+            }
+        },
+        "1288694264620484201": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "13582987039800118416"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.47694939374923706 1.7593950033187866 0.21250848472118378"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "14178303118949320296"
+            }
+        },
+        "9809079278670284393": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "14461285591016623249"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.47668501734733582 1.7632870674133301 0.23758226633071899"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "14178303118949320296"
+            }
+        },
+        "10216198610182833764": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "1558379212996693140"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.15754678845405579 1.7207492589950562 0.12032561004161835"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "9088494507838244452": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "15887908658269736084"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.15241968631744385 1.7633585929870605 0.23221606016159058"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10216198610182833764"
+            }
+        },
+        "12960028979649676900": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "16480245039923285140"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.15267422795295715 1.7593951225280762 0.20782206952571869"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9088494507838244452"
+            }
+        },
+        "16067532303291221605": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "7005871038366305428"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.15240985155105591 1.7632871866226196 0.23289585113525391"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9088494507838244452"
+            }
+        },
+        "10859525071207761521": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "15132290169916705956"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.42668202519416809 1.7204103469848633 0.11224230378866196"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "11548372653652412019": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "15414193792953437339"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.46635478734970093 1.7207491397857666 0.11130046844482422"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "10088790574305478259": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "14242310239662984347"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.47148188948631287 1.763358473777771 0.22319093346595764"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11548372653652412019"
+            }
+        },
+        "1550108797711255156": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "15666785788908358811"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.47122734785079956 1.7593950033187866 0.19879694283008575"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10088790574305478259"
+            }
+        },
+        "6482277072378627700": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "13342331281946791067"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.47149172425270081 1.7632870674133301 0.22387072443962097"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10088790574305478259"
+            }
+        },
+        "11751696435509823088": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "8901712840256474277"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.092778705060482025 1.7204103469848633 0.11741270124912262"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "11859541964800755313": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "9905794520963173539"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.0054455255158245564 1.6521753072738647 0.086034879088401794"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "12491809688197367412": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "16902755627259219111"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.24607954919338226 1.7204103469848633 0.12231291830539703"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "12701842780201780837": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "2269777607128337573"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.54788237810134888 1.7204103469848633 0.1104896292090416"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "16024419567602861685": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "16967548550403935384"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.30667653679847717 1.7207491397857666 0.11360956728458405"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "6856345243274020469": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "6341528426188721305"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.31180363893508911 1.763358473777771 0.22550001740455627"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "16024419567602861685"
+            }
+        },
+        "12068152413312878198": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "13712084879020477593"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.31154909729957581 1.7593950033187866 0.20110602676868439"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6856345243274020469"
+            }
+        },
+        "16912724915877676662": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "317473555279596697"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.31181347370147705 1.7632870674133301 0.2261798083782196"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6856345243274020469"
+            }
+        },
+        "16484618999767336552": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "4074340973042551966"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.54919630289077759 1.7223623991012573 0.11033783107995987"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11030273935601665635"
+            }
+        },
+        "892239057731028584": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989618",
+                "Prototype": "8238834953660746910"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.54919630289077759 1.7223623991012573 0.11033783107995987"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "16484618999767336552"
+            }
+        },
+        "11638004733988162517": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "haensch_sputnik_sl000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "36130"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.34545516967773438 0.64984726905822754 -2.4476547241210938",
+                "Rotation": "0 0.13052617013454437 0 0.99144488573074341",
+                "Scale": "0.67823678255081177 0.67823678255081177 0.67823678255081177"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "-0.34545516967773438 0.64984726905822754 -2.4476547241210938",
+                "LocalRotation": "0 0.13052617013454437 0 0.99144488573074341",
+                "LocalScale": "0.67823678255081177 0.67823678255081177 0.67823678255081177"
+            }
+        },
+        "14702421555601591253": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_left_type_b000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "Active": "false",
+                "Color": "0.0078431395813822746 0.18431399762630463 0.57647097110748291 1",
+                "Intensity": "0",
+                "WidthHeight": "1.2999999523162842 1.2999999523162842",
+                "OcclusionScale": "1",
+                "Material": "78208",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "2"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0 0.67451000213623047 0.74901998043060303 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.34834262728691101 0.64984726905822754 -2.4584307670593262",
+                "Rotation": "0.70105749368667603 -0.092295996844768524 0.092296011745929718 -0.70105737447738647",
+                "Scale": "0.33911839127540588 0.47476574778556824 0.33911839127540588"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_BLUE"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11638004733988162517",
+                "LocalPosition": "0 0 -0.016448974609375",
+                "LocalRotation": "-0.70710676908493042 6.1817232221983431e-08 6.1817239327410789e-08 -0.70710688829421997",
+                "LocalScale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "MinIntensity": "0.029999999329447746",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true",
+                "AnimationType": "CUSTOM",
+                "AnimationCycle": "0.5",
+                "Active": "false",
+                "LightMaterial": "36126",
+                "LightMaterialIsInTopParent": "true"
+            }
+        },
+        "6900490557633448918": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "point_light_blue000"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.070588201284408569 0.22745099663734436 0.79607802629470825",
+                "DiffuseIntensity": "40",
+                "Texture": "78208",
+                "Range": "10",
+                "FalloffSmooth": "0.20000000298023224",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "70",
+                "SpotlightNearClipDistance": "-0.20000000298023224"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.12941199541091919 0.11764699965715408 0.49019598960876465 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.34354373812675476 0.65457677841186523 -2.4402811527252197",
+                "Rotation": "0.70105749368667603 -0.092295996844768524 0.092296011745929718 -0.70105737447738647",
+                "Scale": "0.67823678255081177 0.67823678255081177 0.67823678255081177"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "14702421555601591253",
+                "LocalPosition": "-0.013946532271802425 -0.0001307949423789978 0.05535888671875",
+                "LocalRotation": "1 -3.5527136788005009e-15 3.5527136788005009e-15 0",
+                "LocalScale": "2 1.4285714626312256 2"
+            },
+            "qsf::LightAnimationComponent": {
+                "Active": "false",
+                "AnimationType": "CUSTOM",
+                "AnimationCycle": "0.5",
+                "MinIntensity": "0",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_BLUE"
+            }
+        },
+        "17084603730146216917": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_center1000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "CastShadows": "false",
+                "Active": "false",
+                "BillboardType": "PERPENDICULAR",
+                "Color": "0.0039215697906911373 0.18039199709892273 0.5607839822769165 1",
+                "Intensity": "3",
+                "WidthHeight": "1.2000000476837158 1",
+                "Direction": "0 0 1",
+                "OcclusionScale": "1",
+                "Material": "8560",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.3484819233417511 0.64984726905822754 -2.4589505195617676",
+                "Rotation": "0.99144494533538818 -2.2351727579916769e-08 0.13052625954151154 -1.4901161193847656e-07",
+                "Scale": "0.33911839127540588 0.47476574778556824 0.33911839127540588"
+            },
+            "qsf::LightAnimationComponent": {
+                "Active": "false",
+                "AnimationType": "CUSTOM",
+                "AnimationCycle": "0.5",
+                "MinIntensity": "0",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_BLUE"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "14702421555601591253",
+                "LocalPosition": "1.3877787807814457e-17 1.9818917340597153e-10 -0.0015869140625",
+                "LocalRotation": "0.70710694789886475 -7.9674612583511759e-15 2.1316282072803006e-14 0.70710659027099609"
+            }
+        },
+        "12686195432472038338": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "haensch_sputnik_sl000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "36130"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.34900093078613281 0.66097331047058105 -2.4475631713867188",
+                "Rotation": "0.99144488573074341 3.111987112447423e-08 -0.13052619993686676 2.3637888091343484e-07",
+                "Scale": "0.67823678255081177 0.67823678255081177 0.67823678255081177"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "0.34900093078613281 0.66097331047058105 -2.4475631713867188",
+                "LocalRotation": "0.99144488573074341 3.111987112447423e-08 -0.13052619993686676 2.3637888091343484e-07",
+                "LocalScale": "0.67823678255081177 0.67823678255081177 0.67823678255081177"
+            }
+        },
+        "12885188547265285058": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_left_type_b000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "Active": "false",
+                "Color": "0.0078431395813822746 0.18431399762630463 0.57647097110748291 1",
+                "Intensity": "0",
+                "WidthHeight": "1.2999999523162842 1.2999999523162842",
+                "OcclusionScale": "1",
+                "Material": "78208",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "2"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0 0.67451000213623047 0.74901998043060303 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.35188838839530945 0.66097331047058105 -2.4583392143249512",
+                "Rotation": "-0.70105719566345215 0.092296011745929718 0.092296041548252106 -0.70105767250061035",
+                "Scale": "0.33911839127540588 0.47476574778556824 0.33911839127540588"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_BLUE"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12686195432472038338",
+                "LocalPosition": "0 0 -0.016448974609375",
+                "LocalRotation": "-0.70710676908493042 6.1817232221983431e-08 6.1817239327410789e-08 -0.70710688829421997",
+                "LocalScale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "MinIntensity": "0.029999999329447746",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true",
+                "AnimationType": "CUSTOM",
+                "AnimationCycle": "0.5",
+                "Active": "false",
+                "LightMaterial": "36126",
+                "LightMaterialIsInTopParent": "true"
+            }
+        },
+        "10947414657541721026": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "point_light_blue000"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.070588201284408569 0.22745099663734436 0.79607802629470825",
+                "DiffuseIntensity": "40",
+                "Texture": "78208",
+                "Range": "10",
+                "FalloffSmooth": "0.20000000298023224",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "70",
+                "SpotlightNearClipDistance": "-0.20000000298023224"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.12941199541091919 0.11764699965715408 0.49019598960876465 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.3470894992351532 0.65624380111694336 -2.4401895999908447",
+                "Rotation": "-0.70105719566345215 0.092296011745929718 0.092296041548252106 -0.70105767250061035",
+                "Scale": "0.67823678255081177 0.67823678255081177 0.67823678255081177"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12885188547265285058",
+                "LocalPosition": "-0.013946532271802425 -0.0001307949423789978 0.05535888671875",
+                "LocalRotation": "1 -3.5527136788005009e-15 3.5527136788005009e-15 0",
+                "LocalScale": "2 1.4285714626312256 2"
+            },
+            "qsf::LightAnimationComponent": {
+                "Active": "false",
+                "AnimationType": "CUSTOM",
+                "AnimationCycle": "0.5",
+                "MinIntensity": "0",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_BLUE"
+            }
+        },
+        "12872856429143116739": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_center1000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "CastShadows": "false",
+                "Active": "false",
+                "BillboardType": "PERPENDICULAR",
+                "Color": "0.0039215697906911373 0.18039199709892273 0.5607839822769165 1",
+                "Intensity": "3",
+                "WidthHeight": "1.2000000476837158 1",
+                "Direction": "0 0 1",
+                "OcclusionScale": "1",
+                "Material": "8560",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.35202768445014954 0.66097331047058105 -2.4588589668273926",
+                "Rotation": "8.9406967163085938e-08 0.13052628934383392 5.9604644775390625e-08 -0.99144494533538818",
+                "Scale": "0.33911839127540588 0.47476574778556824 0.33911839127540588"
+            },
+            "qsf::LightAnimationComponent": {
+                "Active": "false",
+                "AnimationType": "CUSTOM",
+                "AnimationCycle": "0.5",
+                "MinIntensity": "0",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_BLUE"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12885188547265285058",
+                "LocalPosition": "1.3877787807814457e-17 1.9818917340597153e-10 -0.0015869140625",
+                "LocalRotation": "0.70710694789886475 -7.9674612583511759e-15 2.1316282072803006e-14 0.70710659027099609"
+            }
+        },
+        "13225050907125599169": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "kodiaq_wheel_1000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "3704988908"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.76532745361328125 0.38784593343734741 1.289031982421875",
+                "Scale": "0.96291345357894897 0.96291345357894897 0.96291345357894897"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "0.76532745361328125 0.38784593343734741 1.289031982421875",
+                "LocalScale": "0.96291345357894897 0.96291345357894897 0.96291345357894897"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_BACK_RIGHT"
+            }
+        },
+        "13283818540909841347": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "lightbar_1_b000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "0 1.7213213443756104 -0.045745849609375",
+                "LocalRotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "LocalScale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            }
+        },
+        "1296530561114688460": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "1745352238365002701": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1296530561114688460"
+            }
+        },
+        "12425178063597063117": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1745352238365002701"
+            }
+        },
+        "16624330587753008078": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1745352238365002701"
+            }
+        },
+        "8926943302837455820": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1296530561114688460"
+            }
+        },
+        "1806209055911168973": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8926943302837455820"
+            }
+        },
+        "18022801733518740429": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8926943302837455820"
+            }
+        },
+        "11298256749106940879": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1296530561114688460"
+            }
+        },
+        "4254944531846122447": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11298256749106940879"
+            }
+        },
+        "4501581568530041807": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11298256749106940879"
+            }
+        },
+        "11488937251051523022": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1296530561114688460"
+            }
+        },
+        "8943744862712089550": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11488937251051523022"
+            }
+        },
+        "9167593314024541135": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11488937251051523022"
+            }
+        },
+        "2398464374351973320": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "15854443831495609288": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "2398464374351973320"
+            }
+        },
+        "2243069292191796168": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "15854443831495609288"
+            }
+        },
+        "8535979022657375176": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "15854443831495609288"
+            }
+        },
+        "3113592277565295557": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "3679076562338958277": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "5321123584157797317": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "3679076562338958277"
+            }
+        },
+        "3141812287169219526": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5321123584157797317"
+            }
+        },
+        "10695216475728104390": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "3141812287169219526"
+            }
+        },
+        "12853148774136925126": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "3141812287169219526"
+            }
+        },
+        "5440275455941659590": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "3679076562338958277"
+            }
+        },
+        "5231672798500211655": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5440275455941659590"
+            }
+        },
+        "8103463970430372807": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5231672798500211655"
+            }
+        },
+        "15213888010923658183": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5231672798500211655"
+            }
+        },
+        "3943002238253648837": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "4420825664990333905": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "4420831287102524368": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "107795630623935440": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "4420831287102524368"
+            }
+        },
+        "235839283006393296": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "107795630623935440"
+            }
+        },
+        "4838477407363910608": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "107795630623935440"
+            }
+        },
+        "6487264560015068114": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "18120860432501427154": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6487264560015068114"
+            }
+        },
+        "2982339245230640083": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "18120860432501427154"
+            }
+        },
+        "8119737859212954578": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "18120860432501427154"
+            }
+        },
+        "8638565643667229636": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "11016727831902014419": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "16840528705878870995": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11016727831902014419"
+            }
+        },
+        "1283401309947284435": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "16840528705878870995"
+            }
+        },
+        "13970454876622015444": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "16840528705878870995"
+            }
+        },
+        "13047337817685740489": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "11420044180327353289": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13047337817685740489"
+            }
+        },
+        "8723071916944772041": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11420044180327353289"
+            }
+        },
+        "18125357396404325321": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11420044180327353289"
+            }
+        },
+        "11466596300056546250": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13047337817685740489"
+            }
+        },
+        "1895510484081036234": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11466596300056546250"
+            }
+        },
+        "14157701655292660682": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11466596300056546250"
+            }
+        },
+        "12715854741451426763": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13047337817685740489"
+            }
+        },
+        "123104324290989003": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12715854741451426763"
+            }
+        },
+        "16653603027553209291": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12715854741451426763"
+            }
+        },
+        "18276637143980690379": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13047337817685740489"
+            }
+        },
+        "4188295676023393228": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "18276637143980690379"
+            }
+        },
+        "16755416515795078092": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "18276637143980690379"
+            }
+        },
+        "13550611846228986820": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "14028643183742536657": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "15337056480288164818": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "15872478072753998804": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "16922960101930552273": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "17611299611218922436": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "18026411344293383107": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "em5\/prefab\/default\/kodiaq_vrs_comp_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 1.7213213443756104 -0.045745849609375",
+                "Rotation": "0.99965739250183105 -0.026176800951361656 0 0",
+                "Scale": "0.5794263482093811 1.0494745969772339 0.88641166687011719"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13283818540909841347"
+            }
+        },
+        "14878859198668327894": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "kodiaq_wheel_1000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "3704988908"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.75861358642578125 0.38784593343734741 -1.573455810546875",
+                "Scale": "-0.96291297674179077 0.96291297674179077 0.96291297674179077"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "-0.75861358642578125 0.38784593343734741 -1.573455810546875",
+                "LocalScale": "-0.96291297674179077 0.96291297674179077 0.96291297674179077"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_FRONT_LEFT"
+            }
+        },
+        "15608327937553451969": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "light_vehicle_headlight01000",
+                "Description": "Spot light",
+                "Tags": "light"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.81568598747253418 0.95686298608779907 1",
+                "DiffuseIntensity": "5",
+                "Texture": "78208",
+                "Range": "12.5",
+                "SpotlightOuterAngle": "64",
+                "SpotlightInnerAngle": "36"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.68067169189453125 0.92970669269561768 -2.1767578125",
+                "Rotation": "-0.99619477987289429 0.087155759334564209 0 0"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_HEAD",
+                "LightMaterial": "3704988867"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11448414827319249857",
+                "LocalPosition": "0.68067169189453125 0.92970669269561768 -2.1767578125",
+                "LocalRotation": "-0.99619477987289429 0.087155759334564209 0 0"
+            }
+        }
+    }
+}

@@ -1,0 +1,1374 @@
+//[-------------------------------------------------------]
+//[ LDS Freeplay Events        					          ]
+//[-------------------------------------------------------]
+{
+    "Format":
+    {
+        "Type": "em5_eventpool",
+        "Version": "1"
+	},
+	"LDS_Events":
+	{
+		// advanced_bomb_event
+		"advanced_bomb_event": {
+			"Core": "LDS_Events_Definitions/AdvancedBombEventFactory",
+			
+			"EventName": "ADVANCED_BOMB_EVENT_TITLE",
+			"EventCategory": "POLICE",
+			
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_EVENT",
+			"SupervisorInitialAudio": "",
+			
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		// smoke_detector
+		"smoke_detector": {
+			"Core": "LDS_Events_Definitions/SmokeDetectorEvent",
+			
+			"EventName": "SMOKEDETECTOR_EVENT_TITLE",
+			"EventCategory": "FIRE",
+			
+			"SupervisorInitialMessage": "SUPERVISOR_SMOKEDETECTOR_EVENT",
+			"SupervisorInitialAudio": "",
+			
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		// advanced_building_fire_f1_suburb
+		"advanced_building_fire_f1_suburb": {
+			"Core": "LDS_Events_Definitions/AdvancedBuildingFireEvent",
+			
+			"BuildingType": "suburb",
+			"EventName": "ADVANCED_BUILDING_FIRE_EVENT_F1GEBAEUDE_B",
+			"EventCategory": "FIRE",
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_FIRE_EVENT",
+			"SupervisorInitialAudio": "",
+			
+			"ForcePersonInside": false,
+			"ForcePersonWindow": false,
+			"ForceBlockedDoor": false,
+			
+			"BlockPersonInside": true,
+			"BlockPersonWindow": true,
+			"BlockBlockedDoor": true,
+			
+			"TrappedPersonMin": 0,
+			"TrappedPersonMax": 2,
+			
+			"TrappedHealthyPersonMin": 0,
+			"TrappedHealthyPersonMax": 3,
+
+			"StartFireRadiusMin": 1.0,
+			"StartFireRadiusMax": 3.0,
+			"Explosion": false,
+			
+			"RecloseDoorNeeded": false,
+			"AllowSideEvents": false,
+			"UseAlarmKitForAudio": true,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// advanced_building_fire_f2_framehouse
+		"advanced_building_fire_f2_framehouse": {
+			"Core": "LDS_Events_Definitions/AdvancedBuildingFireEvent",
+			
+			"BuildingType": "bauernhof",
+			"EventName": "ADVANCED_BUILDING_FIRE_EVENT_F2FRAMEHOUSE",
+			"EventCategory": "FIRE",
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_FIRE_EVENT",
+			"SupervisorInitialAudio": "",
+			
+			"ForcePersonInside": true,
+			"ForcePersonWindow": false,
+			"ForceBlockedDoor": false,
+			
+			"BlockPersonInside": false,
+			"BlockPersonWindow": true,
+			"BlockBlockedDoor": true,
+			
+			"TrappedPersonMin": 1,
+			"TrappedPersonMax": 3,
+			
+			"TrappedHealthyPersonMin": 0,
+			"TrappedHealthyPersonMax": 3,
+
+			"StartFireRadiusMin": 2.0,
+			"StartFireRadiusMax": 4.0,
+			"Explosion": false,
+			
+			"RecloseDoorNeeded": true,
+			"AllowSideEvents": false,
+			"UseAlarmKitForAudio": true,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// advanced_building_fire_f1_gebaeude
+		"advanced_building_fire_f1_gebaeude": {
+			"Core": "LDS_Events_Definitions/AdvancedBuildingFireEvent",
+			
+			"BuildingType": "apartment;kiosk01",
+			"EventName": "ADVANCED_BUILDING_FIRE_EVENT_F1GEBAEUDE_A",	
+			"EventCategory": "FIRE",		
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_FIRE_EVENT",
+			"SupervisorInitialAudio": "",
+			
+			"ForcePersonInside": false,
+			"ForcePersonWindow": false,
+			"ForceBlockedDoor": false,
+			
+			"BlockPersonInside": true,
+			"BlockPersonWindow": true,
+			"BlockBlockedDoor": true,
+			
+			"TrappedPersonMin": 0,
+			"TrappedPersonMax": 1,
+			
+			"TrappedHealthyPersonMin": 0,
+			"TrappedHealthyPersonMax": 2,
+			
+			"StartFireRadiusMin": 1.0,
+			"StartFireRadiusMax": 3.0,
+			"Explosion": false,
+			
+			"RecloseDoorNeeded": true,
+			"AllowSideEvents": false,
+			"UseAlarmKitForAudio": true,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		// advanced_building_fire_f1y_person_window
+		"advanced_building_fire_f1y_person_window": {
+			"Core": "LDS_Events_Definitions/AdvancedBuildingFireEvent",
+			
+			"BuildingType": "apartment;office",
+			"EventName": "ADVANCED_BUILDING_FIRE_EVENT_F1YGEBAEUDE",
+			"EventCategory": "FIRE",
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_FIRE_EVENT",
+			"SupervisorInitialAudio": "",
+			
+			"ForcePersonInside": true,
+			"ForcePersonWindow": true,
+			"ForceBlockedDoor": false,
+			
+			"BlockPersonInside": false,
+			"BlockPersonWindow": false,
+			"BlockBlockedDoor": true,
+			
+			"TrappedPersonMin": 1,
+			"TrappedPersonMax": 4,
+			
+			"TrappedHealthyPersonMin": 1,
+			"TrappedHealthyPersonMax": 5,
+			
+			"StartFireRadiusMin": 1.0,
+			"StartFireRadiusMax": 3.0,
+			"Explosion": false,
+			
+			"RecloseDoorNeeded": true,
+			"AllowSideEvents": false,
+			"UseAlarmKitForAudio": true,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// advanced_building_fire_f2_gebaeude
+		"advanced_building_fire_f2_gebaeude": {
+			"Core": "LDS_Events_Definitions/AdvancedBuildingFireEvent",
+			
+			"BuildingType": "apartment;office;parking;cinema;church;bahnhof",
+			"EventName": "EM5_EVENT_TITLE_14",
+			"EventCategory": "FIRE",
+			"SupervisorInitialMessage": "EM5_EVENT_SUPERV_OBJ_BUILDING_EXPLOSION_01",
+			"SupervisorInitialAudio": "",
+			
+			"ForcePersonInside": true,
+			"ForcePersonWindow": false,
+			"ForceBlockedDoor": false,
+			
+			"BlockPersonInside": false,
+			"BlockPersonWindow": true,
+			"BlockBlockedDoor": true,
+			
+			"TrappedPersonMin": 2,
+			"TrappedPersonMax": 7,
+			
+			"TrappedHealthyPersonMin": 3,
+			"TrappedHealthyPersonMax": 8,
+			
+			"StartFireRadiusMin": 3.0,
+			"StartFireRadiusMax": 5.0,
+			"Explosion": true,
+			
+			"RecloseDoorNeeded": true,
+			"AllowSideEvents": false,
+			"UseAlarmKitForAudio": true,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "5500",
+			"NormalPointGain": "5500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// advanced_building_fire_f2_petrolstation
+		"advanced_building_fire_f2_petrolstation": {
+			"Core": "LDS_Events_Definitions/AdvancedBuildingFireEvent",
+			
+			"BuildingType": "petrolstation",
+			"EventName": "ADVANCED_BUILDING_FIRE_EVENT_F2TANKSTELLE",
+			"EventCategory": "FIRE",
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_FIRE_EVENT",
+			"SupervisorInitialAudio": "",
+			
+			"ForcePersonInside": false,
+			"ForcePersonWindow": false,
+			"ForceBlockedDoor": false,
+			
+			"BlockPersonInside": true,
+			"BlockPersonWindow": true,
+			"BlockBlockedDoor": false,
+			
+			"TrappedPersonMin": 0,
+			"TrappedPersonMax": 1,
+			
+			"TrappedHealthyPersonMin": 0,
+			"TrappedHealthyPersonMax": 2,
+			
+			"StartFireRadiusMin": 3.0,
+			"StartFireRadiusMax": 6.0,
+			"Explosion": false,
+			
+			"RecloseDoorNeeded": false,
+			"AllowSideEvents": false,
+			"UseAlarmKitForAudio": true,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.3,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// advanced_building_fire_f2y_petrolstation
+		"advanced_building_fire_f2y_petrolstation": {
+			"Core": "LDS_Events_Definitions/AdvancedBuildingFireEvent",
+			
+			"BuildingType": "petrolstation",
+			"EventName": "ADVANCED_BUILDING_FIRE_EVENT_F2YTANKSTELLE",
+			"EventCategory": "FIRE",
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_FIRE_EVENT",
+			"SupervisorInitialAudio": "",
+			
+			"ForcePersonInside": true,
+			"ForcePersonWindow": false,
+			"ForceBlockedDoor": false,
+			
+			"BlockPersonInside": false,
+			"BlockPersonWindow": true,
+			"BlockBlockedDoor": true,
+			
+			"TrappedPersonMin": 1,
+			"TrappedPersonMax": 6,
+			
+			"TrappedHealthyPersonMin": 0,
+			"TrappedHealthyPersonMax": 6,
+			
+			"StartFireRadiusMin": 3.0,
+			"StartFireRadiusMax": 6.0,
+			"Explosion": false,
+			
+			"RecloseDoorNeeded": false,
+			"AllowSideEvents": false,
+			"UseAlarmKitForAudio": true,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "false",
+			"MusicLevel": "Low"
+		},
+
+		// advanced_building_fire_f2_industry
+		"advanced_building_fire_f2_industry": {
+			"Core": "LDS_Events_Definitions/AdvancedBuildingFireEvent",
+			
+			"BuildingType": "industry;supermarkt;aldi;fastfood;parking;bahnhof;depot_burnable",
+			"EventName": "ADVANCED_BUILDING_FIRE_EVENT_F2INDUSTRIEANLAGE",
+			"EventCategory": "FIRE",
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_FIRE_EVENT",
+			"SupervisorInitialAudio": "",
+			
+			"ForcePersonInside": false,
+			"ForcePersonWindow": false,
+			"ForceBlockedDoor": false,
+			
+			"BlockPersonInside": false,
+			"BlockPersonWindow": true,
+			"BlockBlockedDoor": false,
+			
+			"TrappedPersonMin": 1,
+			"TrappedPersonMax": 6,
+			
+			"TrappedHealthyPersonMin": 0,
+			"TrappedHealthyPersonMax": 6,
+			
+			"StartFireRadiusMin": 4.0,
+			"StartFireRadiusMax": 8.0,
+			"Explosion": true,
+			
+			"RecloseDoorNeeded": false,
+			"AllowSideEvents": false,
+			"UseAlarmKitForAudio": true,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.8,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "false",
+			"MusicLevel": "Low"
+		},
+
+		// advanced_building_fire_fexplosion_gebaeude
+		"advanced_building_fire_fexplosion_gebaeude": {
+			"Core": "LDS_Events_Definitions/AdvancedBuildingFireEvent",
+			
+			"BuildingType": "highrise;cinema;supermarkt;apartment;office;parking;aldi;bahnhof",
+			"EventName": "ADVANCED_BUILDING_FIRE_EVENT_FEXPLOSIONGEBAEUDE",
+			"EventCategory": "FIRE",
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_FIRE_EVENT",
+			"SupervisorInitialAudio": "",
+			
+			"ForcePersonInside": false,
+			"ForcePersonWindow": false,
+			"ForceBlockedDoor": false,
+			
+			"BlockPersonInside": true,
+			"BlockPersonWindow": true,
+			"BlockBlockedDoor": true,
+			
+			"TrappedPersonMin": 0,
+			"TrappedPersonMax": 2,
+			
+			"TrappedHealthyPersonMin": 0,
+			"TrappedHealthyPersonMax": 2,
+			
+			"StartFireRadiusMin": 6.0,
+			"StartFireRadiusMax": 10.0,
+			"Explosion": true,
+			
+			"RecloseDoorNeeded": true,
+			"AllowSideEvents": false,
+			"UseAlarmKitForAudio": true,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "false",
+			"MusicLevel": "Low"
+		},
+
+		// advanced_building_fire_f2y_gebaeude
+		"advanced_building_fire_f2y_gebaeude": {
+			"Core": "LDS_Events_Definitions/AdvancedBuildingFireEvent",
+			
+			"BuildingType": "highrise;apartment;aldi;bahnhof",
+			"EventName": "ADVANCED_BUILDING_FIRE_EVENT_F2YGEBAEUDE",
+			"EventCategory": "FIRE",
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_FIRE_EVENT",
+			"SupervisorInitialAudio": "",
+			
+			"ForcePersonInside": true,
+			"ForcePersonWindow": true,
+			"ForceBlockedDoor": true,
+			
+			"BlockPersonInside": false,
+			"BlockPersonWindow": false,
+			"BlockBlockedDoor": false,
+			
+			"TrappedPersonMin": 3,
+			"TrappedPersonMax": 10,
+			
+			"TrappedHealthyPersonMin": 4,
+			"TrappedHealthyPersonMax": 12,
+			
+			"StartFireRadiusMin": 3.0,
+			"StartFireRadiusMax": 6.0,
+			"Explosion": false,
+			
+			"RecloseDoorNeeded": false,
+			"AllowSideEvents": false,
+			"UseAlarmKitForAudio": true,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "false",
+			"MusicLevel": "Low"
+		},
+
+		// advanced_building_fire_f3y_gebaeude
+		"advanced_building_fire_f3y_gebaeude": {
+			"Core": "LDS_Events_Definitions/AdvancedBuildingFireEvent",
+			
+			"BuildingType": "highrise;aldi;supermarkt;oktoberfesttent;bahnhof",
+			"EventName": "ADVANCED_BUILDING_FIRE_EVENT_F3YGEBAEUDE",
+			"EventCategory": "FIRE",
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_FIRE_EVENT",
+			"SupervisorInitialAudio": "",
+			
+			"ForcePersonInside": true,
+			"ForcePersonWindow": true,
+			"ForceBlockedDoor": false,
+			
+			"BlockPersonInside": false,
+			"BlockPersonWindow": false,
+			"BlockBlockedDoor": false,
+			
+			"TrappedPersonMin": 10,
+			"TrappedPersonMax": 20,
+			
+			"TrappedHealthyPersonMin": 4,
+			"TrappedHealthyPersonMax": 14,
+			
+			"StartFireRadiusMin": 4.0,
+			"StartFireRadiusMax": 9.0,
+			"Explosion": true,
+			
+			"RecloseDoorNeeded": true,
+			"AllowSideEvents": false,
+			"UseAlarmKitForAudio": true,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.3,
+
+			"MultiplayerPointGain": "5500",
+			"NormalPointGain": "5500",
+			"StartEvent": "false",
+			"MusicLevel": "Low"
+		},
+		
+		// advanced_building
+		"advanced_building": {
+			"Core": "LDS_Events_Definitions/AdvancedBuildingEvent",
+			
+			"BuildingType": "all",
+			"EventName": "ADVANCED_BUILDING_EVENT_TITLE",
+			"EventCategory": "AMBULANCE",
+			"EventType": "person-exit-on-stretcher",
+			"NeededPersons": "paramedic;stretcher",
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_EVENT",
+			"SupervisorInitialAudio": "",
+			
+			"FollowUpAlarmNeededPersons": "doctor",
+			"FollowUpAlarmEventType": "",
+			"SupervisorFollowUpAlarmMessage": "SUPERVISOR_ADVANCED_BUILDING_EVENT_FOLLOW_UP",
+			"SupervisorFollowUpAlarmAudio": "advanced_building_nachalarm",
+			"FollowUpAlarmChange": 0.5,
+			
+			"RecloseDoorNeeded": false,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+			
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		// advanced_building_dlk
+		// needed SUPERVISOR_ADVANCED_BUILDING_NEED_DLK_EVENT_FOLLOW_UP
+		"advanced_building_dlk": {
+			"Core": "LDS_Events_Definitions/AdvancedBuildingEvent",
+			
+			"BuildingType": "apartment",
+			"EventName": "ADVANCED_BUILDING_DLK_EVENT_TITLE",
+			"EventCategory": "AMBULANCE",
+			"EventType": "person-exit-with-dlk",
+			"NeededPersons": "paramedic;stretcher",
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_DLK_EVENT",
+			"SupervisorInitialAudio": "",
+			
+			"FollowUpAlarmNeededPersons": "doctor",
+			"FollowUpAlarmEventType": "",
+			"SupervisorFollowUpAlarmMessage": "SUPERVISOR_ADVANCED_BUILDING_EVENT_FOLLOW_UP",
+			"SupervisorFollowUpAlarmAudio": "advanced_building_nachalarm",
+			"FollowUpAlarmChange": 0.5,
+			
+			"RecloseDoorNeeded": false,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+			
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		// advanced_building_domestic_violence
+		"advanced_building_domestic_violence": {
+			"Core": "LDS_Events_Definitions/AdvancedBuildingEvent",
+			
+			"BuildingType": "suburb;apartment",
+			"EventName": "ADVANCED_BUILDING_EVENT_DOMESTIC_VIOLENCE",
+			"EventCategory": "POLICE",
+			"EventType": "person-exit-arrested",
+			"NeededPersons": "police;police",
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_EVENT_DOMESTIC_VIOLENCE",
+			"SupervisorInitialAudio": "",
+
+			"BuildingInitialAudioLoop": "em5/audio/sfx_events/domestic_violence_streit", // empty = no audio, audio file plays in loop until units arrive
+			"BuildingArrivalAudioLoop": "em5/audio/sfx_events/domestic_violence_streit", // empty = no audio, audio file plays in loop when units arrive and until all needed units are in the building
+			"BuildingUnitsInBuildingAudioLoop": "em5/audio/sfx_events/domestic_violence_streit", // empty = no audio, audio file plays in loop when all needed units are in the building
+			"BuildingUnitsInBuildingFollowUpAudioLoop": "em5/audio/sfx_events/domestic_violence_festnahme", // empty = no audio, audio file plays in loop when all needed units are in the building but follow up is now active
+			"BuildingUnitsExitBuildingAudio": "", // empty = no audio, audio file plays when all units exists the building and the event is finished
+			
+			"FollowUpAlarmNeededPersons": "police;police",
+			"FollowUpAlarmEventType": "person-exit-arrested",
+			"SupervisorFollowUpAlarmMessage": "SUPERVISOR_ADVANCED_BUILDING_EVENT_FOLLOW_UP_DOMESTIC_VIOLENCE",
+			"SupervisorFollowUpAlarmAudio": "advanced_building_nachalarm",
+			"FollowUpAlarmChange": 0.5,
+			
+			"RecloseDoorNeeded": false,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+			
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		// advanced_building_broken_elevator
+		"advanced_building_broken_elevator": {
+			"Core": "LDS_Events_Definitions/AdvancedBuildingEvent",
+			
+			"BuildingType": "apartment;cinema;office;highrise",
+			"EventName": "ADVANCED_BUILDING_EVENT_BROKEN_EVEVATOR",
+			"EventType": "persons-exit",
+			"EventCategory": "TECH",
+			"NeededPersons": "firefighter;firefighter",
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_EVENT_BROKEN_EVEVATOR",
+			"SupervisorInitialAudio": "",
+
+			"BuildingInitialAudioLoop": "em5/audio/sfx_events/aufzug_hilfe", // empty = no audio, audio file plays in loop until units arrive
+			"BuildingArrivalAudioLoop": "em5/audio/sfx_events/aufzug_hilfe", // empty = no audio, audio file plays in loop when units arrive and until all needed units are in the building
+			"BuildingUnitsInBuildingAudioLoop": "em5/audio/sfx_events/aufzug_befreiung", // empty = no audio, audio file plays in loop when all needed units are in the building
+			"BuildingUnitsInBuildingFollowUpAudioLoop": "em5/audio/sfx_events/aufzug_verletzte_person", // empty = no audio, audio file plays in loop when all needed units are in the building but follow up is now active
+			"BuildingUnitsExitBuildingAudio": "", // empty = no audio, audio file plays when all units exists the building and the event is finished
+			
+			"FollowUpAlarmNeededPersons": "paramedic;stretcher",
+			"FollowUpAlarmEventType": "person-exit-on-stretcher",
+			"SupervisorFollowUpAlarmMessage": "SUPERVISOR_ADVANCED_BUILDING_EVENT_FOLLOW_UP_BROKEN_EVEVATOR",
+			"SupervisorFollowUpAlarmAudio": "advanced_building_nachalarm",
+			"FollowUpAlarmChange": 0.3,
+			
+			"RecloseDoorNeeded": false,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+			
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// advanced_building_homicide
+		"advanced_building_homicide": {
+			"Core": "LDS_Events_Definitions/AdvancedBuildingEvent",
+			
+			"BuildingType": "highrise;apartment;suburb",
+			"EventName": "ADVANCED_BUILDING_EVENT_HOMICIDE",
+			"EventType": "person-exit-on-coffin",
+			"EventCategory": "POLICE",
+			"NeededPersons": "police;police;doctor;coffin",
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_EVENT_HOMICIDE",
+			"SupervisorInitialAudio": "",
+
+			// all building audio files must be the local asset id from the audio source: e.g. "em5/audio/sfx_unitvehicles/osf"
+			"BuildingInitialAudioLoop": "", // audio file plays in loop until units arrive
+			"BuildingArrivalAudioLoop": "", // audio file plays in loop when units arrive and until all needed units are in the building
+			"BuildingUnitsInBuildingAudioLoop": "em5/audio/sfx_events/mord_durchsuchung", // audio file plays in loop when all needed units are in the building
+			"BuildingUnitsInBuildingFollowUpAudioLoop": "em5/audio/sfx_events/mord_festnahme", // audio file plays in loop when all needed units are in the building but follow up is now active
+			"BuildingUnitsExitBuildingAudio": "", // audio file plays when all units exists the building and the event is finished
+			
+			"FollowUpAlarmNeededPersons": "police;police;police;police",
+			"FollowUpAlarmEventType": "person-exit-on-coffin-and-person-exit-arrested",
+			"SupervisorFollowUpAlarmMessage": "SUPERVISOR_ADVANCED_BUILDING_EVENT_FOLLOW_UP_HOMICIDE",
+			"SupervisorFollowUpAlarmAudio": "advanced_building_nachalarm",
+			"FollowUpAlarmChange": 0.3,
+			
+			"RecloseDoorNeeded": true,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+			
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		// advanced_building_brandwache
+		"advanced_building_brandwache": {
+			"Core": "LDS_Events_Definitions/AdvancedBuildingEvent",
+			
+			"BuildingType": "brandwache",
+			"EventName": "ADVANCED_BUILDING_EVENT_BRAND_WACHE",
+			"EventCategory": "FIRE",
+			"EventType": "brandwache",
+			"NeededPersons": "firefighter;firefighter;firefighter;firefighter",
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_EVENT_BRAND_WACHE",
+			"SupervisorInitialAudio": "",
+
+			"BuildingInitialAudioLoop": "", // empty = no audio, audio file plays in loop until units arrive
+			"BuildingArrivalAudioLoop": "", // empty = no audio, audio file plays in loop when units arrive and until all needed units are in the building
+			"BuildingUnitsInBuildingAudioLoop": "", // empty = no audio, audio file plays in loop when all needed units are in the building
+			"BuildingUnitsInBuildingFollowUpAudioLoop": "", // empty = no audio, audio file plays in loop when all needed units are in the building but follow up is now active
+			"BuildingUnitsExitBuildingAudio": "", // empty = no audio, audio file plays when all units exists the building and the event is finished
+			
+			"FollowUpAlarmNeededPersons": "",
+			"FollowUpAlarmEventType": "",
+			"SupervisorFollowUpAlarmMessage": "",
+			"SupervisorFollowUpAlarmAudio": "",
+			"FollowUpAlarmChange": 0.0,
+			
+			"RecloseDoorNeeded": false,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+			
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		// modular_development
+		"development": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "development",
+			"EventCategory": "DEV",
+			"EventName": "DEVELOPMENT",
+			"SupervisorInitialMessage": "DEVELOPMENT",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": false,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+				
+		// modular_car_accident
+		"modular_car_accident": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_car_accident",
+			"EventCategory": "TECH",
+			"EventName": "EM5_EVENT_TITLE_35",
+			"SupervisorInitialMessage": "EM5_EVENT_SUPERV_OBJ_CARACCIDENT_01_03",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_car_vs_person
+		"modular_car_vs_person": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_car_vs_person",
+			"EventCategory": "TECH",
+			"EventName": "EM5_EVENT_TITLE_35_PERSON",			
+			"SupervisorInitialMessage": "EM5_EVENT_SUPERV_OBJ_CARACCIDENT_01_02",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_truck_accident
+		"modular_truck_accident": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_truck_accident",
+			"EventCategory": "TECH",
+			"EventName": "EM5_EVENT_TITLE_35_TRUCK",
+			"SupervisorInitialMessage": "EM5_EVENT_SUPERV_OBJ_CARACCIDENT_01_03",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_gsg_accident
+		"modular_gsg_accident": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_gsg_accident",
+			"EventCategory": "FIRE",
+			"EventName": "EM5_EVENT_TITLE_35_GSG",
+			"SupervisorInitialMessage": "",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_bus_accident
+		"modular_bus_accident": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_bus_accident",
+			"EventCategory": "TECH",
+			"EventName": "EM5_EVENT_TITLE_35_BUS",
+			"SupervisorInitialMessage": "EM5_EVENT_SUPERV_OBJ_CARACCIDENT_01_03",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_manv_accident
+		"modular_manv_accident": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_manv_accident",
+			"EventCategory": "TECH",
+			"EventName": "EM5_EVENT_TITLE_35_MANV",
+			"SupervisorInitialMessage": "EM5_EVENT_SUPERV_OBJ_CARACCIDENT_01_03",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "false",
+			"MusicLevel": "Low"
+		},	
+
+		// modular_plane_crash
+		"modular_plane_crash": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "plane_crash",
+			"EventCategory": "TECH",
+			"EventName": "EM5_EVENT_TITLE_35_FLUGZEUG",			
+			"SupervisorInitialMessage": "SUPERVISOR_MODULAR_EVENT",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "false",
+			"MusicLevel": "Low"
+		},
+
+		// modular_big_plane_crash
+		"modular_big_plane_crash": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "big_plane_crash",
+			"EventCategory": "WORLD",
+			"EventName": "EVT_BIGPLANE01",
+			"SupervisorInitialMessage": "SUPERVISOR_MODULAR_EVENT",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "false",
+			"MusicLevel": "Low"
+		},
+
+		// modular_construction_accident
+		"modular_construction_accident": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "construction_accident",
+			"EventCategory": "TECH",
+			"EventName": "EM5_EVENT_TITLE_35_CONSTRUCTION",
+			"SupervisorInitialMessage": "SUPERVISOR_MODULAR_EVENT",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_train_accident
+		"modular_train_accident": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "train_crash",
+			"EventCategory": "WORLD",
+			"EventName": "EM5_EVENT_TITLE_35_TRAIN",
+			"SupervisorInitialMessage": "SUPERVISOR_MODULAR_EVENT",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "false",
+			"MusicLevel": "Low"
+		},
+
+		// modular_trapped_person_accident
+		"modular_trapped_person_accident": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "trapped_person_accident",
+			"EventCategory": "TECH",
+			"EventName": "EM5_EVENT_TITLE_35_TRAPPEDPERSON",
+			"SupervisorInitialMessage": "SUPERVISOR_MODULAR_EVENT",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_co_leakage
+		"modular_co_leakage": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_co_leakage",
+			"EventCategory": "WORLD",
+			"EventName": "MODULAR_EVENT_CO_AUSTRITT",
+			"SupervisorInitialMessage": "MODULAR_EVENT_CO_AUSTRITT_SUPERVISOR",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "4000",
+			"NormalPointGain": "4000",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_vu_noinjured
+		"modular_vu_noinjured": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "vu_noinjured",
+			"EventCategory": "POLICE",
+			"EventName": "EM5_EVENT_TITLE_35_Car_Accident_NoInjured",
+			"SupervisorInitialMessage": "SUPERVISOR_MODULAR_EVENT",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_forest_fire
+		"modular_forest_fire": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_forest_fire",
+			"EventCategory": "FIRE",
+			"EventName": "EM5_EVENT_TITLE_08",
+			"SupervisorInitialMessage": "SUPERVISOR_MODULAR_EVENT_FOREST_FIRE",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+			
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "false",
+			"MusicLevel": "Low"
+		},
+
+		// modular_wind_engine_fire
+		"modular_wind_engine_fire": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_wind_engine_fire",
+			"EventCategory": "FIRE",
+			"EventName": "ADVANCED_BUILDING_FIRE_EVENT_FEXPLOSIONGEBAEUDE",
+			"SupervisorInitialMessage": "SUPERVISOR_ADVANCED_BUILDING_FIRE_EVENT",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_boat_fire
+		"modular_boat_fire": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_boat_fire",
+			"EventCategory": "FIRE",
+			"EventName": "MODULAR_EVENT_BOATFIRE",
+			"SupervisorInitialMessage": "MODULAR_EVENT_BOATFIRE_SUPERVISOR",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_room_fire
+		"modular_room_fire": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_room_fire",
+			"EventCategory": "FIRE",
+			"EventName": "MODULAR_EVENT_ZIMMERBRAND",
+			"SupervisorInitialMessage": "MODULAR_EVENT_ZIMMERBRAND_SUPERVISOR",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_warehouse_fire
+		"modular_warehouse_fire": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_warehouse_fire",
+			"EventCategory": "FIRE",
+			"EventName": "MODULAR_EVENT_BRANDLAGERHALLE",
+			"SupervisorInitialMessage": "MODULAR_EVENT_ZIMMERBRAND_SUPERVISOR",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_mass_brawl
+		"modular_mass_brawl": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_mass_brawl",
+			"EventCategory": "POLICE",
+			"EventName": "MODULAR_EVENT_MASS_BRAWL",
+			"SupervisorInitialMessage": "SUPERVISOR_MODULAR_EVENT_MASS_BRAWL",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": false,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_oil_leak
+		"modular_oil_leak": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_oel_leak",
+			"EventCategory": "TECH",
+			"EventName": "EVT_EVENT_TITEL_08",
+			"SupervisorInitialMessage": "SUPERVISOR_MODULAR_EVENT_OIL_LEAK",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": false,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_graffiti
+		"modular_graffiti": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_graffiti",
+			"EventCategory": "POLICE",
+			"EventName": "MODULAR_EVENT_GRAFFITI",
+			"SupervisorInitialMessage": "SUPERVISOR_MODULAR_EVENT_GRAFFITI",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": false,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_nutzfeuer
+		"modular_nutzfeuer": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_nutzfeuer",
+			"EventCategory": "POLICE",
+			"EventName": "MODULAR_EVENT_NUTZFEUER",
+			"SupervisorInitialMessage": "SUPERVISOR_MODULAR_EVENT_NUTZFEUER",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": false,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		// modular_parking_offender
+		"modular_parking_offender": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_parking_offender",
+			"EventCategory": "POLICE",
+			"EventName": "MODULAR_EVENT_PARKING_OFFENDER",
+			"SupervisorInitialMessage": "SUPERVISOR_MODULAR_EVENT_PARKING_OFFENDER",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": false,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_special_tech
+		"modular_special_tech": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_special_tech",
+			"EventCategory": "TECH",
+			"EventName": "MODULAR_EVENT_SPECIAL_TECH",
+			"SupervisorInitialMessage": "SUPERVISOR_MODULAR_EVENT_SPECIAL",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+
+		// modular_world_war_bomb
+		"modular_world_war_bomb": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_world_war_bomb",
+			"EventCategory": "POLICE",
+			"EventName": "MODULAR_EVENT_WORLD_WAR_BOMB",
+			"SupervisorInitialMessage": "SUPERVISOR_MODULAR_EVENT_WORLD_WAR_BOMB",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": false,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "false",
+			"MusicLevel": "Low"
+		},
+
+		// modular_cbrn_small
+		"modular_cbrn_small": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_cbrn_small",
+			"EventCategory": "WORLD",
+			"EventName": "MODULAR_EVENT_CBRN_SMALL",
+			"SupervisorInitialMessage": "MODULAR_EVENT_CBRN_SMALL_SUPERVISOR",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": false,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "false",
+			"MusicLevel": "Low"
+		},
+		
+		// modular_special
+		"modular_special": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_special",
+			"EventCategory": "WORLD",
+			"EventName": "MODULAR_EVENT_SPECIAL",
+			"SupervisorInitialMessage": "SUPERVISOR_MODULAR_EVENT_SPECIAL",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		// modular_special_special
+		"modular_special_special": {
+			"Core": "LDS_Events_Definitions/ModularEvent",
+			
+			"EventLayer": "modular_special",
+			"EventCategory": "HIDDEN",
+			"EventName": "MODULAR_EVENT_SPECIAL",
+			"SupervisorInitialMessage": "SUPERVISOR_MODULAR_EVENT_SPECIAL",
+			"SupervisorInitialAudio": "",
+						
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 1.0,
+
+			"MultiplayerPointGain": "1",
+			"NormalPointGain": "1",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		// city_help
+		"city_help": {
+			"Core": "LDS_Events_Definitions/CityHelp",
+			
+			"MultiplayerPointGain": "1000",
+			"NormalPointGain": "1000",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		},
+		
+		// ema_event
+		"ema_event": {
+			"Core": "LDS_Events_Definitions/EmaEvent",
+			
+			"EventName": "EMA_EVENT_TITLE",
+			"EventCategory": "POLICE",
+			"SupervisorInitialMessage": "SUPERVISOR_EMA_EVENT",
+			"SupervisorInitialAudio": "",
+			
+			"RecloseDoorNeeded": true,
+			"UseAlarmKitForAudio": true,
+			
+			"FogOfFire": true,
+			"SupervisorArrivalMessage": "",
+			"SupervisorArrivalAudio": "",
+			"FogOfFireChance": 0.5,
+
+			"MultiplayerPointGain": "2500",
+			"NormalPointGain": "2500",
+			"StartEvent": "true",
+			"MusicLevel": "Low"
+		}
+		
+		// here all other events are configured
+	}
+}

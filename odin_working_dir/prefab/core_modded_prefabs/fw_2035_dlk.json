@@ -1,0 +1,3672 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "10953794131270860243": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "fw_2035_dlk",
+                "Description": "fw_2035_dlk",
+                "Tags": "vehicle;firefighters"
+            },
+            "qsf::TransformComponent": "",
+            "qsf::LinkComponent": "",
+            "em5::CommandableComponent": {
+                "CommandArray": [
+                    "wmp::CoolCommand",
+                    "wmp::ExtinguishCommand",
+                    "wmp::StopCoolingCommand",
+                    "omp::ExitVehicleCommand",
+                    "omp::ReturnToBaseCommand",
+                    "omp::TidyUpCommand",
+                    "omp::MoveCommand",
+                    "omp::TurnToPointerCommand",
+                    "wmp::ShowPsaEquipmentVehicleGuiCommand",
+                    "wmp::GetPaSuitFromVehicleCommand",
+                    "wmp::GetNormalSuitFromVehicleCommand",
+                    "avc::DLKUndeployCommand",
+                    "avc::RescuePersonCommand",
+                    "wmp::DebugVehicleCommand",
+                    "wmp::GfSCBAMonitoringCommand",
+                    "wmp::GfConnectToVehicleCommand"
+                ],
+                "UnitType": "-1",
+                "PlayerId": "0"
+            },
+            "em5::RoadVehiclePlacementComponent": "",
+            "qsf::game::SelectableComponent": "",
+            "em5::RoadVehicleComponent": {
+                "SpecialEntity": "11840176390759022041",
+                "VehicleDoors": [
+                    "13486753267340312034",
+                    "5786281800769240543",
+                    "9758448889629277666"
+                ],
+                "Resistances": "1.000000,1.000000",
+                "VehicleWheels": [
+                    "15501258633297559001",
+                    "6807985294204763618",
+                    "4043954843141307871",
+                    "11115116633371737567"
+                ],
+                "VehicleLights": [
+                    "6414696766702648802",
+                    "1459556309696806360",
+                    "65277674782227929",
+                    "10689687018757717467",
+                    "17790470537003695583",
+                    "11491360638994251230",
+                    "8914112075046354400",
+                    "2984808640863043040",
+                    "14113499045773737430",
+                    "9097884482872573407",
+                    "11221820939954102909",
+                    "10117640811576369791",
+                    "7275126205144330314",
+                    "3117335002027880522",
+                    "8833777396005171272",
+                    "14440446524750262345",
+                    "1087999255731466313",
+                    "17122214715574153288"
+                ],
+                "SignalAudio": "8000000749",
+                "TooBigToTow": "true"
+            },
+            "qsf::MovableComponent": "",
+            "qsf::ai::NavigationComponent": {
+                "MaxSpeed": "20",
+                "MaxTurningChange": "0.80000001192092896",
+                "GearChangingDuration": "1000000",
+                "DesiredAcceleration": "2.5",
+                "AdditionalNavMapId": "1",
+                "AvoidCollisionTypes": "20",
+                "AvoidCollisionMeasures": "7",
+                "MayMoveBackward": "true",
+                "MayManeuver": "true",
+                "MayReduceTurningRadius": "true",
+                "CollisionMask": "37",
+                "PrioritySearch": "true",
+                "AdditionalCollisionLookaheadDistance": "10"
+            },
+            "qsf::ActionComponent": "",
+            "qsf::BulletBoxCollisionComponent": {
+                "CollisionMask": "37",
+                "CollisionFilterGroup": "20",
+                "HalfExtents": "1.2779999971389771 1.5 4.690000057220459"
+            },
+            "em5::FireComponent": {
+                "Active": "true",
+                "FireMaterial": "unit_car_dlk",
+                "SoftRadius": "8"
+            },
+            "em5::HighlightComponent": "",
+            "qsf::ai::StuckResolverComponent": {
+                "SwitchDelay": "1000000",
+                "RegardTrafficImpedimentsAsStuck": "true"
+            },
+            "qsf::GameLogicComponent": {
+                "GameLogicArray": [
+                    {
+                        "LogicTypeId": "em5::DLKLogic"
+                    }
+                ]
+            },
+            "em5::SwingComponent": {
+                "AnimationType": "CARACCELERATION",
+                "VelocitySkew": "0.039999999105930328"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395531979",
+                "Materials": [
+                    "3082010029"
+                ]
+            },
+            "wmp::WatertankComponent": {
+                "Couplings": [
+                    "7143647528236907994",
+                    "15465433267404570078"
+                ],
+                "Water Level": "25",
+                "Delivery Rate": "100",
+                "Pump Required": "true",
+                "Watercannons": [
+                    "15925752597876080090"
+                ],
+                "Current Watertank Level": "25"
+            },
+            "status_icon::StatusIconComponent": "",
+            "pth::VehicleLightGuiComponent": {
+                "Bluelight": "true",
+                "Headlight": "true",
+                "Warninglight": "true",
+                "Environmentlight": "true",
+                "Trafficwarner": "true",
+                "Siren": "true",
+                "Debug Lights": "0",
+                "WithSoRe": "false"
+            },
+            "script::MultiplayerSynchronizationMasterComponent": {
+                "[MP] Slave Slot": [
+                    "10953794131270860243"
+                ]
+            },
+            "script::MultiplayerSynchronizationHelperComponent": {
+                "Component Name": "wmp::WaterCannonComponent",
+                "Property Name": "Target Entity",
+                "Synchronized Entity": "15925752597876080090"
+            },
+            "avc::DLKMasterComponent": {
+                "Is Crew Needed": "true",
+                "Attachpoint CrewMember(Stage)": "7659825373704125914",
+                "Attachpoint Operator(Turret)": "13848756385474969051",
+                "Attachpoint Rescued Person": "4531373909717056986",
+                "CrewComponent Name": "omp::CrewComponent",
+                "CrewComponent Property Name": "Crew Members",
+                "Maschinist Tag": "vehicle_operator",
+                "Clong Sound": "1395534873"
+            },
+            "avc::SupportLegControllerComponent": {
+                "Support Legs Animation[Front]": "1395531064",
+                "Support Legs Slots[Front Left]": [
+                    "8425485817717751257"
+                ],
+                "Support Legs Slots[Front Right]": [
+                    "4326207251882212830"
+                ],
+                "Support Legs Animation[Back]": "1395531064",
+                "Support Legs Slots[Left Back]": [
+                    "13042188705839218137"
+                ],
+                "Support Legs Slots[Right Back]": [
+                    "5541979001501285856"
+                ],
+                "Additional Setup Animation": "1395534488",
+                "Additional Setup Entities": [
+                    "5871734659069017562"
+                ],
+                "Waypoint Left": "9523684632905154015",
+                "Waypoint Right": "14403909663289015775"
+            },
+            "avc::SimpleTurretControllerComponent": {
+                "Turret Entity": "11840176390759022041",
+                "Rotation Speed": "10",
+                "Look At Entity": "1387946033499080655",
+                "Pitch Anim": "1395534482",
+                "Pitching Bone": "dlk_magirus_2003_yaw_bone",
+                "Bone Pitching Axis": "1 0 1",
+                "Pitching Finished": "false",
+                "Current Pitching Level in Degrees": "0",
+                "Wanted Pitching Level in Degrees": "0"
+            },
+            "avc::StageControllerComponent": {
+                "Stages": [
+                    "5871734659069017562"
+                ],
+                "Rotation Offset": "90 0 0"
+            },
+            "avc::LadderControllerComponent": {
+                "Extend Anim": "1395534485",
+                "Ladder Entity": "7993290736259333593"
+            },
+            "avc::DLKRescueAssistentComponent": {
+                "Base Min Yawangle": "92.558029174804688",
+                "Base Max Yawangle": "167.50048828125",
+                "Knickarmlength": "0",
+                "Used Angle from Notchladder": "0",
+                "[Fixed] Notchladdder channel level": "0",
+                "High Offset": "1.5"
+            },
+            "inventory::SuitInventoryComponent": {
+                "Pa Suits": "2"
+            },
+            "inventory::EquipmentInventoryComponent": {
+                "MedicBag Equipment": "1",
+                "Axe Equipment": "1",
+                "ChainSaw Equipment": "1",
+                "FireExtinguisher Equipment": "4",
+                "HoseRolled Equipment": "10"
+            },
+            "em5::InventoryComponent": {
+                "InventoryArray": [
+                    "em5\/prefab\/equipment\/equipment_firefighter_firehose_rolled",
+                    "em5\/prefab\/equipment\/equipment_firefighter_axe",
+                    "em5\/prefab\/equipment\/equipment_firefighter_chainsaw",
+                    "em5\/prefab\/equipment\/equipment_firefighter_rescue_cutter",
+                    "em5\/prefab\/equipment\/tauchpumpe_equipment",
+                    "em5\/prefab\/equipment\/equipment_traffic_cone",
+                    "em5\/prefab\/equipment\/equipment_ambulance_medic_case_closed",
+                    "em5\/prefab\/wuppertal_equipment\/equipment_firefighter_extinguisher",
+                    "em5\/prefab\/equipment\/equipment_traffic_cone_2"
+                ]
+            },
+            "pth::VehicleSirenGuiComponent": {
+                "MainAudioAsset": "8000000749",
+                "SecondaryAudioAsset": "8000000793"
+            },
+            "avc::HotkeyControlHelperComponent": {
+                "Acceleration Factor": "0.80000001192092896",
+                "Max Speed": "70",
+                "Reverse Beep Sound": "18446744073709551615"
+            },
+            "wmp::ScbaSupplyComponent": {
+                "SupplyType": "SCBA_SUPPLY_HLF",
+                "Effect Range": "0",
+                "Effect Power": "0",
+                "Seconds": "0"
+            }
+        },
+        "65277674782227929": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "blinker_right_emissive000",
+                "Description": "blinker"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.2558083534240723 1.7881393432617188e-06 -1.0456581115722656"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "1 0.50196099281311035 0 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "MinIntensity": "0",
+                "AnimationType": "SWITCHING",
+                "Active": "false",
+                "LightMaterial": "1395531976",
+                "LightMaterialIsInTopParent": "true"
+            },
+            "qsf::game::LightControllerComponent": "",
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "1.2558083534240723 1.7881393432617188e-06 -1.0456581115722656"
+            }
+        },
+        "242432087761124822": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "bos_antenne_4000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "3362"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.88100242614746094 2.4135727882385254 -2.8471894264221191",
+                "Rotation": "0.70183616876602173 0.086174622178077698 -0.70183616876602173 -0.086174622178077698"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "0.88100242614746094 2.4135727882385254 -2.8471894264221191",
+                "LocalRotation": "0.70183616876602173 0.086174622178077698 -0.70183616876602173 -0.086174622178077698"
+            }
+        },
+        "747645603276160481": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "pylone000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "4062"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.89238357543945313 1.1047019958496094 -0.74452972412109375"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "0.89238357543945313 1.1047019958496094 -0.74452972412109375"
+            }
+        },
+        "1744202217812426209": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "pylone000",
+                "Tags": "ghost"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "4062"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.89238357543945313 1.5172966718673706 -0.74452972412109375"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "747645603276160481",
+                "LocalPosition": "0 0.41259467601776123 0"
+            }
+        },
+        "2564686424710872545": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "pylone000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "4062"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.89238357543945313 1.3522588014602661 -0.74452972412109375"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "747645603276160481",
+                "LocalPosition": "0 0.24755680561065674 0"
+            }
+        },
+        "10396539433333063137": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "pylone000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "4062"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.89238357543945313 1.2697398662567139 -0.74452972412109375"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "747645603276160481",
+                "LocalPosition": "0 0.16503787040710449 0"
+            }
+        },
+        "11983263466743430625": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "pylone000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "4062"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.89238357543945313 1.1872209310531616 -0.74452972412109375"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "747645603276160481",
+                "LocalPosition": "0 0.082518935203552246 0"
+            }
+        },
+        "14853263680260832737": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "pylone000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "4062"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.89238357543945313 1.4347777366638184 -0.74452972412109375"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "747645603276160481",
+                "LocalPosition": "0 0.33007574081420898 0"
+            }
+        },
+        "1087999255731466313": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "10558512867648487208"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.88283896446228027 1.4229953289031982 3.6002216339111328",
+                "Rotation": "-4.9546360969543457e-06 0 1 0",
+                "Scale": "1 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-0.88283896446228027 1.4229953289031982 3.6002216339111328",
+                "LocalRotation": "-4.9546360969543457e-06 0 1 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "13423798392505725001": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "17438049606726598440"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.88283878564834595 1.4229953289031982 3.6169757843017578"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1087999255731466313"
+            }
+        },
+        "8630725021721129033": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "18206197034373103400"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.88283878564834595 1.4229953289031982 3.6177692413330078"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13423798392505725001"
+            }
+        },
+        "9298631125314531402": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "9022831582793449256"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.88293063640594482 1.4160220623016357 3.5892963409423828"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13423798392505725001"
+            }
+        },
+        "1387946033499080655": {
+            "qsf::MetadataComponent": {
+                "Prefab": "3082009900",
+                "Prototype": "468787232438557097"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.063646554946899414 1.5627784729003906 -0.050245285034179688",
+                "Rotation": "1 0 0 0",
+                "Scale": "1.0017770528793335 1.0017770528793335 1.0017770528793335"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "0.063646554946899414 1.5627784729003906 -0.050245285034179688",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1.0017770528793335 1.0017770528793335 1.0017770528793335"
+            }
+        },
+        "1459556309696806360": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "blinker_left_emissive000",
+                "Description": "blinker"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.2603049278259277 4.6715140342712402e-06 -1.0610688924789429"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "1 0.50196099281311035 0 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "MinIntensity": "0",
+                "AnimationType": "SWITCHING",
+                "Active": "false",
+                "LightMaterial": "1395531978",
+                "LightMaterialIsInTopParent": "true"
+            },
+            "qsf::game::LightControllerComponent": "",
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-1.2603049278259277 4.6715140342712402e-06 -1.0610688924789429"
+            }
+        },
+        "2984808640863043040": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "tlf_wpt_fw_6307_umfeld000",
+                "Description": "umfeld"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.2265472412109375 1.3436915874481201 1.881927490234375",
+                "Rotation": "0.49999901652336121 -0.49999919533729553 0.50000107288360596 0.5000007152557373",
+                "Scale": "1.1348665952682495 1 1"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395528810"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "1395528703",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_DIRECT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-1.2265472412109375 1.3436915874481201 1.881927490234375",
+                "LocalRotation": "0.49999901652336121 -0.49999919533729553 0.50000107288360596 0.5000007152557373",
+                "LocalScale": "1.1348665952682495 1 1"
+            }
+        },
+        "3117335002027880522": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "713693732038524710"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.0600216388702393 1.4230509996414185 3.6003146171569824",
+                "Rotation": "-6.2659382820129395e-06 0 1 0",
+                "Scale": "1 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-1.0600216388702393 1.4230509996414185 3.6003146171569824",
+                "LocalRotation": "-6.2659382820129395e-06 0 1 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "5953758320866324554": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "14242891854614118183"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.0600214004516602 1.4230509996414185 3.6170687675476074"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "3117335002027880522"
+            }
+        },
+        "1836263179525779530": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "15268536079327969063"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.0600214004516602 1.4230509996414185 3.6178622245788574"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5953758320866324554"
+            }
+        },
+        "4167961239026364490": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "5394456504056430375"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.0601133108139038 1.416077733039856 3.5893893241882324"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5953758320866324554"
+            }
+        },
+        "4043954843141307871": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "atego_reifen_hinten000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.2269821166992188 0.51100140810012817 1.898773193359375",
+                "Rotation": "-4.3711388286737929e-08 0 -1 0",
+                "Scale": "-0.87000006437301636 0.87000006437301636 0.87000006437301636"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_BACK_LEFT"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395537633",
+                "TintPalette": "1395537642",
+                "TintPaletteIndex": "2"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-1.2269821166992188 0.51100140810012817 1.898773193359375",
+                "LocalRotation": "-4.3711388286737929e-08 0 -1 0",
+                "LocalScale": "-0.87000006437301636 0.87000006437301636 0.87000006437301636"
+            }
+        },
+        "4326207251882212830": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "dlk_magirus_2015_supports000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.437225341796875 1.1920928955078125e-07 -1.36651611328125"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395531061"
+            },
+            "qsf::ActionComponent": "",
+            "qsf::MeshAnimationComponent": "",
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "0.437225341796875 1.1920928955078125e-07 -1.36651611328125"
+            }
+        },
+        "2057757683941408222": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_center1000",
+                "Description": "supportleg_light",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "CastShadows": "false",
+                "Active": "false",
+                "Color": "1 0.33333298563957214 0 1",
+                "Intensity": "3",
+                "OcclusionScale": "0.30000001192092896",
+                "Material": "239707",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "3"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.087371826171875 0.52907043695449829 -0.82110595703125",
+                "Rotation": "0.7071068286895752 0 0.70710670948028564 -3.0908616110991716e-08"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "4326207251882212830",
+                "LocalPosition": "0.650146484375 0.52907031774520874 0.54541015625",
+                "LocalRotation": "0.7071068286895752 0 0.70710670948028564 -3.0908616110991716e-08"
+            },
+            "qsf::game::LightControllerComponent": "",
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2015_supports_main_bone",
+                "LocalPosition": "-0.019999999552965164 0.0099999997764825821 2.2400000095367432",
+                "LocalRotation": "1 0 0 0"
+            }
+        },
+        "3878091319363010015": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_left_type_b000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "Active": "false",
+                "Color": "0.93333297967910767 0.54901999235153198 0.074509799480438232 1",
+                "Intensity": "0",
+                "WidthHeight": "0.40000000596046448 0.89999997615814209",
+                "OcclusionScale": "0.5",
+                "Material": "78208",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "2"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0 0.67451000213623047 0.74901998043060303 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.1273727416992188 0.54407042264938354 -0.846099853515625",
+                "Rotation": "0.50000005960464478 0.5 0.5 0.50000005960464478",
+                "Scale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_HEAD"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "4326207251882212830",
+                "LocalPosition": "0.69014739990234375 0.54407030344009399 0.520416259765625",
+                "LocalRotation": "0.50000005960464478 0.5 0.5 0.50000005960464478",
+                "LocalScale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "MinIntensity": "0.029999999329447746",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true",
+                "AnimationType": "SWITCHING",
+                "Active": "false",
+                "LightMaterial": "4221",
+                "LightMaterialIsInTopParent": "true"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2015_supports_main_bone",
+                "LocalPosition": "0.004999999888241291 0.02500000037252903 2.2799999713897705",
+                "LocalRotation": "0.70710700750350952 0 0 0.70710700750350952"
+            }
+        },
+        "1379824133086936543": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_center1000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "CastShadows": "false",
+                "Active": "false",
+                "BillboardType": "PERPENDICULAR",
+                "Color": "0.93333297967910767 0.54901999235153198 0.074509799480438232 1",
+                "Intensity": "8",
+                "WidthHeight": "0.30000001192092896 0.40000000596046448",
+                "Direction": "0 0 1",
+                "OcclusionScale": "1",
+                "Material": "239707",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "1"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.1265792846679688 0.54407042264938354 -0.846099853515625",
+                "Rotation": "0.50000005960464478 0.5 0.5 0.50000005960464478",
+                "Scale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::LightAnimationComponent": {
+                "Active": "false",
+                "AnimationType": "SWITCHING",
+                "MinIntensity": "0",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_HEAD"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "3878091319363010015",
+                "LocalPosition": "0 0 -0.0015869140625"
+            }
+        },
+        "5541979001501285856": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "dlk_magirus_2015_supports000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.437225341796875 1.1920928955078125e-07 2.805206298828125"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395531061"
+            },
+            "qsf::ActionComponent": "",
+            "qsf::MeshAnimationComponent": "",
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "0.437225341796875 1.1920928955078125e-07 2.805206298828125"
+            }
+        },
+        "9879521668356406752": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_left_type_b000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "Active": "false",
+                "Color": "0.93333297967910767 0.54901999235153198 0.074509799480438232 1",
+                "Intensity": "0",
+                "WidthHeight": "0.40000000596046448 0.89999997615814209",
+                "OcclusionScale": "0.5",
+                "Material": "78208",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "2"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0 0.67451000213623047 0.74901998043060303 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.1273727416992188 0.54407042264938354 3.32562255859375",
+                "Rotation": "0.50000005960464478 0.5 0.5 0.50000005960464478",
+                "Scale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_HEAD"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5541979001501285856",
+                "LocalPosition": "0.69014739990234375 0.54407030344009399 0.520416259765625",
+                "LocalRotation": "0.50000005960464478 0.5 0.5 0.50000005960464478",
+                "LocalScale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "MinIntensity": "0.029999999329447746",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true",
+                "AnimationType": "SWITCHING",
+                "Active": "false",
+                "LightMaterial": "4221",
+                "LightMaterialIsInTopParent": "true"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2015_supports_main_bone",
+                "LocalPosition": "0.004999999888241291 0.02500000037252903 2.2799999713897705",
+                "LocalRotation": "0.70710700750350952 0 0 0.70710700750350952"
+            }
+        },
+        "11192231779033972192": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_center1000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "CastShadows": "false",
+                "Active": "false",
+                "BillboardType": "PERPENDICULAR",
+                "Color": "0.93333297967910767 0.54901999235153198 0.074509799480438232 1",
+                "Intensity": "8",
+                "WidthHeight": "0.30000001192092896 0.40000000596046448",
+                "Direction": "0 0 1",
+                "OcclusionScale": "1",
+                "Material": "239707",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "1"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.1269149780273438 0.5440024733543396 3.325653076171875",
+                "Rotation": "0.50000005960464478 0.5 0.5 0.50000005960464478",
+                "Scale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::LightAnimationComponent": {
+                "Active": "false",
+                "AnimationType": "SWITCHING",
+                "MinIntensity": "0",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_HEAD"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9879521668356406752",
+                "LocalPosition": "-0.00013589905574917793 4.3596541217993945e-05 -0.00091552676167339087"
+            }
+        },
+        "13689689991039974880": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_center1000",
+                "Description": "supportleg_light",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "CastShadows": "false",
+                "Active": "false",
+                "Color": "1 0.33333298563957214 0 1",
+                "Intensity": "3",
+                "OcclusionScale": "0.30000001192092896",
+                "Material": "239707",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "3"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.087371826171875 0.52907043695449829 3.350616455078125",
+                "Rotation": "0.7071068286895752 0 0.70710670948028564 -3.0908616110991716e-08"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5541979001501285856",
+                "LocalPosition": "0.650146484375 0.52907031774520874 0.54541015625",
+                "LocalRotation": "0.7071068286895752 0 0.70710670948028564 -3.0908616110991716e-08"
+            },
+            "qsf::game::LightControllerComponent": "",
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2015_supports_main_bone",
+                "LocalPosition": "-0.019999999552965164 0.0099999997764825821 2.2400000095367432",
+                "LocalRotation": "1 0 0 0"
+            }
+        },
+        "5786281800769240543": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "atego_01_short_driver000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.0736392736434937 0.87548315525054932 -3.6215405464172363"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-1.0736392736434937 0.87548315525054932 -3.6215405464172363"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_DRIVER",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAngle": "-75",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395531983",
+                "Materials": [
+                    "3082010029"
+                ]
+            }
+        },
+        "6414696766702648802": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "light_vehicle_headlight02000",
+                "Description": "head",
+                "Tags": "light"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.61960798501968384 0.93333297967910767 1",
+                "DiffuseIntensity": "5",
+                "Texture": "78208",
+                "Range": "14.5",
+                "SpotlightOuterAngle": "120.01000213623047",
+                "SpotlightInnerAngle": "56"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.78761816024780273 0.5314483642578125 -2.9473605155944824",
+                "Rotation": "-0.98966479301452637 0.13908831775188446 -0.034559756517410278 -0.0048570632934570313"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "1395531977"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-0.78761816024780273 0.5314483642578125 -2.9473605155944824",
+                "LocalRotation": "-0.98966479301452637 0.13908831775188446 -0.034559756517410278 -0.0048570632934570313"
+            }
+        },
+        "6807985294204763618": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "atego_reifen_vorne000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.1311187744140625 0.51100140810012817 -2.5379638671875",
+                "Rotation": "-4.4703476476115611e-08 0 -1 0",
+                "Scale": "-0.87000012397766113 -0.87000012397766113 0.87000012397766113"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395537635",
+                "TintPalette": "1395537642",
+                "TintPaletteIndex": "2"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_FRONT_LEFT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-1.1311187744140625 0.51100140810012817 -2.5379638671875",
+                "LocalRotation": "-4.4703476476115611e-08 0 -1 0",
+                "LocalScale": "-0.87000012397766113 -0.87000012397766113 0.87000012397766113"
+            }
+        },
+        "7275126205144330314": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "10558512867648487208"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.86561870574951172 1.4229953289031982 3.6002259254455566",
+                "Rotation": "-4.9695372581481934e-06 0 1 0",
+                "Scale": "1 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "0.86561870574951172 1.4229953289031982 3.6002259254455566",
+                "LocalRotation": "-4.9695372581481934e-06 0 1 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "16761566204354850890": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "17438049606726598440"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.86561888456344604 1.4229953289031982 3.6169800758361816"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "7275126205144330314"
+            }
+        },
+        "2121484046323380298": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "9022831582793449256"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.86552703380584717 1.4160220623016357 3.5893006324768066"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "16761566204354850890"
+            }
+        },
+        "5565090856052158538": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "18206197034373103400"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.86561888456344604 1.4229953289031982 3.6177735328674316"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "16761566204354850890"
+            }
+        },
+        "7961814071998184918": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "dlk_magirus_base_stretcher000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "1395528866"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.023167282342910767 2.5317120552062988 -1.3842374086380005",
+                "Rotation": "-4.3711388286737929e-08 1 0 0"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "0.023167282342910767 2.5317120552062988 -1.3842374086380005",
+                "LocalRotation": "-4.3711388286737929e-08 1 0 0"
+            }
+        },
+        "7987547961257655771": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "typhooon_luefter000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "3963"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-3.4338012255830108e-07 0.42883813381195068 3.9278106689453125",
+                "Rotation": "0.70578789710998535 0.043167755007743835 -0.70578789710998535 -0.043167769908905029"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-3.4338012255830108e-07 0.42883813381195068 3.9278106689453125",
+                "LocalRotation": "0.70578789710998535 0.043167755007743835 -0.70578789710998535 -0.043167769908905029"
+            }
+        },
+        "8425485817717751257": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "dlk_magirus_2015_supports_t000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.4227752685546875 1.1920928955078125e-07 -0.140380859375",
+                "Rotation": "-4.3711388286737929e-08 0 1 0"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395531061"
+            },
+            "qsf::ActionComponent": "",
+            "qsf::MeshAnimationComponent": "",
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-0.4227752685546875 1.1920928955078125e-07 -0.140380859375",
+                "LocalRotation": "-4.3711388286737929e-08 0 1 0"
+            }
+        },
+        "9093502774417063385": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_center1000",
+                "Description": "supportleg_light",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "CastShadows": "false",
+                "Active": "false",
+                "Color": "1 0.33333298563957214 0 1",
+                "Intensity": "3",
+                "OcclusionScale": "0.30000001192092896",
+                "Material": "239707",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "3"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.0729217529296875 0.52907043695449829 -0.685791015625",
+                "Rotation": "-0.70710676908493042 -3.0908616110991716e-08 0.70710676908493042 1.3510585260894325e-15"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8425485817717751257",
+                "LocalPosition": "0.650146484375 0.52907031774520874 0.54541015625",
+                "LocalRotation": "0.7071068286895752 0 0.70710670948028564 -3.0908616110991716e-08"
+            },
+            "qsf::game::LightControllerComponent": "",
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2015_supports_main_bone",
+                "LocalPosition": "-0.019999999552965164 0.0099999997764825821 2.2400000095367432",
+                "LocalRotation": "1 0 0 0"
+            }
+        },
+        "17424904709137268185": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_left_type_b000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "Active": "false",
+                "Color": "0.93333297967910767 0.54901999235153198 0.074509799480438232 1",
+                "Intensity": "0",
+                "WidthHeight": "0.40000000596046448 0.89999997615814209",
+                "OcclusionScale": "0.5",
+                "Material": "78208",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "2"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0 0.67451000213623047 0.74901998043060303 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.1129226684570313 0.54407042264938354 -0.660797119140625",
+                "Rotation": "-0.5 0.50000005960464478 0.50000005960464478 -0.5",
+                "Scale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_HEAD"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8425485817717751257",
+                "LocalPosition": "0.69014739990234375 0.54407030344009399 0.52041637897491455",
+                "LocalRotation": "0.50000005960464478 0.5 0.5 0.50000005960464478",
+                "LocalScale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "MinIntensity": "0.029999999329447746",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true",
+                "AnimationType": "SWITCHING",
+                "Active": "false",
+                "LightMaterial": "4221",
+                "LightMaterialIsInTopParent": "true"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2015_supports_main_bone",
+                "LocalPosition": "0.004999999888241291 0.02500000037252903 2.2799999713897705",
+                "LocalRotation": "0.70710700750350952 0 0 0.70710700750350952"
+            }
+        },
+        "5937349187982622169": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_center1000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "CastShadows": "false",
+                "Active": "false",
+                "BillboardType": "PERPENDICULAR",
+                "Color": "0.93333297967910767 0.54901999235153198 0.074509799480438232 1",
+                "Intensity": "8",
+                "WidthHeight": "0.30000001192092896 0.40000000596046448",
+                "Direction": "0 0 1",
+                "OcclusionScale": "1",
+                "Material": "239707",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "1"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.1121292114257813 0.54407042264938354 -0.660797119140625",
+                "Rotation": "-0.5 0.50000005960464478 0.50000005960464478 -0.5",
+                "Scale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::LightAnimationComponent": {
+                "Active": "false",
+                "AnimationType": "SWITCHING",
+                "MinIntensity": "0",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_HEAD"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "17424904709137268185",
+                "LocalPosition": "0 0 -0.0015869140625"
+            }
+        },
+        "8833777396005171272": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "713693732038524710"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.0446767807006836 1.4230509996414185 3.6002731323242188",
+                "Rotation": "-4.9695372581481934e-06 0 1 0",
+                "Scale": "1 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "1.0446767807006836 1.4230509996414185 3.6002731323242188",
+                "LocalRotation": "-4.9695372581481934e-06 0 1 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "5878172389719896136": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "14242891854614118183"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.0446768999099731 1.4230509996414185 3.6170272827148438"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8833777396005171272"
+            }
+        },
+        "7517623241247256648": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "5394456504056430375"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.044585108757019 1.416077733039856 3.5893478393554688"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5878172389719896136"
+            }
+        },
+        "15027351482171355208": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "15268536079327969063"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.0446768999099731 1.4230509996414185 3.6178207397460938"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5878172389719896136"
+            }
+        },
+        "8914112075046354400": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "tlf_wpt_fw_6307_umfeld000",
+                "Description": "umfeld"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.17413330078125 1.3440026044845581 1.88214111328125",
+                "Rotation": "-0.50000083446502686 0.50000107288360596 0.49999919533729553 0.49999904632568359",
+                "Scale": "1.1348665952682495 1 1"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395528810"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "1395528703",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_DIRECT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "1.17413330078125 1.3440026044845581 1.88214111328125",
+                "LocalRotation": "-0.50000083446502686 0.50000107288360596 0.49999919533729553 0.49999904632568359",
+                "LocalScale": "1.1348665952682495 1 1"
+            }
+        },
+        "9097884482872573407": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "umfeld000",
+                "Description": "umfeld",
+                "Tags": "light"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.61960798501968384 0.93333297967910767 1",
+                "DiffuseIntensity": "5",
+                "DiffuseTemperature": "10000",
+                "Texture": "78208",
+                "Range": "10",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "101"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.22686767578125 1.3440026044845581 1.88214111328125",
+                "Rotation": "0.63003677129745483 -0.3210197389125824 0.63003677129745483 0.32101976871490479",
+                "Scale": "1.3410500288009644 1.0693634748458862 1.1774399280548096"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "1395528703",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_DIRECT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-1.22686767578125 1.3440026044845581 1.88214111328125",
+                "LocalRotation": "0.63003677129745483 -0.3210197389125824 0.63003677129745483 0.32101976871490479",
+                "LocalScale": "1.3410500288009644 1.0693634748458862 1.1774399280548096"
+            }
+        },
+        "9523684632905154015": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "debug_box000"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0 0.66666698455810547 0 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.2840576171875 -2.2873282432556152e-06 4.098785400390625"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-1.2840576171875 -2.2873282432556152e-06 4.098785400390625"
+            }
+        },
+        "9758448889629277666": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "soccer_ball000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "30063"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.04278564453125 1.8506696224212646 -1.4132080078125"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "1.04278564453125 1.8506696224212646 -1.4132080078125"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_EQUIPMENTRIGHT",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAngle": "75",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            }
+        },
+        "10117640811576369791": {
+            "qsf::MetadataComponent": {
+                "Prefab": "25323",
+                "Prototype": "15067835440149454492",
+                "Name": "typ_40_db_blue000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.49481010437011719 1.0796589851379395 -3.7915802001953125"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-0.49481010437011719 1.0796589851379395 -3.7915802001953125",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "10518614921061671551": {
+            "qsf::MetadataComponent": {
+                "Prefab": "25323",
+                "Prototype": "5769671590126444188"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.49481010437011719 1.0796589851379395 -3.8147125244140625"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10117640811576369791"
+            }
+        },
+        "9027436352160998015": {
+            "qsf::MetadataComponent": {
+                "Prefab": "25323",
+                "Prototype": "8076948268013477532"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.49481010437011719 1.0796589851379395 -3.8155059814453125"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10518614921061671551"
+            }
+        },
+        "16760057508663468671": {
+            "qsf::MetadataComponent": {
+                "Prefab": "25323",
+                "Prototype": "16345363588214840988"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.57441526651382446 1.083580493927002 -2.9278106689453125"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10518614921061671551"
+            }
+        },
+        "10689687018757717467": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "light_vehicle_headlight02000",
+                "Description": "head",
+                "Tags": "light"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.61960798501968384 0.93333297967910767 1",
+                "DiffuseIntensity": "5",
+                "Texture": "78208",
+                "Range": "14.5",
+                "SpotlightOuterAngle": "120.01000213623047",
+                "SpotlightInnerAngle": "56"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.77318811416625977 0.5314483642578125 -2.9472384452819824",
+                "Rotation": "-0.98966479301452637 0.13908831775188446 -0.034559756517410278 -0.0048570632934570313"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "1395531977"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "0.77318811416625977 0.5314483642578125 -2.9472384452819824",
+                "LocalRotation": "-0.98966479301452637 0.13908831775188446 -0.034559756517410278 -0.0048570632934570313"
+            }
+        },
+        "11115116633371737567": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "atego_reifen_hinten000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.1792144775390625 0.51100140810012817 1.852325439453125",
+                "Rotation": "-4.3711388286737929e-08 0 -1 0",
+                "Scale": "0.87000012397766113 -0.87000012397766113 0.87000012397766113"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_BACK_RIGHT"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395537633",
+                "TintPalette": "1395537642",
+                "TintPaletteIndex": "2"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "1.1792144775390625 0.51100140810012817 1.852325439453125",
+                "LocalRotation": "-4.3711388286737929e-08 0 -1 0",
+                "LocalScale": "0.87000012397766113 -0.87000012397766113 0.87000012397766113"
+            }
+        },
+        "11221820939954102909": {
+            "qsf::MetadataComponent": {
+                "Prefab": "25323",
+                "Prototype": "15067835440149454492",
+                "Name": "typ_40_db_blue000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.46483469009399414 1.0796589851379395 -3.7915802001953125",
+                "Rotation": "1 0 0 0",
+                "Scale": "1 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "0.46483469009399414 1.0796589851379395 -3.7915802001953125",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "8943783329971380861": {
+            "qsf::MetadataComponent": {
+                "Prefab": "25323",
+                "Prototype": "5769671590126444188"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.46483469009399414 1.0796589851379395 -3.8147125244140625"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11221820939954102909"
+            }
+        },
+        "5009790108006687357": {
+            "qsf::MetadataComponent": {
+                "Prefab": "25323",
+                "Prototype": "8076948268013477532"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.46483469009399414 1.0796589851379395 -3.8155059814453125"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8943783329971380861"
+            }
+        },
+        "6374183982518575741": {
+            "qsf::MetadataComponent": {
+                "Prefab": "25323",
+                "Prototype": "16345363588214840988"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.38522949814796448 1.083580493927002 -2.9278106689453125"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8943783329971380861"
+            }
+        },
+        "11491360638994251230": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "dlk_magirus_wpt_light_right000",
+                "Description": "blinker"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "1395531940"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.00095369841437786818 6.3180923461914063e-06 -0.27596282958984375",
+                "Rotation": "-1 0 8.7422776573475858e-08 0"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "0.00095369841437786818 6.3180923461914063e-06 -0.27596282958984375",
+                "LocalRotation": "-1 0 8.7422776573475858e-08 0"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "1395531996"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "MinIntensity": "0",
+                "CustomAnimationValues": "0.900000 0.800000 0.700000 0.600000 0.500000 0.400000 0.300000 0.200000 0.100000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.100000 0.200000 0.300000 0.400000 0.500000 0.600000 0.700000 0.800000 0.900000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000",
+                "InvisibleAnimation": "true",
+                "AnimationType": "SWITCHING",
+                "Active": "false",
+                "LightMaterial": "1395531996"
+            }
+        },
+        "1498120417320664542": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "blinker000",
+                "Description": "blinker",
+                "Tags": "light"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "1 0.58431398868560791 0.078431397676467896",
+                "DiffuseIntensity": "0.5",
+                "Texture": "18446744073709551615",
+                "Range": "8",
+                "SpotlightOuterAngle": "75"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.14276883006095886 6.3180923461914063e-06 -0.25478366017341614",
+                "Rotation": "1.3113415775478643e-07 0 1 -0"
+            },
+            "qsf::game::LightControllerComponent": "",
+            "qsf::LinkComponent": {
+                "ParentId": "11491360638994251230",
+                "LocalPosition": "-0.1437225341796875 0 0.02117919921875",
+                "LocalRotation": "-4.3711388286737929e-08 0 -1 0"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "MinIntensity": "0",
+                "CustomAnimationValues": "0.900000 0.800000 0.700000 0.600000 0.500000 0.400000 0.300000 0.200000 0.100000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.100000 0.200000 0.300000 0.400000 0.500000 0.600000 0.700000 0.800000 0.900000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000",
+                "InvisibleAnimation": "true",
+                "AnimationType": "SWITCHING",
+                "Active": "false",
+                "LightMaterial": "1395531996",
+                "LightMaterialIsInTopParent": "true"
+            }
+        },
+        "11234791778201140702": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "headlight000",
+                "Description": "head",
+                "Tags": "light"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.54509800672531128 0 0",
+                "DiffuseIntensity": "0.5",
+                "Texture": "18446744073709551615",
+                "Range": "7",
+                "SpotlightOuterAngle": "75"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.0059433188289403915 6.3180923461914063e-06 -0.25392913818359375",
+                "Rotation": "1.1722509896117117e-07 0 1 -0"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "1395531993",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11491360638994251230",
+                "LocalPosition": "0.0049896240234375 0 0.02203369140625",
+                "LocalRotation": "-2.9802322387695313e-08 0 -1 0"
+            }
+        },
+        "13677730615949557214": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "brakelight000",
+                "Description": "Point light",
+                "Tags": "light"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "1 0 0",
+                "DiffuseIntensity": "0.5",
+                "Texture": "18446744073709551615",
+                "Range": "8",
+                "SpotlightOuterAngle": "75"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.062751755118370056 -0.00045144557952880859 -0.25435638427734375",
+                "Rotation": "1.1722509896117117e-07 0 1 -0"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_BRAKE",
+                "LightMaterial": "1395531995",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11491360638994251230",
+                "LocalPosition": "-0.0637054443359375 -0.000457763671875 0.0216064453125",
+                "LocalRotation": "-2.9802322387695313e-08 0 -1 0"
+            }
+        },
+        "11840176390759022041": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "dlk_magirus_2003_base000",
+                "Tags": "ghost"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.036268234252929688 1.6453540325164795 1.76898193359375"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395534511",
+                "Materials": [
+                    "3082010025",
+                    "3082010027"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "0.036268234252929688 1.6453540325164795 1.76898193359375"
+            },
+            "qsf::ai::NavigationComponent": {
+                "CurveSmoothing": "0"
+            },
+            "qsf::MovableComponent": "",
+            "qsf::ActionComponent": "",
+            "qsf::MeshAnimationComponent": ""
+        },
+        "6981997282966271624": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "dlk_magirus_2003_bluelight_holder000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "1395534478"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.017190933227539063 2.7509081363677979 4.38446044921875",
+                "Rotation": "-1 -6.0995552075837622e-07 -1.4231828160404802e-08 4.412248699736665e-08"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11840176390759022041",
+                "LocalPosition": "-0.05345916748046875 1.1055541038513184 2.615478515625",
+                "LocalRotation": "-1 -6.0995552075837622e-07 -1.4231828160404802e-08 4.412248699736665e-08"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2003_ladder_attach_bone",
+                "LocalPosition": "0 0 0",
+                "LocalRotation": "-4.3711398944878965e-08 1 0 0"
+            }
+        },
+        "2889811799785502344": {
+            "qsf::MetadataComponent": {
+                "Prefab": "14599",
+                "Prototype": "14895171471484236437",
+                "Name": "haensch_comet_db_blue000",
+                "Tags": "ghost"
+            },
+            "qsf::MeshComponent": {
+                "RenderingDistanceFactor": "2"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.71136045455932617 2.7570240497589111 3.91754150390625",
+                "Rotation": "1 0 0 0",
+                "Scale": "1 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "6981997282966271624",
+                "LocalPosition": "0.72855138778686523 0.0061154081486165524 -0.4669189453125",
+                "LocalRotation": "-1 6.0995552075837622e-07 1.4231828160404802e-08 -4.412248699736665e-08",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "8989198752093992584": {
+            "qsf::MetadataComponent": {
+                "Prefab": "14599",
+                "Prototype": "7364618720848229013"
+            },
+            "qsf::MeshComponent": {
+                "RenderingDistanceFactor": "2"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.71136045455932617 2.7570240497589111 3.91754150390625"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "2889811799785502344"
+            }
+        },
+        "15579134878719047304": {
+            "qsf::MetadataComponent": {
+                "Prefab": "14599",
+                "Prototype": "3383982896959323548"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.71136045455932617 2.8520176410675049 3.91754150390625"
+            },
+            "qsf::game::LightControllerComponent": {
+                "Active": "false"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "2889811799785502344"
+            }
+        },
+        "5729539292799334024": {
+            "qsf::MetadataComponent": {
+                "Prefab": "14599",
+                "Prototype": "16451069467930262940"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.71226930618286133 2.8519117832183838 3.9188380241394043"
+            },
+            "qsf::game::LightControllerComponent": {
+                "Active": "false"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "15579134878719047304"
+            }
+        },
+        "7502872224927479432": {
+            "qsf::MetadataComponent": {
+                "Prefab": "14599",
+                "Prototype": "8617893544956394908"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.71136045455932617 2.8556568622589111 3.91754150390625"
+            },
+            "qsf::game::LightControllerComponent": {
+                "Active": "false"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "15579134878719047304"
+            }
+        },
+        "6140546686406260360": {
+            "qsf::MetadataComponent": {
+                "Prefab": "14599",
+                "Prototype": "14895171471484236437",
+                "Name": "haensch_comet_db_blue000",
+                "Tags": "ghost"
+            },
+            "qsf::MeshComponent": {
+                "RenderingDistanceFactor": "2"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.82135629653930664 2.7619397640228271 -3.1727066040039063",
+                "Scale": "1.1160049438476563 1.1160049438476563 1.1160049438476563"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "6981997282966271624",
+                "LocalPosition": "0.8385474681854248 0.011022482998669147 -7.5571670532226563",
+                "LocalRotation": "-1 6.0995552075837622e-07 1.4231828160404802e-08 -4.412248699736665e-08",
+                "LocalScale": "1.1160049438476563 1.1160049438476563 1.1160049438476563"
+            }
+        },
+        "9383284696109184648": {
+            "qsf::MetadataComponent": {
+                "Prefab": "14599",
+                "Prototype": "3383982896959323548"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.82135629653930664 2.8679530620574951 -3.1727066040039063"
+            },
+            "qsf::game::LightControllerComponent": {
+                "Active": "false"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6140546686406260360"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "CustomAnimationValues": "0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 1.000000 0.000000 0.000000"
+            }
+        },
+        "9072425125117326984": {
+            "qsf::MetadataComponent": {
+                "Prefab": "14599",
+                "Prototype": "8617893544956394908"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.82135629653930664 2.8720145225524902 -3.1727066040039063"
+            },
+            "qsf::game::LightControllerComponent": {
+                "Active": "false"
+            },
+            "qsf::LightAnimationComponent": {
+                "CustomAnimationValues": "0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 1.000000 0.000000 0.000000"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9383284696109184648"
+            }
+        },
+        "18370041757652121224": {
+            "qsf::MetadataComponent": {
+                "Prefab": "14599",
+                "Prototype": "16451069467930262940"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.82237058877944946 2.8678348064422607 -3.1712596416473389"
+            },
+            "qsf::LightAnimationComponent": {
+                "CustomAnimationValues": "0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 1.000000 0.000000 0.000000"
+            },
+            "qsf::game::LightControllerComponent": {
+                "Active": "false"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9383284696109184648"
+            }
+        },
+        "16733416380425205384": {
+            "qsf::MetadataComponent": {
+                "Prefab": "14599",
+                "Prototype": "7364618720848229013"
+            },
+            "qsf::MeshComponent": {
+                "RenderingDistanceFactor": "2"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.82135629653930664 2.7619397640228271 -3.1727066040039063"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6140546686406260360"
+            }
+        },
+        "8781474488479020680": {
+            "qsf::MetadataComponent": {
+                "Prefab": "14599",
+                "Prototype": "14895171471484236437",
+                "Name": "haensch_comet_db_blue000",
+                "Tags": "ghost"
+            },
+            "qsf::MeshComponent": {
+                "RenderingDistanceFactor": "2"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.81857013702392578 2.7619397640228271 -3.1727066040039063",
+                "Rotation": "1 0 0 0",
+                "Scale": "1.1160049438476563 1.1160049438476563 1.1160049438476563"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "6981997282966271624",
+                "LocalPosition": "-0.80137896537780762 0.011022337712347507 -7.5571670532226563",
+                "LocalRotation": "-1 6.0995552075837622e-07 1.4231828160404802e-08 -4.412248699736665e-08",
+                "LocalScale": "1.1160049438476563 1.1160049438476563 1.1160049438476563"
+            }
+        },
+        "3863410821987202697": {
+            "qsf::MetadataComponent": {
+                "Prefab": "14599",
+                "Prototype": "3383982896959323548"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.81857013702392578 2.8679530620574951 -3.1727066040039063"
+            },
+            "qsf::game::LightControllerComponent": {
+                "Active": "false"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8781474488479020680"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "CustomAnimationValues": "1.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000"
+            }
+        },
+        "1426032107166267017": {
+            "qsf::MetadataComponent": {
+                "Prefab": "14599",
+                "Prototype": "8617893544956394908"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.81857013702392578 2.8720145225524902 -3.1727066040039063"
+            },
+            "qsf::game::LightControllerComponent": {
+                "Active": "false"
+            },
+            "qsf::LightAnimationComponent": {
+                "CustomAnimationValues": "1.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "3863410821987202697"
+            }
+        },
+        "15950078186028693129": {
+            "qsf::MetadataComponent": {
+                "Prefab": "14599",
+                "Prototype": "16451069467930262940"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.81755584478378296 2.8678348064422607 -3.1712596416473389"
+            },
+            "qsf::LightAnimationComponent": {
+                "CustomAnimationValues": "1.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000"
+            },
+            "qsf::game::LightControllerComponent": {
+                "Active": "false"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "3863410821987202697"
+            }
+        },
+        "15668122739916568200": {
+            "qsf::MetadataComponent": {
+                "Prefab": "14599",
+                "Prototype": "7364618720848229013"
+            },
+            "qsf::MeshComponent": {
+                "RenderingDistanceFactor": "2"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.81857013702392578 2.7619397640228271 -3.1727066040039063"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8781474488479020680"
+            }
+        },
+        "7143647528236907994": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "kupplung_eingang000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.017190933227539063 2.7509078979492188 4.48443603515625",
+                "Rotation": "1.4231854805757393e-08 -8.7833882389531936e-08 -1 -5.6624412536621094e-07",
+                "Scale": "1 1.0014532804489136 1"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "RenderQueueId": "90"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11840176390759022041",
+                "LocalPosition": "-0.05345916748046875 1.1055538654327393 2.7154541015625",
+                "LocalRotation": "1.4231854805757393e-08 -8.7833882389531936e-08 -1 -5.6624412536621094e-07",
+                "LocalScale": "1 1.0014532804489136 1"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2003_ladder_attach_bone",
+                "LocalPosition": "0 0 -0.10000000149011612",
+                "LocalRotation": "-4.3711398944878965e-08 0 0 1"
+            },
+            "qsf::MeshComponent": {
+                "Active": "false",
+                "Mesh": "1395530559"
+            }
+        },
+        "7993290736259333593": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "dlk_magirus_2003_stairs000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.017190933227539063 2.7509081363677979 4.38446044921875",
+                "Rotation": "-1 -6.0995552075837622e-07 -1.4231828160404802e-08 4.412248699736665e-08"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395534513",
+                "Materials": [
+                    "3082010027"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11840176390759022041",
+                "LocalPosition": "-0.05345916748046875 1.1055541038513184 2.615478515625",
+                "LocalRotation": "-1 -6.0995552075837622e-07 -1.4231828160404802e-08 4.412248699736665e-08"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2003_ladder_attach_bone",
+                "LocalPosition": "0 0 0",
+                "LocalRotation": "-4.3711398944878965e-08 1 0 0"
+            },
+            "qsf::MeshAnimationTestComponent": {
+                "Active": "false",
+                "Restart": "true",
+                "Skeleton_A": "1395534485",
+                "Skeleton_B": "18446744073709551615",
+                "Loop": "false",
+                "ReverseAnimation": "true",
+                "Speed": "0.20000000298023224"
+            },
+            "qsf::ActionComponent": ""
+        },
+        "1393537018770259418": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "fire_hose_exit000"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.21262931823730469 2.9731316566467285 4.284942626953125",
+                "Rotation": "4.4122462128370898e-08 5.7943228881640607e-08 -5.3445762659976026e-07 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "7993290736259333593",
+                "LocalPosition": "0.22982023656368256 0.22222341597080231 -0.099518090486526489",
+                "LocalRotation": "-3.5527136788005009e-15 -4.3711398944878965e-08 -7.5497894158615964e-08 -1"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2003_ladder_stair3_bone",
+                "LocalPosition": "0.23000000417232513 -0.079999998211860657 0.10000000149011612",
+                "LocalRotation": "-4.3711398944878965e-08 0 -1 0"
+            }
+        },
+        "5871734659069017562": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "dlk_magirus_2003_basket000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.017374038696289063 2.5595533847808838 -4.748809814453125",
+                "Rotation": "0.99976193904876709 -0.021818799898028374 1.5191165658734462e-08 -4.3801456683922879e-08"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395534520",
+                "Materials": [
+                    "3082010032"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "7993290736259333593",
+                "LocalPosition": "-0.00018282861856278032 -0.19136589765548706 -9.133270263671875",
+                "LocalRotation": "-0.99976193904876709 0.021819408982992172 5.1567535235431256e-16 2.1926904736346842e-15"
+            },
+            "qsf::game::BoneToBoneLinkComponent": {
+                "BoneName": "dlk_magirus_2003_ladder_basket_attach_bone",
+                "LocalPosition": "0 0 0",
+                "LocalRotation": "0.99976193904876709 -0.021819408982992172 0 0",
+                "LocalPosition1": "0 0 0",
+                "LocalRotation1": "1 0 0 0",
+                "LocalPosition2": "0 0 0",
+                "LocalRotation2": "1 0 0 0"
+            },
+            "qsf::MeshAnimationTestComponent": {
+                "Active": "false",
+                "Restart": "true",
+                "Skeleton_A": "1395534488",
+                "Skeleton_B": "18446744073709551615",
+                "Loop": "false"
+            },
+            "qsf::ActionComponent": "",
+            "qsf::ai::NavigationComponent": {
+                "CurveSmoothing": "0"
+            }
+        },
+        "4531373909717056986": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "fm_lz03000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.13273124396800995 2.4816229343414307 -4.9161796569824219",
+                "Rotation": "0.97213840484619141 -0.021215938031673431 0.23338989913463593 -0.0050935745239257813",
+                "Scale": "0.99999970197677612 0.99999970197677612 0.99999970197677612"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "18446744073709551615"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5871734659069017562",
+                "LocalPosition": "0.15010529756546021 -0.070554450154304504 -0.17061050236225128",
+                "LocalRotation": "0.97236990928649902 -4.6382071516859469e-09 0.23344546556472778 -3.1762681373947999e-08",
+                "LocalScale": "0.99999970197677612 0.99999970197677612 0.99999970197677612"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "magirus_dlk_gl_basket_equipment_attach_bone",
+                "LocalPosition": "0.40000000596046448 -0.20999999344348907 -1.0700000524520874",
+                "LocalRotation": "0.69636398553848267 0.69636398553848267 0.12278799712657928 0.12278799712657928"
+            }
+        },
+        "7659825373704125914": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "fm_lz03000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.54191678762435913 2.4802603721618652 -4.9473800659179688",
+                "Rotation": "0.9585915207862854 -0.020920330658555031 -0.28394761681556702 0.0061968048103153706",
+                "Scale": "0.99999964237213135 0.99999964237213135 0.99999964237213135"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "18446744073709551615"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5871734659069017562",
+                "LocalPosition": "-0.52454274892807007 -0.070554547011852264 -0.20184044539928436",
+                "LocalRotation": "0.95881980657577515 -1.9898186209843516e-08 -0.2840152382850647 -2.5188191088432177e-08",
+                "LocalScale": "0.99999964237213135 0.99999964237213135 0.99999964237213135"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "magirus_dlk_gl_basket_equipment_attach_bone",
+                "LocalPosition": "-0.10999999940395355 -0.20999999344348907 -1.0700000524520874",
+                "LocalRotation": "0.70710700750350952 0.70710700750350952 0 0"
+            }
+        },
+        "15925752597876080090": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "magirus_dlk_cannon_base000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "1395531037"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.49665641784667969 3.049501895904541 -3.846527099609375",
+                "Rotation": "0.7223668098449707 0.69151014089584351 -2.0230530139997427e-08 -4.1714088183653075e-08",
+                "Scale": "0.99999964237213135 0.99999964237213135 0.99999964237213135"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2003_basket_equipment_attach_bone",
+                "LocalPosition": "0 0.0099999997764825821 0",
+                "LocalRotation": "0.70710700750350952 -0.70710700750350952 0 0"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5871734659069017562",
+                "LocalPosition": "0.51403039693832397 0.45011797547340393 0.922798752784729",
+                "LocalRotation": "0.70710688829421997 0.70710670948028564 -3.9968016181011427e-15 8.8817810206277001e-16",
+                "LocalScale": "0.99999964237213135 0.99999964237213135 0.99999964237213135"
+            },
+            "wmp::WaterCannonComponent": {
+                "Cannon Entity": "2485531281252187610",
+                "Default Rotation": "1 0 0 0",
+                "Current Output": "10",
+                "Extinguish Power": "50"
+            },
+            "em5::WaterCannonComponent": {
+                "CannonEntity": "2485531281252187610"
+            }
+        },
+        "2485531281252187610": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "magirus_dlk_cannon_gun000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "1395531042"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.49698805809020996 3.0570712089538574 -3.6794435977935791",
+                "Rotation": "-0.72211933135986328 -0.69127321243286133 -0.018909312784671783 -0.018101558089256287",
+                "Scale": "0.99999964237213135 0.99999964237213135 0.99999964237213135"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "15925752597876080090",
+                "LocalPosition": "0.00033164909109473228 0.16725468635559082 -0.00027258339105173945",
+                "LocalRotation": "-0.99965739250183105 3.1775574171888366e-08 -0.02617691271007061 8.3207613021940574e-10"
+            }
+        },
+        "10169771787238800858": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "eisemann_bska13000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.82017326354980469 2.0850067138671875 2.583160400390625",
+                "Rotation": "-0.0087264282628893852 0 0.99996191263198853 0"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11840176390759022041",
+                "LocalPosition": "0.783905029296875 0.43965268135070801 0.814178466796875",
+                "LocalRotation": "-0.0087264282628893852 0 0.99996191263198853 0"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395528996",
+                "Materials": [
+                    "1395531052"
+                ]
+            }
+        },
+        "13603902829665746395": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "seitenmakierungsleuchte000",
+                "Description": "head"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26029"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.54280662536621094 2.7809081077575684 4.304443359375",
+                "Rotation": "-5.6624412536621094e-07 1 -4.412248699736665e-08 -1.4231829936761642e-08"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11840176390759022041",
+                "LocalPosition": "0.50653839111328125 1.1355540752410889 2.53546142578125",
+                "LocalRotation": "-5.6624412536621094e-07 1 -4.412248699736665e-08 -1.4231829936761642e-08"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2003_ladder_attach_bone",
+                "LocalPosition": "0.56000000238418579 -0.029999999329447746 0.079999998211860657",
+                "LocalRotation": "1 0 0 0"
+            }
+        },
+        "1436544381730979291": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_left_type_b000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "Active": "false",
+                "Color": "0.93333297967910767 0.54901999235153198 0.074509799480438232 1",
+                "Intensity": "0",
+                "WidthHeight": "0.40000000596046448 0.89999997615814209",
+                "OcclusionScale": "0.5",
+                "Material": "78208",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "2"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0 0.67451000213623047 0.74901998043060303 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.54258537292480469 2.7809977531433105 4.304779052734375",
+                "Rotation": "-0.50000029802322388 0.49999967217445374 -0.50000035762786865 0.49999973177909851",
+                "Scale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_HEAD"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13603902829665746395",
+                "LocalPosition": "-0.00022125245595816523 -8.9645749540068209e-05 -0.00033569324295967817",
+                "LocalRotation": "0.5 0.5 0.5 0.50000005960464478",
+                "LocalScale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "MinIntensity": "0.029999999329447746",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true",
+                "AnimationType": "SWITCHING",
+                "Active": "false",
+                "LightMaterial": "4221",
+                "LightMaterialIsInTopParent": "true"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2015_supports_main_bone",
+                "LocalPosition": "0.004999999888241291 0.02500000037252903 2.2799999713897705",
+                "LocalRotation": "0.70710700750350952 0 0 0.70710700750350952"
+            }
+        },
+        "3129899147292343771": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_center1000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "CastShadows": "false",
+                "Active": "false",
+                "BillboardType": "PERPENDICULAR",
+                "Color": "0.93333297967910767 0.54901999235153198 0.074509799480438232 1",
+                "Intensity": "8",
+                "WidthHeight": "0.5 0.5",
+                "Direction": "0 0 1",
+                "OcclusionScale": "1",
+                "Material": "239707",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "1"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.54179191589355469 2.7809977531433105 4.304779052734375",
+                "Rotation": "-0.50000029802322388 0.49999967217445374 -0.50000035762786865 0.49999973177909851",
+                "Scale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::LightAnimationComponent": {
+                "Active": "false",
+                "AnimationType": "SWITCHING",
+                "MinIntensity": "0",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_HEAD"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1436544381730979291",
+                "LocalPosition": "0 0 -0.0015869140625"
+            }
+        },
+        "5503097087772360155": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_center1000",
+                "Description": "supportleg_light",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "CastShadows": "false",
+                "Active": "false",
+                "Color": "1 0.33333298563957214 0 1",
+                "Intensity": "3",
+                "OcclusionScale": "0.30000001192092896",
+                "Material": "239707",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "3"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.54258537292480469 2.7809977531433105 4.304779052734375",
+                "Rotation": "0.7071068286895752 -5.6942166808831868e-15 0.70710670948028564 -3.0908616110991716e-08"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13603902829665746395",
+                "LocalPosition": "-0.00022125245595816523 -8.9645749540068209e-05 -0.00033569324295967817",
+                "LocalRotation": "-4.3159440110684955e-07 -0.7071068286895752 -4.0010431234804855e-07 -0.70710670948028564"
+            },
+            "qsf::game::LightControllerComponent": "",
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2015_supports_main_bone",
+                "LocalPosition": "-0.019999999552965164 0.0099999997764825821 2.2400000095367432",
+                "LocalRotation": "1 0 0 0"
+            }
+        },
+        "13848756385474969051": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "fm_lz03000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.76214253902435303 2.0269989967346191 2.3152866363525391",
+                "Rotation": "-0.026177167892456055 -8.3207751799818652e-10 -0.99965733289718628 -3.1775570619174687e-08",
+                "Scale": "0.89999997615814209 0.89999997615814209 0.89999997615814209"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "18446744073709551615"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11840176390759022041",
+                "LocalPosition": "-0.79841077327728271 0.38164496421813965 0.54630482196807861",
+                "LocalRotation": "-0.026177167892456055 -8.3207751799818652e-10 -0.99965733289718628 -3.1775570619174687e-08",
+                "LocalScale": "0.89999997615814209 0.89999997615814209 0.89999997615814209"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "magirus_dlk_gl_basket_equipment_attach_bone",
+                "LocalPosition": "-0.10999999940395355 -0.20999999344348907 -1.0700000524520874",
+                "LocalRotation": "0.70710700750350952 0.70710700750350952 0 0"
+            }
+        },
+        "17269717438969707995": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "fire_hose_entry000"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.017190933227539063 2.7509078979492188 4.48443603515625",
+                "Rotation": "-3.9033162124724186e-07 0.70710670948028564 -0.7071068286895752 -4.1045845478038245e-07"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11840176390759022041",
+                "LocalPosition": "-0.05345916748046875 1.1055538654327393 2.7154541015625",
+                "LocalRotation": "-3.9033162124724186e-07 0.70710670948028564 -0.7071068286895752 -4.1045845478038245e-07"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2003_ladder_attach_bone",
+                "LocalPosition": "0 0 -0.10000000149011612",
+                "LocalRotation": "0.70710700750350952 0 0 0.70710700750350952"
+            },
+            "qsf::MeshComponent": {
+                "Active": "false",
+                "Mesh": "1395530559"
+            }
+        },
+        "18163390753335180762": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "seitenmakierungsleuchte000",
+                "Description": "head"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26029"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.56719398498535156 2.7809081077575684 4.304443359375",
+                "Rotation": "1.4231854805757393e-08 -8.7833882389531936e-08 -1 -5.6624412536621094e-07"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11840176390759022041",
+                "LocalPosition": "-0.60346221923828125 1.1355540752410889 2.53546142578125",
+                "LocalRotation": "1.4231854805757393e-08 -8.7833882389531936e-08 -1 -5.6624412536621094e-07"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2003_ladder_attach_bone",
+                "LocalPosition": "-0.55000001192092896 -0.029999999329447746 0.079999998211860657",
+                "LocalRotation": "-4.3711398944878965e-08 0 0 1"
+            }
+        },
+        "8708999190202056154": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_left_type_b000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "Active": "false",
+                "Color": "0.93333297967910767 0.54901999235153198 0.074509799480438232 1",
+                "Intensity": "0",
+                "WidthHeight": "0.40000000596046448 0.89999997615814209",
+                "OcclusionScale": "0.5",
+                "Material": "78208",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "2"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0 0.67451000213623047 0.74901998043060303 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.56719398498535156 2.7809081077575684 4.304443359375",
+                "Rotation": "0.50000035762786865 -0.49999982118606567 -0.50000029802322388 0.49999967217445374",
+                "Scale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_HEAD"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "18163390753335180762",
+                "LocalRotation": "0.50000005960464478 0.5 0.5 0.50000005960464478",
+                "LocalScale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "MinIntensity": "0.029999999329447746",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true",
+                "AnimationType": "SWITCHING",
+                "Active": "false",
+                "LightMaterial": "4221",
+                "LightMaterialIsInTopParent": "true"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2015_supports_main_bone",
+                "LocalPosition": "0.004999999888241291 0.02500000037252903 2.2799999713897705",
+                "LocalRotation": "0.70710700750350952 0 0 0.70710700750350952"
+            }
+        },
+        "13117099592680766938": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_center1000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "CastShadows": "false",
+                "Active": "false",
+                "BillboardType": "PERPENDICULAR",
+                "Color": "0.93333297967910767 0.54901999235153198 0.074509799480438232 1",
+                "Intensity": "8",
+                "WidthHeight": "0.5 0.5",
+                "Direction": "0 0 1",
+                "OcclusionScale": "1",
+                "Material": "239707",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "1"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.56640052795410156 2.7809081077575684 4.304443359375",
+                "Rotation": "0.50000035762786865 -0.49999982118606567 -0.50000029802322388 0.49999967217445374",
+                "Scale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::LightAnimationComponent": {
+                "Active": "false",
+                "AnimationType": "SWITCHING",
+                "MinIntensity": "0",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_HEAD"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "8708999190202056154",
+                "LocalPosition": "0 0 -0.0015869140625"
+            }
+        },
+        "14690767969188347354": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_center1000",
+                "Description": "supportleg_light",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "CastShadows": "false",
+                "Active": "false",
+                "Color": "1 0.33333298563957214 0 1",
+                "Intensity": "3",
+                "OcclusionScale": "0.30000001192092896",
+                "Material": "239707",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "3"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.56740760803222656 2.7809977531433105 4.304779052734375",
+                "Rotation": "0.7071068286895752 0 0.70710670948028564 -3.0908609005564358e-08"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "18163390753335180762",
+                "LocalPosition": "0.00021362307597883046 8.9645727712195367e-05 -0.00033569324295967817",
+                "LocalRotation": "-0.70710670948028564 -3.6919567492077476e-07 0.7071068286895752 4.625030101124139e-07"
+            },
+            "qsf::game::LightControllerComponent": "",
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2015_supports_main_bone",
+                "LocalPosition": "-0.019999999552965164 0.0099999997764825821 2.2400000095367432",
+                "LocalRotation": "1 0 0 0"
+            }
+        },
+        "12196387371832868322": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "bos_antenne_9000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "4027"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.80528128147125244 2.4621829986572266 -2.6541383266448975"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-0.80528128147125244 2.4621829986572266 -2.6541383266448975"
+            }
+        },
+        "12774484141498194383": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395528462",
+                "Prototype": "2689064401",
+                "Name": "kfz_kennzeichen_euro_2000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.86569404602050781 0.71799850463867188 3.6055908203125"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-0.86569404602050781 0.71799850463867188 3.6055908203125",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "15880515429523544527": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395528462",
+                "Prototype": "4326853743126226858"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.0022602081298828 0.77700537443161011 3.6092910766601563"
+            },
+            "pth::LicensePlateComponent": {
+                "City": "RA",
+                "Combination": "42508",
+                "HU Plate": "HU_PLATE_NONE",
+                "State": "STATE_NONE",
+                "Execute Generation": "false",
+                "Chars": [
+                    "5415129616209435088",
+                    "3124797292974725584",
+                    "12582002605147576788",
+                    "565199034568694226",
+                    "1523107905582946769",
+                    "5644907561931790803",
+                    "2961648605139327444"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12774484141498194383"
+            }
+        },
+        "565199034568694226": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395535716",
+                "Prototype": "1721951363",
+                "Name": "fe_font00"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.91726016998291016 0.68700540065765381 3.6092908382415771"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "15880515429523544527",
+                "LocalPosition": "0.085000000894069672 0 0.090000003576278687",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            },
+            "pth::UvOffsetComponent": {
+                "U Offset": "0.220703125",
+                "V Offset": "0.72265625"
+            }
+        },
+        "1523107905582946769": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395535716",
+                "Prototype": "1721951363",
+                "Name": "fe_font00"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.86726021766662598 0.68700540065765381 3.609290599822998"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "15880515429523544527",
+                "LocalPosition": "0.13500000536441803 0 0.090000003576278687",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            },
+            "pth::UvOffsetComponent": {
+                "U Offset": "0.55078125",
+                "V Offset": "0.72265625"
+            }
+        },
+        "2961648605139327444": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395535716",
+                "Prototype": "1721951363",
+                "Name": "fe_font00"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.76726019382476807 0.68700540065765381 3.6092903614044189"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "15880515429523544527",
+                "LocalPosition": "0.23499999940395355 0 0.090000003576278687",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            },
+            "pth::UvOffsetComponent": {
+                "U Offset": "0.880859375",
+                "V Offset": "0.72265625"
+            }
+        },
+        "3124797292974725584": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395535716",
+                "Prototype": "1721951363",
+                "Name": "fe_font00"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.8472602367401123 0.77700537443161011 3.609290599822998"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "15880515429523544527",
+                "LocalPosition": "0.1550000011920929 0 0",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            },
+            "pth::UvOffsetComponent": {
+                "U Offset": "0.001953125",
+                "V Offset": "0.001953125"
+            }
+        },
+        "5415129616209435088": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395535716",
+                "Prototype": "1721951363",
+                "Name": "fe_font00"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.89726018905639648 0.77700537443161011 3.609290599822998"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "15880515429523544527",
+                "LocalPosition": "0.10499999672174454 0 0",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            },
+            "pth::UvOffsetComponent": {
+                "U Offset": "0.880859375",
+                "V Offset": "0.12109375"
+            }
+        },
+        "5644907561931790803": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395535716",
+                "Prototype": "1721951363",
+                "Name": "fe_font00"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.81726020574569702 0.68700540065765381 3.6092903614044189"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "15880515429523544527",
+                "LocalPosition": "0.18500000238418579 0 0.090000003576278687",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            },
+            "pth::UvOffsetComponent": {
+                "U Offset": "0.001953125",
+                "V Offset": "0.72265625"
+            }
+        },
+        "12582002605147576788": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395535716",
+                "Prototype": "1721951363",
+                "Name": "fe_font00"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.96726018190383911 0.68700540065765381 3.6092908382415771"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "15880515429523544527",
+                "LocalPosition": "0.035000000149011612 0 0.090000003576278687",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            },
+            "pth::UvOffsetComponent": {
+                "U Offset": "0.44140625",
+                "V Offset": "0.72265625"
+            }
+        },
+        "13042188705839218137": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "dlk_magirus_2015_supports000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.4227752685546875 1.1920928955078125e-07 3.615875244140625",
+                "Rotation": "-4.3711388286737929e-08 0 1 0"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395531061"
+            },
+            "qsf::ActionComponent": "",
+            "qsf::MeshAnimationComponent": "",
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-0.4227752685546875 1.1920928955078125e-07 3.615875244140625",
+                "LocalRotation": "-4.3711388286737929e-08 0 1 0"
+            }
+        },
+        "2793230911660391897": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_center1000",
+                "Description": "supportleg_light",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "CastShadows": "false",
+                "Active": "false",
+                "Color": "1 0.33333298563957214 0 1",
+                "Intensity": "3",
+                "OcclusionScale": "0.30000001192092896",
+                "Material": "239707",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "3"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.0729217529296875 0.52907043695449829 3.070465087890625",
+                "Rotation": "-0.70710676908493042 -3.0908616110991716e-08 0.70710676908493042 1.3510585260894325e-15"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13042188705839218137",
+                "LocalPosition": "0.650146484375 0.52907031774520874 0.54541015625",
+                "LocalRotation": "0.7071068286895752 0 0.70710670948028564 -3.0908616110991716e-08"
+            },
+            "qsf::game::LightControllerComponent": "",
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2015_supports_main_bone",
+                "LocalPosition": "-0.019999999552965164 0.0099999997764825821 2.2400000095367432",
+                "LocalRotation": "1 0 0 0"
+            }
+        },
+        "3345831175014350297": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_left_type_b000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "Active": "false",
+                "Color": "0.93333297967910767 0.54901999235153198 0.074509799480438232 1",
+                "Intensity": "0",
+                "WidthHeight": "0.40000000596046448 0.89999997615814209",
+                "OcclusionScale": "0.5",
+                "Material": "78208",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "2"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0 0.67451000213623047 0.74901998043060303 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.1129226684570313 0.54407042264938354 3.095458984375",
+                "Rotation": "-0.5 0.50000005960464478 0.50000005960464478 -0.5",
+                "Scale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_HEAD"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13042188705839218137",
+                "LocalPosition": "0.69014739990234375 0.54407030344009399 0.52041637897491455",
+                "LocalRotation": "0.50000005960464478 0.5 0.5 0.50000005960464478",
+                "LocalScale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "MinIntensity": "0.029999999329447746",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true",
+                "AnimationType": "SWITCHING",
+                "Active": "false",
+                "LightMaterial": "4221",
+                "LightMaterialIsInTopParent": "true"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "dlk_magirus_2015_supports_main_bone",
+                "LocalPosition": "0.004999999888241291 0.02500000037252903 2.2799999713897705",
+                "LocalRotation": "0.70710700750350952 0 0 0.70710700750350952"
+            }
+        },
+        "10559956556624461273": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "flare_bluelight_center1000",
+                "Description": "Flare",
+                "Tags": "light;flare"
+            },
+            "qsf::FlareComponent": {
+                "CastShadows": "false",
+                "Active": "false",
+                "BillboardType": "PERPENDICULAR",
+                "Color": "0.93333297967910767 0.54901999235153198 0.074509799480438232 1",
+                "Intensity": "8",
+                "WidthHeight": "0.30000001192092896 0.40000000596046448",
+                "Direction": "0 0 1",
+                "OcclusionScale": "1",
+                "Material": "239707",
+                "AtlasTextureRowCount": "2",
+                "AtlasTextureSliceCount": "2",
+                "AtlasTextureIndex": "1"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-1.1121292114257813 0.54407042264938354 3.095458984375",
+                "Rotation": "-0.5 0.50000005960464478 0.50000005960464478 -0.5",
+                "Scale": "0.5 0.69999998807907104 0.5"
+            },
+            "qsf::LightAnimationComponent": {
+                "Active": "false",
+                "AnimationType": "SWITCHING",
+                "MinIntensity": "0",
+                "CustomAnimationValues": "1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000",
+                "InvisibleAnimation": "true"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_HEAD"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "3345831175014350297",
+                "LocalPosition": "0 0 -0.0015869140625"
+            }
+        },
+        "13486753267340312034": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "atego_01_short_codriver000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.0788415670394897 0.87603390216827393 -3.6202304363250732"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "1.0788415670394897 0.87603390216827393 -3.6202304363250732"
+            },
+            "em5::DoorComponent": {
+                "DoorType": "DOORTYPE_CODRIVER",
+                "OpeningAnimation": "18446744073709551615",
+                "ClosingAnimation": "18446744073709551615",
+                "CuttingAnimation": "18446744073709551615",
+                "RotationAngle": "75",
+                "OpeningAnimationLength": "1000000",
+                "ClosingAnimationLength": "1000000"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395531981",
+                "Materials": [
+                    "3082010029"
+                ]
+            }
+        },
+        "13857609687461559778": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "magirus_dlk_2003_body000",
+                "Tags": "ghost"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.00095367431640625 6.3180923461914063e-06 -0.27596282958984375",
+                "Rotation": "-1 0 8.7422776573475858e-08 0"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "0.00095367431640625 6.3180923461914063e-06 -0.27596282958984375",
+                "LocalRotation": "-1 0 8.7422776573475858e-08 0"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395530576",
+                "Materials": [
+                    "3082010019"
+                ]
+            }
+        },
+        "13984284589601357267": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "lkw_radaufhaengung_vorne000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "1395532532"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 0.51099997758865356 -2.532989501953125"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "0 0.51099997758865356 -2.532989501953125"
+            }
+        },
+        "14113499045773737430": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "umfeld000",
+                "Description": "umfeld",
+                "Tags": "light"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.61960798501968384 0.93333297967910767 1",
+                "DiffuseIntensity": "5",
+                "DiffuseTemperature": "10000",
+                "Texture": "78208",
+                "Range": "10",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "101"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.17413330078125 1.3440026044845581 1.88214111328125",
+                "Rotation": "-0.63003671169281006 0.32102003693580627 0.63003665208816528 0.32101985812187195",
+                "Scale": "1.3410500288009644 1.0693634748458862 1.1774399280548096"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "1395528703",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_DIRECT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "1.17413330078125 1.3440026044845581 1.88214111328125",
+                "LocalRotation": "-0.63003671169281006 0.32102003693580627 0.63003665208816528 0.32101985812187195",
+                "LocalScale": "1.3410500288009644 1.0693634748458862 1.1774399280548096"
+            }
+        },
+        "14403909663289015775": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "debug_box000"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0 0.66666698455810547 0 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.1229400634765625 -2.2873282432556152e-06 4.098785400390625"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "1.1229400634765625 -2.2873282432556152e-06 4.098785400390625"
+            }
+        },
+        "14440446524750262345": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "713693732038524710"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.70266842842102051 1.4230509996414185 3.6003012657165527",
+                "Rotation": "-6.2584877014160156e-06 0 1 0",
+                "Scale": "1 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-0.70266842842102051 1.4230509996414185 3.6003012657165527",
+                "LocalRotation": "-6.2584877014160156e-06 0 1 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "9551927646229852233": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "14242891854614118183"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.70266819000244141 1.4230509996414185 3.6170554161071777"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "14440446524750262345"
+            }
+        },
+        "9447453198114844745": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "5394456504056430375"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.70276010036468506 1.416077733039856 3.5893759727478027"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9551927646229852233"
+            }
+        },
+        "13427276345352876105": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "15268536079327969063"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.70266819000244141 1.4230509996414185 3.6178488731384277"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9551927646229852233"
+            }
+        },
+        "15465433267404570078": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "kupplung_eingang000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.035033941268920898 2.8556334972381592 3.8507993221282959",
+                "Rotation": "-8.9406967163085938e-08 0 1 0",
+                "Scale": "1 1.0014532804489136 1"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "RenderQueueId": "90"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-0.035033941268920898 2.8556334972381592 3.8507993221282959",
+                "LocalRotation": "-8.9406967163085938e-08 0 1 0",
+                "LocalScale": "1 1.0014532804489136 1"
+            },
+            "qsf::MeshComponent": {
+                "CastShadows": "false",
+                "Active": "false",
+                "Mesh": "1395530559"
+            },
+            "wmp::CouplingOnDLKComponent": {
+                "FireHoseEntry": "17269717438969707995",
+                "FireHoseExit": "1393537018770259418",
+                "Visual Object": "7143647528236907994"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "magirus_dlk_gl_base_attach__bone",
+                "LocalPosition": "0 -0 0.25999999046325684",
+                "LocalRotation": "-4.3711398944878965e-08 0 1 0"
+            }
+        },
+        "15501258633297559001": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "atego_reifen_vorne000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "1.1446380615234375 0.51099997758865356 -2.5333251953125",
+                "Rotation": "-4.3711388286737929e-08 0 -1 0",
+                "Scale": "0.87000006437301636 0.87000006437301636 0.87000006437301636"
+            },
+            "qsf::compositing::SkinnableMeshComponent": {
+                "Mesh": "1395537635",
+                "TintPalette": "1395537642",
+                "TintPaletteIndex": "2"
+            },
+            "em5::WheelComponent": {
+                "WheelType": "WHEELTYPE_FRONT_RIGHT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "1.1446380615234375 0.51099997758865356 -2.5333251953125",
+                "LocalRotation": "-4.3711388286737929e-08 0 -1 0",
+                "LocalScale": "0.87000006437301636 0.87000006437301636 0.87000006437301636"
+            }
+        },
+        "17122214715574153288": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "713693732038524710"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.68768811225891113 1.4229953289031982 3.6002144813537598",
+                "Rotation": "-6.2584877014160156e-06 0 1 0",
+                "Scale": "1 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "0.68768811225891113 1.4229953289031982 3.6002144813537598",
+                "LocalRotation": "-6.2584877014160156e-06 0 1 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "16039202432299003976": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "14242891854614118183"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.68768835067749023 1.4229953289031982 3.6169686317443848"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "17122214715574153288"
+            }
+        },
+        "1425799073511993417": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "15268536079327969063"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.68768835067749023 1.4229953289031982 3.6177620887756348"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "16039202432299003976"
+            }
+        },
+        "5126759434558861385": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395537561",
+                "Prototype": "5394456504056430375"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.68759644031524658 1.4160220623016357 3.5892891883850098"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "16039202432299003976"
+            }
+        },
+        "17681781665008736670": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395528440",
+                "Prototype": "3326761018",
+                "Name": "kfz_kennzeichen_euro_1000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.0056934356689453125 0.7389984130859375 -3.80340576171875",
+                "Rotation": "-4.3711388286737929e-08 0 -1 0"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "-0.0056934356689453125 0.7389984130859375 -3.80340576171875",
+                "LocalRotation": "-4.3711388286737929e-08 0 -1 0",
+                "LocalScale": "1 1 1"
+            }
+        },
+        "5860215191603272095": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395528440",
+                "Prototype": "253260001096483684"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.18115042150020599 0.74852019548416138 -3.8069496154785156"
+            },
+            "pth::LicensePlateComponent": {
+                "City": "RA",
+                "Combination": "42508",
+                "HU Plate": "HU_PLATE_NONE",
+                "State": "STATE_NONE",
+                "Execute Generation": "false",
+                "Chars": [
+                    "2836146843251661217",
+                    "10638073584907213216",
+                    "13311190977157552548",
+                    "9922744488245877151",
+                    "4860418170271062433",
+                    "6653514909807827362",
+                    "5992066418392979874"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "17681781665008736670"
+            }
+        },
+        "2836146843251661217": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395535716",
+                "Prototype": "1721951363",
+                "Name": "fe_font00"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.14615041017532349 0.74852019548416138 -3.8069496154785156"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "5860215191603272095",
+                "LocalPosition": "0.035000000149011612 0 0",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            },
+            "pth::UvOffsetComponent": {
+                "U Offset": "0.880859375",
+                "V Offset": "0.12109375"
+            }
+        },
+        "4860418170271062433": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395535716",
+                "Prototype": "1721951363",
+                "Name": "fe_font00"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.10384969413280487 0.74852019548416138 -3.8069496154785156"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "5860215191603272095",
+                "LocalPosition": "0.28499999642372131 0 0",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            },
+            "pth::UvOffsetComponent": {
+                "U Offset": "0.55078125",
+                "V Offset": "0.72265625"
+            }
+        },
+        "5992066418392979874": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395535716",
+                "Prototype": "1721951363",
+                "Name": "fe_font00"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.20384962856769562 0.74852019548416138 -3.8069496154785156"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "5860215191603272095",
+                "LocalPosition": "0.38499999046325684 0 0",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            },
+            "pth::UvOffsetComponent": {
+                "U Offset": "0.880859375",
+                "V Offset": "0.72265625"
+            }
+        },
+        "6653514909807827362": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395535716",
+                "Prototype": "1721951363",
+                "Name": "fe_font00"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.15384970605373383 0.74852019548416138 -3.8069496154785156"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "5860215191603272095",
+                "LocalPosition": "0.33500000834465027 0 0",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            },
+            "pth::UvOffsetComponent": {
+                "U Offset": "0.001953125",
+                "V Offset": "0.72265625"
+            }
+        },
+        "9922744488245877151": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395535716",
+                "Prototype": "1721951363",
+                "Name": "fe_font00"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.053849637508392334 0.74852019548416138 -3.8069496154785156"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "5860215191603272095",
+                "LocalPosition": "0.23499999940395355 0 0",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            },
+            "pth::UvOffsetComponent": {
+                "U Offset": "0.220703125",
+                "V Offset": "0.72265625"
+            }
+        },
+        "10638073584907213216": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395535716",
+                "Prototype": "1721951363",
+                "Name": "fe_font00"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.096150405704975128 0.74852019548416138 -3.8069496154785156"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "5860215191603272095",
+                "LocalPosition": "0.085000000894069672 0 0",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            },
+            "pth::UvOffsetComponent": {
+                "U Offset": "0.001953125",
+                "V Offset": "0.001953125"
+            }
+        },
+        "13311190977157552548": {
+            "qsf::MetadataComponent": {
+                "Prefab": "1395535716",
+                "Prototype": "1721951363",
+                "Name": "fe_font00"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.0038496106863021851 0.74852019548416138 -3.8069496154785156"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "5860215191603272095",
+                "LocalPosition": "0.18500000238418579 0 0",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "1 1 1"
+            },
+            "pth::UvOffsetComponent": {
+                "U Offset": "0.44140625",
+                "V Offset": "0.72265625"
+            }
+        },
+        "17790470537003695583": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "dlk_magirus_wpt_light_left000",
+                "Description": "blinker"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "1395531931"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.00095369841437786818 6.3180923461914063e-06 -0.27596282958984375",
+                "Rotation": "-1 0 8.7422776573475858e-08 0"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10953794131270860243",
+                "LocalPosition": "0.00095369841437786818 6.3180923461914063e-06 -0.27596282958984375",
+                "LocalRotation": "-1 0 8.7422776573475858e-08 0"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "1395531994"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "MinIntensity": "0",
+                "CustomAnimationValues": "0.900000 0.800000 0.700000 0.600000 0.500000 0.400000 0.300000 0.200000 0.100000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.100000 0.200000 0.300000 0.400000 0.500000 0.600000 0.700000 0.800000 0.900000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000",
+                "InvisibleAnimation": "true",
+                "AnimationType": "SWITCHING",
+                "Active": "false",
+                "LightMaterial": "1395531994"
+            }
+        },
+        "4672689758368464351": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "blinker000",
+                "Description": "blinker",
+                "Tags": "light"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "1 0.58431398868560791 0.078431397676467896",
+                "DiffuseIntensity": "0.5",
+                "Texture": "18446744073709551615",
+                "Range": "8",
+                "SpotlightOuterAngle": "75"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.14276883006095886 6.3180923461914063e-06 -0.25478366017341614",
+                "Rotation": "1.3113415775478643e-07 0 1 -0"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "17790470537003695583",
+                "LocalPosition": "-0.1437225341796875 0 0.02117919921875",
+                "LocalRotation": "-4.3711388286737929e-08 0 -1 0"
+            },
+            "qsf::compositing::MaterialLightAnimationComponent": {
+                "MinIntensity": "0",
+                "CustomAnimationValues": "0.900000 0.800000 0.700000 0.600000 0.500000 0.400000 0.300000 0.200000 0.100000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.100000 0.200000 0.300000 0.400000 0.500000 0.600000 0.700000 0.800000 0.900000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000",
+                "InvisibleAnimation": "true",
+                "AnimationType": "SWITCHING",
+                "Active": "false",
+                "LightMaterial": "1395531994",
+                "LightMaterialIsInTopParent": "true"
+            }
+        },
+        "10916760316199599583": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "brakelight000",
+                "Description": "Point light",
+                "Tags": "light"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "1 0 0",
+                "DiffuseIntensity": "0.5",
+                "Texture": "18446744073709551615",
+                "Range": "8",
+                "SpotlightOuterAngle": "75"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.062751755118370056 -0.00045144557952880859 -0.25435638427734375",
+                "Rotation": "1.1722509896117117e-07 0 1 -0"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightPosition": "LIGHTPOSITION_BRAKE",
+                "LightMaterial": "1395531995",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "17790470537003695583",
+                "LocalPosition": "-0.0637054443359375 -0.000457763671875 0.0216064453125",
+                "LocalRotation": "-2.9802322387695313e-08 0 -1 0"
+            }
+        },
+        "11379711916162711007": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "headlight000",
+                "Description": "head",
+                "Tags": "light"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.54509800672531128 0 0",
+                "DiffuseIntensity": "0.5",
+                "Texture": "18446744073709551615",
+                "Range": "7",
+                "SpotlightOuterAngle": "75"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.0059433188289403915 6.3180923461914063e-06 -0.25392913818359375",
+                "Rotation": "1.1722509896117117e-07 0 1 -0"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "1395531993",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "17790470537003695583",
+                "LocalPosition": "0.0049896240234375 0 0.02203369140625",
+                "LocalRotation": "-2.9802322387695313e-08 0 -1 0"
+            }
+        }
+    }
+}
