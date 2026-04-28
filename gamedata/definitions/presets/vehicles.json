@@ -1,0 +1,265 @@
+{
+	"test": {
+		"tags": "",
+		"commands": [
+			
+		]
+	},
+	"stadtreinigung": {
+		"tags": "vehicle;tech",
+		"commands": [
+			"omp::ExitVehicleCommand",
+			"omp::MoveCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::TurnToPointerCommand"
+		]
+	},
+	"stadtreinigung-matrix": {
+		"tags": "vehicle;tech",
+		"commands": [
+			"aps::NissenWenipolBoardAchtung",
+			"aps::NissenWenipolBoardOff",
+			"aps::NissenWenipolBoardSpeed",
+			"aps::NissenWenipolBoardUnfall",
+			"aps::ShowNissenWenipolGui",
+			"omp::ExitVehicleCommand",
+			"omp::MoveCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::TurnToPointerCommand"
+		]
+	},
+	"polizeihelikopter": {
+		"tags": "vehicle;police;helicopter",
+		"commands": [
+			"aps::ExitVehicleCommand",
+			"aps::LandHelicopterCommand",
+			"aps::MoveCommand",
+			"em5::HelicopterFollowCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::TurnToPointerCommand"
+		]
+	},
+	"polizeihelikopter-winde": {
+		"tags": "vehicle;police;helicopter",
+		"commands": [
+			"aps::ExitVehicleCommand",
+			"aps::LandHelicopterCommand",
+			"aps::MoveCommand",
+			"em5::HelicopterFollowCommand",
+			"em5::PickupPersonByFlyingHeliCommand",
+			"em5::PlacePersonByFlyingHeliCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::TurnToPointerCommand"
+		]
+	},
+	"thw-hund": {
+		"tags": "vehicle;tech;container;dog",
+		"commands": [
+			"omp::ExitVehicleCommand",
+			"omp::MoveCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::TurnToPointerCommand",
+			"tnt::AttachTrailerCommand",
+			"tnt::DetachTrailerCommand"
+		]
+	},
+	"kran": {
+		"tags": "vehicle;tech;kran",
+		"commands": [
+			"avc::DLKUndeployCommand",
+			"avc::DropOffWithCrane",
+			"avc::LiftUpWithCrane",
+			"omp::ExitVehicleCommand",
+			"omp::MoveCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::TurnToPointerCommand"
+		]
+	},
+	"bestatter": {
+		"tags": "vehicle;tech;bestatter",
+		"commands": [
+			"omp::ExitVehicleCommand",
+			"omp::MoveCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::TurnToPointerCommand",
+			"pms::ExitVehicleAndPickupPersonMorticianCommand",
+			"pms::GetOrSelectStretcherFromCrewCarCommand"
+		]
+	},
+	"asf": {
+		"tags": "vehicle;tech;asf",
+		"commands": [
+			"omp::MoveCommand",
+			"omp::PickupVehicleByTowcarCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::TurnToPointerCommand"
+		]
+	},
+	"bfu": {
+		"tags": "vehicle;police;nosnow",
+		"commands": [
+			"omp::ExitVehicleCommand",
+			"omp::MoveCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::TurnToPointerCommand"
+		]
+	},
+	"lna": {
+		"tags": "vehicle;rescue",
+		"commands": [
+			"csp::AddControlledVehiclesCommand",
+			"csp::SendAllUnitsHomeCommand",
+			"omp::ExitVehicleCommand",
+			"omp::MoveCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::TurnToPointerCommand",
+			"pms::ExitVehicleAndTreatPersonCommand",
+			"pth::CreateNewRTWEventCommand",
+			"wmp::SelectSpecialPersonCommand"
+		]
+	},
+	"nef": {
+		"tags": "vehicle;rescue",
+		"commands": [
+			"omp::ExitVehicleCommand",
+			"omp::MoveCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::TurnToPointerCommand",
+			"pms::ExitVehicleAndTreatPersonCommand",
+			"wmp::SelectDoctorPersonCommand"
+		]
+	},
+	"ktw": {
+		"tags": "vehicle;rescue",
+		"commands": [
+			"omp::ExitVehicleCommand",
+			"omp::MoveCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::ReturnToBaseWithSosiOverrideCommand",
+			"omp::TurnToPointerCommand",
+			"pms::ExitVehicleAndPickupPersonCommand",
+			"pms::ExitVehicleAndPickupPersonFromTentCommand",
+			"pms::ExitVehicleAndPickupPersonFromVehicleCommand",
+			"pms::GetOrSelectStretcherFromCrewCarCommand"
+		]
+	},
+	"rtw": {
+		"tags": "vehicle;rescue",
+		"commands": [
+			"omp::ExitVehicleCommand",
+			"omp::MoveCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::ReturnToBaseWithSosiOverrideCommand",
+			"omp::TurnToPointerCommand",
+			"pms::ExitVehicleAndPickupPersonCommand",
+			"pms::ExitVehicleAndPickupPersonFromTentCommand",
+			"pms::ExitVehicleAndPickupPersonFromVehicleCommand",
+			"pms::ExitVehicleAndTreatPersonCommand",
+			"pms::GetOrSelectStretcherFromCrewCarCommand",
+			"pms::GetOrSelectMedicBagFromCrewCarCommand"
+		]
+	},
+	"naw-grtw": {
+		"tags": "vehicle;rescue;grtw",
+		"commands": [
+			"omp::ExitVehicleCommand",
+			"omp::MoveCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::ReturnToBaseWithSosiOverrideCommand",
+			"omp::TurnToPointerCommand",
+			"pms::ExitVehicleAndPickupPersonCommand",
+			"pms::ExitVehicleAndPickupPersonFromTentCommand",
+			"pms::ExitVehicleAndPickupPersonFromVehicleCommand",
+			"pms::ExitVehicleAndTreatPersonCommand",
+			"pms::GetOrSelectStretcherFromCrewCarCommand",
+			"pms::GetOrSelectMedicBagFromCrewCarCommand",
+			"wmp::SelectDoctorPersonCommand"
+		]
+	},
+	"naw": {
+		"tags": "vehicle;rescue",
+		"commands": [
+			"omp::ExitVehicleCommand",
+			"omp::MoveCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::ReturnToBaseWithSosiOverrideCommand",
+			"omp::TurnToPointerCommand",
+			"pms::ExitVehicleAndPickupPersonCommand",
+			"pms::ExitVehicleAndPickupPersonFromTentCommand",
+			"pms::ExitVehicleAndPickupPersonFromVehicleCommand",
+			"pms::ExitVehicleAndTreatPersonCommand",
+			"pms::GetOrSelectStretcherFromCrewCarCommand",
+			"pms::GetOrSelectMedicBagFromCrewCarCommand",
+			"wmp::SelectDoctorPersonCommand"
+		]
+	},
+	"irtw": {
+		"tags": "vehicle;rescue",
+		"commands": [
+			"omp::ExitVehicleCommand",
+			"omp::MoveCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::ReturnToBaseWithSosiOverrideCommand",
+			"omp::TurnToPointerCommand",
+			"pms::ExitVehicleAndPickupPersonCommand",
+			"pms::ExitVehicleAndPickupPersonFromTentCommand",
+			"pms::ExitVehicleAndPickupPersonFromVehicleCommand",
+			"pms::ExitVehicleAndTreatPersonCommand",
+			"pms::GetOrSelectStretcherFromCrewCarCommand",
+			"pms::GetOrSelectMedicBagFromCrewCarCommand"
+		]
+	},
+	"itw": {
+		"tags": "vehicle;rescue;itw",
+		"commands": [
+			"omp::ExitVehicleCommand",
+			"omp::MoveCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::ReturnToBaseWithSosiOverrideCommand",
+			"omp::TurnToPointerCommand",
+			"pms::ExitVehicleAndPickupPersonCommand",
+			"pms::ExitVehicleAndPickupPersonFromTentCommand",
+			"pms::ExitVehicleAndPickupPersonFromVehicleCommand",
+			"pms::ExitVehicleAndTreatPersonCommand",
+			"pms::GetOrSelectStretcherFromCrewCarCommand",
+			"pms::GetOrSelectMedicBagFromCrewCarCommand",
+			"wmp::SelectDoctorPersonCommand"
+		]
+	},
+	"btcombi": {
+		"tags": "vehicle;rescue",
+		"commands": [
+			"omp::ExitVehicleCommand",
+			"omp::MoveCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::TurnToPointerCommand"
+		]
+	},
+	"gwsan": {
+		"tags": "vehicle;rescue",
+		"commands": [
+			"omp::ExitVehicleCommand",
+			"omp::MoveCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::TurnToPointerCommand",
+			"pms::RemoveTent",
+			"pms::SetASBTentCommand"
+		]
+	},
+	"rettungshelikopter": {
+		"tags": "vehicle;rescue;ghost",
+		"commands": [
+			"aps::ExitVehicleCommand",
+			"aps::LandHelicopterCommand",
+			"aps::MoveCommand",
+			"omp::ReturnToBaseCommand",
+			"omp::TurnToPointerCommand",
+			"pms::ExitVehicleAndPickupPersonCommand",
+			"pms::ExitVehicleAndPickupPersonFromTentCommand",
+			"pms::ExitVehicleAndPickupPersonFromVehicleCommand",
+			"pms::ExitVehicleAndTreatPersonCommand",
+			"pms::GetOrSelectStretcherFromCrewCarCommand",
+			"pms::GetOrSelectMedicBagFromCrewCarCommand"
+		]
+	}
+}

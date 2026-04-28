@@ -9515,69 +9515,69 @@
 		</message>
 		<message>
 			<source>core_lnz_pol1_1</source>
-			<translation>Police 1/1</translation>
+			<translation>Politi 1/1</translation>
 		</message>
 		<message>
 			<source>core_lnz_pol1_2</source>
-			<translation>Police 1/2</translation>
+			<translation>Politi 1/2</translation>
 		</message>
 		<message>
 			<source>core_lnz_pol1_3</source>
-			<translation>Police 1/3</translation>
+			<translation>Politi 1/3</translation>
 		</message>
 		<message>
 			<source>core_lnz_pol1_4</source>
-			<translation>Police 1/4</translation>
+			<translation>Politi 1/4</translation>
 		</message>
 		<message>
 			<source>core_lnz_pol1_5</source>
-			<translation>Police 1/5</translation>
+			<translation>Politi 1/5</translation>
 		</message>
 		<message>
 			<source>core_lnz_pol1_6</source>
-			<translation>Police 1/6</translation>
+			<translation>Politi 1/6</translation>
 		</message><message>
 			<source>core_lnz_pol1_7</source>
-			<translation>Police 1/7</translation>
+			<translation>Politi 1/7</translation>
 		</message><message>
 			<source>core_lnz_pol2_1</source>
-			<translation>Police 3/1</translation>
+			<translation>Politi 3/1</translation>
 		</message>
 		<message>
 			<source>core_lnz_pol2_2</source>
-			<translation>Police 3/2</translation>
+			<translation>Politi 3/2</translation>
 		</message>
 		<message>
 			<source>core_lnz_pol2_3</source>
-			<translation>Police 3/3</translation>
+			<translation>Politi 3/3</translation>
 		</message>
 		<message>
 			<source>core_lnz_pol3_1</source>
-			<translation>Police 2/1</translation>
+			<translation>Politi 2/1</translation>
 		</message>
 		<message>
 			<source>core_lnz_pol3_2</source>
-			<translation>Police 2/2</translation>
+			<translation>Politi 2/2</translation>
 		</message>
 		<message>
 			<source>core_lnz_pol3_3</source>
-			<translation>Police 2/3</translation>
+			<translation>Politi 2/3</translation>
 		</message>
 		<message>
 			<source>core_lnz_pol1_sup_1</source>
-			<translation>Police 1/8</translation>
+			<translation>Politi 1/8</translation>
 		</message>
 		<message>
 			<source>core_lnz_pol1_sup_2</source>
-			<translation>Police 1/9</translation>
+			<translation>Politi 1/9</translation>
 		</message>
 		<message>
 			<source>core_lnz_pol2_sup_3</source>
-			<translation>Police 3/4</translation>
+			<translation>Politi 3/4</translation>
 		</message>
 		<message>
 			<source>core_lnz_pol1_dog_1</source>
-			<translation>Police Dog</translation>
+			<translation>Politihund</translation>
 		</message>
 		<message>
 			<source>core_lnz_naw_9_1</source>
@@ -9797,7 +9797,7 @@
 		</message>
 		<message>
 			<source>core_lnz_mtw_56</source>
-			<translation>Slukkeenhet O-5.6</translation>
+			<translation>Fremskutt Enhet O-5.6</translation>
 		</message>
 		<message>
 			<source>core_lnz_asf_96</source>
@@ -9865,7 +9865,7 @@
 		</message>
 		<message>
 			<source>core_lnz_mtw_75</source>
-			<translation>Slukkeenhet O-7.5</translation>
+			<translation>Fremskutt Enhet O-7.5</translation>
 		</message>
 		<message>
 			<source>core_lnz_kef_78</source>
@@ -9901,7 +9901,7 @@
 		</message>
 		<message>
 			<source>core_lnz_mtw_26</source>
-			<translation>Slukkeenhet O-2.6</translation>
+			<translation>Fremskutt Enhet O-2.6</translation>
 		</message>
 		<message>
 			<source>core_lnz_rw_27</source>
@@ -9949,7 +9949,7 @@
 		</message>
 		<message>
 			<source>core_lnz_mtw_16</source>
-			<translation>Slukkeenhet O-1.6</translation>
+			<translation>Fremskutt Enhet O-1.6</translation>
 		</message>
 		<message>
 			<source>core_lnz_rvr_1</source>
