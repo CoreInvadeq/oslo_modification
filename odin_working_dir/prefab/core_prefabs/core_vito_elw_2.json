@@ -9,15 +9,15 @@
             "qsf::MetadataComponent": {
                 "Prefab": "18446744073709551615",
                 "Name": "core_vito_elw_2",
-                "Tags": "vehicle;firefighters;nosnow"
+                "Tags": "vehicle;firefighters;container;ghost"
             },
             "qsf::game::SelectableComponent": "",
             "em5::RoadVehiclePlacementComponent": "",
             "em5::RoadVehicleComponent": {
                 "VehicleDoors": [
-                    "15410238909960810778",
                     "11392666234301313312",
-                    "10217883221603774745"
+                    "10217883221603774745",
+                    "15410238909960810778"
                 ],
                 "Resistances": "0.000000,0.000000",
                 "MainDoorType": "DOORTYPE_DRIVER",
@@ -97,7 +97,8 @@
                     "csp::AddControlledVehiclesCommand",
                     "csp::SendAllUnitsHomeCommand",
                     "csp::AbspannenCommand",
-                    "wmp::SelectLeaderPersonCommand"
+                    "wmp::SelectLeaderPersonCommand",
+                    "csp::AreaExtinguishCommand"
                 ],
                 "UnitType": "-1",
                 "PlayerId": "-1"
@@ -134,9 +135,16 @@
                 "Effect Range": "50",
                 "Effect Power": "0"
             },
-            "qsf::GameLogicComponent": "",
+            "qsf::GameLogicComponent": {
+                "GameLogicArray": [
+                    {
+                        "LogicTypeId": "em5::CommandoCarLogic"
+                    }
+                ]
+            },
             "csp::ControlCarComponent": {
-                "Vehicle Type": "COMMAND_VEHICLE"
+                "Vehicle Type": "COMMAND_CONTAINER",
+                "Command Unit Active": "true"
             },
             "pth::VehicleSirenGuiComponent": {
                 "MainAudioAsset": "3947084522",
@@ -175,308 +183,6 @@
                 "LocalPosition": "-0.87802028656005859 0.88315564393997192 2.0078125"
             }
         },
-        "2565813197485240626": {
-            "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "kfz_kennzeichen_euro_1000"
-            },
-            "qsf::TransformComponent": {
-                "Position": "-0.0089986799284815788 0.52250254154205322 -2.7797257900238037",
-                "Rotation": "-4.3711388286737929e-08 0 -1 0",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
-            },
-            "qsf::compositing::SkinnableMeshComponent": {
-                "Mesh": "1395528439"
-            },
-            "qsf::LinkComponent": {
-                "ParentId": "15254224794164261127",
-                "LocalPosition": "-0.0081806182861328125 0.47500228881835938 -2.5270233154296875",
-                "LocalRotation": "-4.3711388286737929e-08 0 -1 0"
-            }
-        },
-        "4639750585717748018": {
-            "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "debug_box000",
-                "Description": "Debug box with the dimension 1x1x1 meter",
-                "Tags": "debug"
-            },
-            "qsf::DebugBoxComponent": {
-                "Color": "0.75 0.75 0.75 1",
-                "ShowDirection": "true",
-                "CenterAtPivot": "true",
-                "RenderQueueId": "90"
-            },
-            "qsf::TransformComponent": {
-                "Position": "0.1965295672416687 0.53297650814056396 -2.7836239337921143",
-                "Rotation": "-3.0908598347423322e-08 -3.0908676507124255e-08 -0.7071068286895752 0.7071068286895752",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
-            },
-            "pth::LicensePlateComponent": {
-                "Plate Type": "TYPE_CAR",
-                "City": "MK",
-                "Combination": "FW 2008",
-                "HU Plate": "HU_PLATE_ORANGE_2025",
-                "HU Termination": "DATE_JUNE",
-                "State": "STATE_NRW",
-                "Chars": [
-                    "16165516420860211508",
-                    "9440180913357844789",
-                    "2306991665000083763",
-                    "4770186917136167221",
-                    "18352942032057397556",
-                    "11741225799856812339",
-                    "5821627780581683508",
-                    "9760886628156305716",
-                    "6861748269084978",
-                    "1098885688975028531"
-                ]
-            },
-            "qsf::LinkComponent": {
-                "ParentId": "2565813197485240626",
-                "LocalPosition": "-0.18684385716915131 0.0095218103379011154 0.003543853759765625",
-                "LocalRotation": "0.7071068286895752 0.7071068286895752 2.0097183127203676e-14 5.6843418860808015e-14"
-            }
-        },
-        "6861748269084978": {
-            "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "fe_font000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "RenderingDistanceFactor": "2",
-                "Mesh": "1395535735"
-            },
-            "qsf::TransformComponent": {
-                "Position": "-0.20772057771682739 0.53297650814056396 -2.7836239337921143",
-                "Rotation": "-3.0908598347423322e-08 -3.0908676507124255e-08 -0.7071068286895752 0.7071068286895752",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
-            },
-            "qsf::LinkComponent": {
-                "ParentId": "4639750585717748018",
-                "LocalPosition": "0.36750000715255737 0 0"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.001953125",
-                "V Offset": "0.72265625"
-            }
-        },
-        "1098885688975028531": {
-            "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "fe_font000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "RenderingDistanceFactor": "2",
-                "Mesh": "1395535735"
-            },
-            "qsf::TransformComponent": {
-                "Position": "-0.26272058486938477 0.53297650814056396 -2.7836239337921143",
-                "Rotation": "-3.0908598347423322e-08 -3.0908676507124255e-08 -0.7071068286895752 0.7071068286895752",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
-            },
-            "qsf::LinkComponent": {
-                "ParentId": "4639750585717748018",
-                "LocalPosition": "0.41750001907348633 0 0"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.880859375",
-                "V Offset": "0.72265625"
-            }
-        },
-        "2306991665000083763": {
-            "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "kfz_labels000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "Mesh": "1395535746"
-            },
-            "qsf::TransformComponent": {
-                "Position": "0.08652951568365097 0.54837650060653687 -2.7836239337921143",
-                "Rotation": "-3.0908598347423322e-08 -3.0908676507124255e-08 -0.7071068286895752 0.7071068286895752",
-                "Scale": "0.49500000476837158 0.49500000476837158 0.49500000476837158"
-            },
-            "qsf::LinkComponent": {
-                "ParentId": "4639750585717748018",
-                "LocalPosition": "0.10000000149011612 0 -0.014000000432133675",
-                "LocalScale": "0.44999998807907104 0.44999998807907104 0.44999998807907104"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.111328125",
-                "V Offset": "0.2421875"
-            }
-        },
-        "4770186917136167221": {
-            "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "kfz_labels000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "Mesh": "1395535746"
-            },
-            "qsf::TransformComponent": {
-                "Position": "0.08652951568365097 0.50657647848129272 -2.7836239337921143",
-                "Rotation": "-3.0908598347423322e-08 -3.0908676507124255e-08 -0.7071068286895752 0.7071068286895752",
-                "Scale": "0.6600000262260437 0.6600000262260437 0.6600000262260437"
-            },
-            "qsf::LinkComponent": {
-                "ParentId": "4639750585717748018",
-                "LocalPosition": "0.10000000149011612 0 0.024000000208616257",
-                "LocalScale": "0.60000002384185791 0.60000002384185791 0.60000002384185791"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.111328125",
-                "V Offset": "0.12109375"
-            }
-        },
-        "5821627780581683508": {
-            "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "fe_font000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "RenderingDistanceFactor": "2",
-                "Mesh": "1395535735"
-            },
-            "qsf::TransformComponent": {
-                "Position": "-0.097720503807067871 0.53297650814056396 -2.7836239337921143",
-                "Rotation": "-3.0908598347423322e-08 -3.0908676507124255e-08 -0.7071068286895752 0.7071068286895752",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
-            },
-            "qsf::LinkComponent": {
-                "ParentId": "4639750585717748018",
-                "LocalPosition": "0.26750001311302185 0 0"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.220703125",
-                "V Offset": "0.72265625"
-            }
-        },
-        "9440180913357844789": {
-            "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "fe_font000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "RenderingDistanceFactor": "2",
-                "Mesh": "1395535735"
-            },
-            "qsf::TransformComponent": {
-                "Position": "0.14152954518795013 0.53297650814056396 -2.7836239337921143",
-                "Rotation": "-3.0908598347423322e-08 -3.0908676507124255e-08 -0.7071068286895752 0.7071068286895752",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
-            },
-            "qsf::LinkComponent": {
-                "ParentId": "4639750585717748018",
-                "LocalPosition": "0.05000000074505806 0 0"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.111328125",
-                "V Offset": "0.12109375"
-            }
-        },
-        "9760886628156305716": {
-            "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "fe_font000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "RenderingDistanceFactor": "2",
-                "Mesh": "1395535735"
-            },
-            "qsf::TransformComponent": {
-                "Position": "-0.15272048115730286 0.53297650814056396 -2.7836239337921143",
-                "Rotation": "-3.0908598347423322e-08 -3.0908676507124255e-08 -0.7071068286895752 0.7071068286895752",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
-            },
-            "qsf::LinkComponent": {
-                "ParentId": "4639750585717748018",
-                "LocalPosition": "0.31749999523162842 0 0"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.001953125",
-                "V Offset": "0.72265625"
-            }
-        },
-        "11741225799856812339": {
-            "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "fe_font000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "RenderingDistanceFactor": "2",
-                "Mesh": "1395535735"
-            },
-            "qsf::TransformComponent": {
-                "Position": "-0.02347053587436676 0.53297650814056396 -2.7836239337921143",
-                "Rotation": "-3.0908598347423322e-08 -3.0908676507124255e-08 -0.7071068286895752 0.7071068286895752",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
-            },
-            "qsf::LinkComponent": {
-                "ParentId": "4639750585717748018",
-                "LocalPosition": "0.20000000298023224 0 0"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.44140625",
-                "V Offset": "0.2421875"
-            }
-        },
-        "16165516420860211508": {
-            "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "fe_font000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "RenderingDistanceFactor": "2",
-                "Mesh": "1395535735"
-            },
-            "qsf::TransformComponent": {
-                "Position": "0.1965295672416687 0.53297650814056396 -2.7836239337921143",
-                "Rotation": "-3.0908598347423322e-08 -3.0908676507124255e-08 -0.7071068286895752 0.7071068286895752",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
-            },
-            "qsf::LinkComponent": {
-                "ParentId": "4639750585717748018"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.33203125",
-                "V Offset": "0.12109375"
-            }
-        },
-        "18352942032057397556": {
-            "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "fe_font000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "RenderingDistanceFactor": "2",
-                "Mesh": "1395535735"
-            },
-            "qsf::TransformComponent": {
-                "Position": "0.031529501080513 0.53297650814056396 -2.7836239337921143",
-                "Rotation": "-3.0908598347423322e-08 -3.0908676507124255e-08 -0.7071068286895752 0.7071068286895752",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
-            },
-            "qsf::LinkComponent": {
-                "ParentId": "4639750585717748018",
-                "LocalPosition": "0.15000000596046448 0 0"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.55078125",
-                "V Offset": "0.001953125"
-            }
-        },
         "3530491920505499930": {
             "qsf::MetadataComponent": {
                 "Prefab": "18446744073709551615",
@@ -496,6 +202,23 @@
                 "ParentId": "15254224794164261127",
                 "LocalPosition": "-0.86100000143051147 0.34099999070167542 1.5429999828338623",
                 "LocalScale": "-1 1 1"
+            }
+        },
+        "3796813233558073815": {
+            "qsf::MetadataComponent": {
+                "Prefab": "3460",
+                "Prototype": "1077686797",
+                "Name": "bos_antenne_000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.47506710886955261 2.0476610660552979 1.5328062772750854"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "15254224794164261127",
+                "LocalPosition": "0.4318791925907135 1.8615100383758545 1.3934602737426758",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "0.90909087657928467 0.90909087657928467 0.90909087657928467"
             }
         },
         "3859838366474170656": {
@@ -3164,6 +2887,25 @@
                 "ParentId": "11226271698015742294"
             }
         },
+        "8508498713545224660": {
+            "qsf::MetadataComponent": {
+                "Prefab": "3460",
+                "Prototype": "1077686797",
+                "Name": "bos_antenne_000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.45081326365470886 2.0476610660552979 1.5328062772750854",
+                "Rotation": "1 0 0 0",
+                "Scale": "1 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "15254224794164261127",
+                "LocalPosition": "-0.409830242395401 1.8615100383758545 1.3934602737426758",
+                "LocalRotation": "1 0 0 0",
+                "LocalScale": "0.90909087657928467 0.90909087657928467 0.90909087657928467"
+            }
+        },
         "10022160110295443799": {
             "qsf::MetadataComponent": {
                 "Prefab": "2401989904",
@@ -3277,14 +3019,14 @@
                 "Prototype": "8804270674406650972"
             },
             "qsf::TransformComponent": {
-                "Position": "-1.1327438354492188 1.3361778259277344 -1.152191162109375",
+                "Position": "-1.1327438354492188 1.2643911838531494 -1.152191162109375",
                 "Rotation": "0.25881326198577881 0 -0.96592748165130615 0",
                 "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
             },
             "qsf::LinkComponent": {
                 "ParentLinkType": "HARD_LINK",
                 "ParentId": "10217883221603774745",
-                "LocalPosition": "-0.12167496979236603 0.37300586700439453 0.10564630478620529",
+                "LocalPosition": "-0.12167496979236603 0.30774527788162231 0.10564630478620529",
                 "LocalRotation": "0.25881326198577881 0 -0.96592748165130615 0",
                 "LocalScale": "1 1 1"
             }
@@ -3295,7 +3037,7 @@
                 "Prototype": "9659927231780467804"
             },
             "qsf::TransformComponent": {
-                "Position": "-1.1388198137283325 1.3361778259277344 -1.1627153158187866"
+                "Position": "-1.1388198137283325 1.2643911838531494 -1.1627153158187866"
             },
             "qsf::LinkComponent": {
                 "ParentId": "12918528939602704032"
@@ -3307,7 +3049,7 @@
                 "Prototype": "16747413256400122973"
             },
             "qsf::TransformComponent": {
-                "Position": "-1.1392562389373779 1.3361778259277344 -1.1634712219238281"
+                "Position": "-1.1392562389373779 1.2643911838531494 -1.1634712219238281"
             },
             "qsf::LinkComponent": {
                 "ParentId": "8213935245190198945"
@@ -3319,7 +3061,7 @@
                 "Prototype": "2980786472663495773"
             },
             "qsf::TransformComponent": {
-                "Position": "-1.1235091686248779 1.3285071849822998 -1.1363972425460815"
+                "Position": "-1.1235091686248779 1.2567205429077148 -1.1363972425460815"
             },
             "qsf::LinkComponent": {
                 "ParentId": "8213935245190198945"
@@ -3578,14 +3320,14 @@
                 "Prototype": "11717305781625140266"
             },
             "qsf::TransformComponent": {
-                "Position": "1.1276947259902954 1.3361778259277344 -1.1522003412246704",
+                "Position": "1.1276931762695313 1.2620793581008911 -1.151092529296875",
                 "Rotation": "-0.25882089138031006 0 -0.96592533588409424 0",
                 "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
             },
             "qsf::LinkComponent": {
                 "ParentLinkType": "HARD_LINK",
                 "ParentId": "15254224794164261127",
-                "LocalPosition": "1.025177001953125 1.2147071361541748 -1.047454833984375",
+                "LocalPosition": "1.0251755714416504 1.1473448276519775 -1.04644775390625",
                 "LocalRotation": "-0.25882089138031006 0 -0.96592533588409424 0",
                 "LocalScale": "1 1 1"
             }
@@ -3596,7 +3338,7 @@
                 "Prototype": "17196264822327850027"
             },
             "qsf::TransformComponent": {
-                "Position": "1.1337708234786987 1.3361778259277344 -1.1627243757247925"
+                "Position": "1.1337692737579346 1.2620793581008911 -1.1616165637969971"
             },
             "qsf::LinkComponent": {
                 "ParentId": "12984827352780545996"
@@ -3608,7 +3350,7 @@
                 "Prototype": "10093759348613690411"
             },
             "qsf::TransformComponent": {
-                "Position": "1.1186342239379883 1.3285071849822998 -1.1363058090209961"
+                "Position": "1.1186326742172241 1.2544087171554565 -1.1351981163024902"
             },
             "qsf::LinkComponent": {
                 "ParentId": "6684818174518665164"
@@ -3620,7 +3362,7 @@
                 "Prototype": "13110465169537217579"
             },
             "qsf::TransformComponent": {
-                "Position": "1.1342072486877441 1.3361778259277344 -1.163480281829834"
+                "Position": "1.13420569896698 1.2620793581008911 -1.1623724699020386"
             },
             "qsf::LinkComponent": {
                 "ParentId": "6684818174518665164"
@@ -5994,6 +5736,132 @@
                 "LocalScale": "1.6959402561187744 1 1"
             }
         },
+        "13677909952166546426": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989605",
+                "Prototype": "10675471205834701182",
+                "Name": "core_white_license_plate_nor00"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.0015487669734284282 0.5113978385925293 -2.7843015193939209",
+                "Rotation": "7.5497901264043321e-08 0 -1 0",
+                "Scale": "1.1699788570404053 1.1699788570404053 1.1699788570404053"
+            },
+            "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
+                "ParentId": "15254224794164261127",
+                "LocalPosition": "-0.0014079699758440256 0.46490710973739624 -2.5311832427978516",
+                "LocalRotation": "7.5497901264043321e-08 0 -1 0",
+                "LocalScale": "1.0636171102523804 1.0636171102523804 1.0636171102523804"
+            }
+        },
+        "7535964293476043770": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989605",
+                "Prototype": "14307583649148582270"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.2170545905828476 0.52253818511962891 -2.7884478569030762"
+            },
+            "pth::LicensePlateComponent": {
+                "Chars": [
+                    "2034324690124327931",
+                    "11576715619141864444",
+                    "16821916031058103291",
+                    "6813801903846771707",
+                    "4529082497277545468",
+                    "13039240902137793532",
+                    "5292630667785063419"
+                ]
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "13677909952166546426"
+            }
+        },
+        "2034324690124327931": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989605",
+                "Prototype": "8547384278683498879"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.1761053204536438 0.52253818511962891 -2.7884478569030762"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "7535964293476043770"
+            }
+        },
+        "4529082497277545468": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989605",
+                "Prototype": "4648415784873245055"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.1163894385099411 0.52253818511962891 -2.7884478569030762"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "7535964293476043770"
+            }
+        },
+        "5292630667785063419": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989605",
+                "Prototype": "6437943608450496895"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.23338736593723297 0.52253818511962891 -2.7884478569030762"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "7535964293476043770"
+            }
+        },
+        "6813801903846771707": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989605",
+                "Prototype": "7946380159105382784"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.05789048969745636 0.52253818511962891 -2.7884478569030762"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "7535964293476043770"
+            }
+        },
+        "11576715619141864444": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989605",
+                "Prototype": "4476352256759839104"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.11760637164115906 0.52253818511962891 -2.7884478569030762"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "7535964293476043770"
+            }
+        },
+        "13039240902137793532": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989605",
+                "Prototype": "18210548837661030783"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.17488838732242584 0.52253818511962891 -2.7884478569030762"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "7535964293476043770"
+            }
+        },
+        "16821916031058103291": {
+            "qsf::MetadataComponent": {
+                "Prefab": "2401989605",
+                "Prototype": "11241304280607504766"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.0006084144115447998 0.52253818511962891 -2.7884478569030762"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "7535964293476043770"
+            }
+        },
         "14885970759152169269": {
             "qsf::MetadataComponent": {
                 "Prefab": "18446744073709551615",
@@ -6189,7 +6057,7 @@
                 "Tags": "gr"
             },
             "qsf::TransformComponent": {
-                "Position": "0 2.0164334774017334 2.5196473598480225",
+                "Position": "0 2.0164334774017334 2.5196533203125",
                 "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
             },
             "qsf::compositing::SkinnableMeshComponent": {
@@ -6211,309 +6079,132 @@
             },
             "qsf::LinkComponent": {
                 "ParentId": "15254224794164261127",
-                "LocalPosition": "0 1.8331212997436523 2.29058837890625"
+                "LocalPosition": "0 1.8331212997436523 2.2905938625335693"
             }
         },
-        "16938363148318929178": {
+        "8844558051662524001": {
             "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "kfz_kennzeichen_euro_1000"
+                "Prefab": "2401989605",
+                "Prototype": "10675471205834701182",
+                "Name": "core_white_license_plate_nor00"
             },
             "qsf::TransformComponent": {
-                "Position": "-0.00019721985154319555 0.81070268154144287 2.7598862648010254",
-                "Rotation": "0.99357187747955322 -0.11320321261882782 0 0",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
-            },
-            "qsf::compositing::SkinnableMeshComponent": {
-                "Mesh": "1395528439"
+                "Position": "-0.0044860835187137127 0.81112504005432129 2.760223388671875",
+                "Rotation": "0.99619472026824951 -0.087155371904373169 0 0"
             },
             "qsf::LinkComponent": {
+                "ParentLinkType": "HARD_LINK",
                 "ParentId": "15410238909960810778",
-                "LocalPosition": "-0.000179290771484375 -1.0961189270019531 0.2183990478515625",
-                "LocalRotation": "0.99357187747955322 -0.11320321261882782 0 0"
+                "LocalPosition": "-0.004078257828950882 -1.0957349538803101 0.21870005130767822",
+                "LocalRotation": "0.99619472026824951 -0.087155371904373169 0 0",
+                "LocalScale": "0.90909087657928467 0.90909087657928467 0.90909087657928467"
             }
         },
-        "4675335253053534491": {
+        "8412398300605083233": {
             "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "debug_box000",
-                "Description": "Debug box with the dimension 1x1x1 meter",
-                "Tags": "debug"
-            },
-            "qsf::DebugBoxComponent": {
-                "Color": "0.75 0.75 0.75 1",
-                "ShowDirection": "true",
-                "CenterAtPivot": "true",
-                "RenderQueueId": "90"
+                "Prefab": "2401989605",
+                "Prototype": "14307583649148582270"
             },
             "qsf::TransformComponent": {
-                "Position": "-0.20572546124458313 0.82178515195846558 2.7613284587860107",
-                "Rotation": "0.78260821104049683 0.62251466512680054 2.6402853834468429e-14 5.4202956278068606e-14",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
+                "Position": "-0.19132994115352631 0.8211175799369812 2.7620599269866943"
             },
             "pth::LicensePlateComponent": {
-                "Plate Type": "TYPE_CAR",
-                "City": "MK",
-                "Combination": "FW 2008",
-                "HU Plate": "HU_PLATE_ORANGE_2025",
-                "HU Termination": "DATE_JUNE",
-                "State": "STATE_NRW",
                 "Chars": [
-                    "12970031117361869085",
-                    "12614006086897103132",
-                    "12939750687392002333",
-                    "7799081734986658075",
-                    "6220422911423803677",
-                    "8731338093486797083",
-                    "9199906995277000987",
-                    "11886437256860135708",
-                    "16405421246631506205",
-                    "12224786710195466524"
+                    "10070927955207024226",
+                    "705661730879598179",
+                    "4351801683411103330",
+                    "7189053037584477795",
+                    "2514163714948230755",
+                    "15344860933829324386",
+                    "10931836639108558435"
                 ]
             },
             "qsf::LinkComponent": {
-                "ParentId": "16938363148318929178",
-                "LocalPosition": "-0.18684385716915131 0.0095218103379011154 0.003543853759765625",
-                "LocalRotation": "0.7071068286895752 0.7071068286895752 2.0097183127203676e-14 5.6843418860808015e-14"
+                "ParentId": "8844558051662524001"
             }
         },
-        "6220422911423803677": {
+        "705661730879598179": {
             "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "fe_font000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "RenderingDistanceFactor": "2",
-                "Mesh": "1395535735"
+                "Prefab": "2401989605",
+                "Prototype": "4476352256759839104"
             },
             "qsf::TransformComponent": {
-                "Position": "-0.040725454688072205 0.82178515195846558 2.7613284587860107",
-                "Rotation": "0.78260821104049683 0.62251466512680054 2.6402853834468429e-14 5.4202956278068606e-14",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
+                "Position": "-0.10632994025945663 0.8211175799369812 2.7620599269866943"
             },
             "qsf::LinkComponent": {
-                "ParentId": "4675335253053534491",
-                "LocalPosition": "0.15000000596046448 0 0"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.55078125",
-                "V Offset": "0.001953125"
+                "ParentId": "8412398300605083233"
             }
         },
-        "7799081734986658075": {
+        "2514163714948230755": {
             "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "kfz_labels000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "Mesh": "1395535746"
+                "Prefab": "2401989605",
+                "Prototype": "4648415784873245055"
             },
             "qsf::TransformComponent": {
-                "Position": "-0.095725454390048981 0.79606175422668457 2.7672672271728516",
-                "Rotation": "0.78260821104049683 0.62251466512680054 2.6402853834468429e-14 5.4202956278068606e-14",
-                "Scale": "0.6600000262260437 0.6600000262260437 0.6600000262260437"
+                "Position": "0.093670055270195007 0.8211175799369812 2.7620599269866943"
             },
             "qsf::LinkComponent": {
-                "ParentId": "4675335253053534491",
-                "LocalPosition": "0.10000000149011612 0 0.024000000208616257",
-                "LocalScale": "0.60000002384185791 0.60000002384185791 0.60000002384185791"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.111328125",
-                "V Offset": "0.12109375"
+                "ParentId": "8412398300605083233"
             }
         },
-        "8731338093486797083": {
+        "4351801683411103330": {
             "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "fe_font000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "RenderingDistanceFactor": "2",
-                "Mesh": "1395535735"
+                "Prefab": "2401989605",
+                "Prototype": "11241304280607504766"
             },
             "qsf::TransformComponent": {
-                "Position": "0.014274552464485168 0.82178515195846558 2.7613284587860107",
-                "Rotation": "0.78260821104049683 0.62251466512680054 2.6402853834468429e-14 5.4202956278068606e-14",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
+                "Position": "-0.0063299387693405151 0.8211175799369812 2.7620599269866943"
             },
             "qsf::LinkComponent": {
-                "ParentId": "4675335253053534491",
-                "LocalPosition": "0.20000000298023224 0 0"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.44140625",
-                "V Offset": "0.2421875"
+                "ParentId": "8412398300605083233"
             }
         },
-        "9199906995277000987": {
+        "7189053037584477795": {
             "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "fe_font000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "RenderingDistanceFactor": "2",
-                "Mesh": "1395535735"
+                "Prefab": "2401989605",
+                "Prototype": "7946380159105382784"
             },
             "qsf::TransformComponent": {
-                "Position": "0.088524550199508667 0.82178515195846558 2.7613284587860107",
-                "Rotation": "0.78260821104049683 0.62251466512680054 2.6402853834468429e-14 5.4202956278068606e-14",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
+                "Position": "0.043670058250427246 0.8211175799369812 2.7620599269866943"
             },
             "qsf::LinkComponent": {
-                "ParentId": "4675335253053534491",
-                "LocalPosition": "0.26750001311302185 0 0"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.220703125",
-                "V Offset": "0.72265625"
+                "ParentId": "8412398300605083233"
             }
         },
-        "11886437256860135708": {
+        "10070927955207024226": {
             "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "fe_font000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "RenderingDistanceFactor": "2",
-                "Mesh": "1395535735"
+                "Prefab": "2401989605",
+                "Prototype": "8547384278683498879"
             },
             "qsf::TransformComponent": {
-                "Position": "0.14352452754974365 0.82178515195846558 2.7613284587860107",
-                "Rotation": "0.78260821104049683 0.62251466512680054 2.6402853834468429e-14 5.4202956278068606e-14",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
+                "Position": "-0.15632994472980499 0.8211175799369812 2.7620599269866943"
             },
             "qsf::LinkComponent": {
-                "ParentId": "4675335253053534491",
-                "LocalPosition": "0.31749999523162842 0 0"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.001953125",
-                "V Offset": "0.72265625"
+                "ParentId": "8412398300605083233"
             }
         },
-        "12224786710195466524": {
+        "10931836639108558435": {
             "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "fe_font000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "RenderingDistanceFactor": "2",
-                "Mesh": "1395535735"
+                "Prefab": "2401989605",
+                "Prototype": "6437943608450496895"
             },
             "qsf::TransformComponent": {
-                "Position": "0.25352457165718079 0.82178515195846558 2.7613284587860107",
-                "Rotation": "0.78260821104049683 0.62251466512680054 2.6402853834468429e-14 5.4202956278068606e-14",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
+                "Position": "0.19367004930973053 0.8211175799369812 2.7620599269866943"
             },
             "qsf::LinkComponent": {
-                "ParentId": "4675335253053534491",
-                "LocalPosition": "0.41750001907348633 0 0"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.880859375",
-                "V Offset": "0.72265625"
+                "ParentId": "8412398300605083233"
             }
         },
-        "12614006086897103132": {
+        "15344860933829324386": {
             "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "fe_font000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "RenderingDistanceFactor": "2",
-                "Mesh": "1395535735"
+                "Prefab": "2401989605",
+                "Prototype": "18210548837661030783"
             },
             "qsf::TransformComponent": {
-                "Position": "-0.15072545409202576 0.82178515195846558 2.7613284587860107",
-                "Rotation": "0.78260821104049683 0.62251466512680054 2.6402853834468429e-14 5.4202956278068606e-14",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
+                "Position": "0.14367006719112396 0.8211175799369812 2.7620599269866943"
             },
             "qsf::LinkComponent": {
-                "ParentId": "4675335253053534491",
-                "LocalPosition": "0.05000000074505806 0 0"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.111328125",
-                "V Offset": "0.12109375"
-            }
-        },
-        "12939750687392002333": {
-            "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "kfz_labels000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "Mesh": "1395535746"
-            },
-            "qsf::TransformComponent": {
-                "Position": "-0.095725454390048981 0.83679044246673584 2.757864236831665",
-                "Rotation": "0.78260821104049683 0.62251466512680054 2.6402853834468429e-14 5.4202956278068606e-14",
-                "Scale": "0.49500000476837158 0.49500000476837158 0.49500000476837158"
-            },
-            "qsf::LinkComponent": {
-                "ParentId": "4675335253053534491",
-                "LocalPosition": "0.10000000149011612 0 -0.014000000432133675",
-                "LocalScale": "0.44999998807907104 0.44999998807907104 0.44999998807907104"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.111328125",
-                "V Offset": "0.2421875"
-            }
-        },
-        "12970031117361869085": {
-            "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "fe_font000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "RenderingDistanceFactor": "2",
-                "Mesh": "1395535735"
-            },
-            "qsf::TransformComponent": {
-                "Position": "-0.20572546124458313 0.82178515195846558 2.7613284587860107",
-                "Rotation": "0.78260821104049683 0.62251466512680054 2.6402853834468429e-14 5.4202956278068606e-14",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
-            },
-            "qsf::LinkComponent": {
-                "ParentId": "4675335253053534491"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.33203125",
-                "V Offset": "0.12109375"
-            }
-        },
-        "16405421246631506205": {
-            "qsf::MetadataComponent": {
-                "Prefab": "18446744073709551615",
-                "Name": "fe_font000"
-            },
-            "qsf::MeshComponent": {
-                "CastShadows": "false",
-                "RenderingDistanceFactor": "2",
-                "Mesh": "1395535735"
-            },
-            "qsf::TransformComponent": {
-                "Position": "0.19852456450462341 0.82178515195846558 2.7613284587860107",
-                "Rotation": "0.78260821104049683 0.62251466512680054 2.6402853834468429e-14 5.4202956278068606e-14",
-                "Scale": "1.1000000238418579 1.1000000238418579 1.1000000238418579"
-            },
-            "qsf::LinkComponent": {
-                "ParentId": "4675335253053534491",
-                "LocalPosition": "0.36750000715255737 0 0"
-            },
-            "pth::UvOffsetComponent": {
-                "U Offset": "0.001953125",
-                "V Offset": "0.72265625"
+                "ParentId": "8412398300605083233"
             }
         },
         "15487190438843904287": {

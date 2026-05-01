@@ -9933,7 +9933,7 @@
 		</message>
 		<message>
 			<source>core_lnz_diver</source>
-			<translation>Redningsdykkerbil O-4.7</translation>
+			<translation>Redningsdykkerbil O-9.6</translation>
 		</message>
 		<message>
 			<source>core_lnz_hlf_11</source>
