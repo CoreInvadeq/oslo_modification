@@ -9781,7 +9781,7 @@
 		</message>
 		<message>
 			<source>core_lnz_tlf_94</source>
-			<translation>Tankbil O-9.4</translation>
+			<translation>Tankbil O-9.5</translation>
 		</message>
 		<message>
 			<source>core_lnz_tlf_95</source>
