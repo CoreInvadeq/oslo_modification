@@ -9816,8 +9816,12 @@
 			<translation>Vann-konteiner</translation>
 		</message>
 		<message>
+			<source>core_lnz_ab_ats</source>
+			<translation>Luft-konteiner</translation>
+		</message>
+		<message>
 			<source>core_lnz_wlf_55</source>
-			<translation>Krokløftbil O-5.5</translation>
+			<translation>Krokløftbil O-9.4</translation>
 		</message>
 		<message>
 			<source>core_lnz_elw_o6</source>

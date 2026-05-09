@@ -1,0 +1,61 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "5914783971098372382": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "wlf_arm_mod",
+                "Description": "arm"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "1395530368"
+            },
+            "qsf::TransformComponent": "",
+            "qsf::LinkComponent": {
+                "LocalPosition": "0 -0.040660262107849121 -4.2309341430664063"
+            },
+            "qsf::ActionComponent": "",
+            "qsf::MeshAnimationComponent": ""
+        },
+        "4961814166445631775": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "wlf_arm_helper000",
+                "Description": "helper"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.0196990966796875 1.2162362337112427 5.691162109375"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5914783971098372382",
+                "LocalPosition": "0.0196990966796875 1.2162362337112427 5.691162109375"
+            },
+            "qsf::game::BoneToBoneLinkComponent": {
+                "BoneName": "wlf_hook_bone",
+                "LocalPosition": "0 -1.5900000333786011 2.630000114440918",
+                "LocalRotation": "1 0 0 0",
+                "ChildBoneName1": "ab_hook_bone",
+                "LocalPosition1": "0 0 0",
+                "LocalRotation1": "1 0 0 0",
+                "SetParentTransformToChild1": "true",
+                "LocalPosition2": "0 0 0",
+                "LocalRotation2": "1 0 0 0"
+            },
+            "qsf::BulletBoxCollisionComponent": {
+                "CollisionMask": "37",
+                "CollisionFilterGroup": "20",
+                "CollisionTypeId": "885726410",
+                "Active": "false",
+                "HalfExtents": "1.2351053953170776 1.2351053953170776 2.4288160800933838"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.24313700199127197 0.15294100344181061 0.74901998043060303 1",
+                "RenderQueueId": "90"
+            }
+        }
+    }
+}
