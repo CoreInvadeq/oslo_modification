@@ -9813,15 +9813,19 @@
 		</message>
 		<message>
 			<source>core_lnz_ab_wasser</source>
-			<translation>Vann-konteiner</translation>
+			<translation>Tank-konteiner</translation>
 		</message>
 		<message>
 			<source>core_lnz_ab_ats</source>
-			<translation>Luft-konteiner</translation>
+			<translation>Innsatsstøtte-konteiner</translation>
 		</message>
 		<message>
 			<source>core_lnz_wlf_55</source>
 			<translation>Krokløftbil O-9.4</translation>
+		</message>
+		<message>
+			<source>core_lnz_wlf_68</source>
+			<translation>Krok- og Redningsbil O-6.8</translation>
 		</message>
 		<message>
 			<source>core_lnz_elw_o6</source>
@@ -9841,7 +9845,7 @@
 		</message>
 		<message>
 			<source>core_lnz_tlf_64</source>
-			<translation>Tankbil O-6.4</translation>
+			<translation>Tankbil O-4.4</translation>
 		</message>
 		<message>
 			<source>core_lnz_kef_68</source>

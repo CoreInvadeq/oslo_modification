@@ -1,0 +1,958 @@
+{
+    "Format": {
+        "Type": "prefab",
+        "Version": "2",
+        "DifferenceToDefault": "true"
+    },
+    "Prototypes": {
+        "4899081573462407751": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "core_fireco_lightpole_mega"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26414"
+            },
+            "qsf::TransformComponent": "",
+            "qsf::LinkComponent": {
+                "LocalPosition": "0.05633544921875 2.527130126953125 0.034820556640625"
+            }
+        },
+        "10182189817704708680": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "fireco_lightpole_head000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26549"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0 0.17350029945373535 -0.000274658203125",
+                "Rotation": "1 0.00019553108722902834 4.4746388994099107e-07 -1.1920923270736239e-07"
+            },
+            "qsf::game::BoneLinkComponent": {
+                "BoneName": "segment_02",
+                "LocalPosition": "-0.030000001192092896 0 0",
+                "LocalRotation": "0.70710700750350952 0 0 -0.70710700750350952"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "4899081573462407751",
+                "LocalPosition": "0 0.17350029945373535 -0.000274658203125",
+                "LocalRotation": "1 0.00019553108722902834 4.4746388994099107e-07 -1.1920923270736239e-07"
+            }
+        },
+        "1577394200773884488": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "fireco_lightpole_lamp_holder000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26611"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-2.1316282072803006e-14 0.33243584632873535 -0.073272705078125",
+                "Rotation": "1 2.9103830456733704e-11 -5.6846888307759968e-14 -2.0816681711721685e-17"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10182189817704708680",
+                "LocalPosition": "2.7466002805454082e-08 0.15890698134899139 -0.073060192167758942",
+                "LocalRotation": "1 -0.00019553105812519789 -4.4746394678440993e-07 1.1920923270736239e-07"
+            }
+        },
+        "1995961810563594825": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "lamp_clamp000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.2143402099609375 0.34473443031311035 -0.072296142578125",
+                "Rotation": "1 2.9103830456733704e-11 -5.6846888307759968e-14 -2.0816681711721685e-17",
+                "Scale": "1.0806537866592407 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1577394200773884488",
+                "LocalPosition": "0.2143402099609375 0.012298583984375 0.0009765625",
+                "LocalScale": "1.0806537866592407 1 1"
+            }
+        },
+        "18219786951104625225": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "hella_as_2000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26786"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.2143402099609375 0.37183403968811035 -0.059906005859375",
+                "Rotation": "0.98768836259841919 -0.15643447637557983 -2.8071346110233528e-14 -4.4601159347550361e-15"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1995961810563594825",
+                "LocalPosition": "6.5142381709660212e-16 0.027099609375 0.01239013671875",
+                "LocalRotation": "0.98768836259841919 -0.15643447637557983 2.807240659548349e-14 4.4532579324975917e-15",
+                "LocalScale": "0.92536574602127075 1 1"
+            }
+        },
+        "10150356744172436041": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "spot_light000",
+                "Description": "Spot light",
+                "Tags": "light",
+                "Quality": "ULTRA_QUALITY"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.7215690016746521 0.78823500871658325 1",
+                "Texture": "18446744073709551615",
+                "Range": "25",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "60"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.2143402099609375 0.40742525458335876 -0.14973312616348267",
+                "Rotation": "0.98768836259841919 -0.15643447637557983 -2.8071346110233528e-14 -4.4601159347550361e-15"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "18219786951104625225",
+                "LocalPosition": "0 0.06160736083984375 -0.074432373046875"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "26766",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            }
+        },
+        "6259104657325652562": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "lamp_clamp000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.4364013671875 0.34473443031311035 -0.072296142578125",
+                "Rotation": "1 2.9103830456733704e-11 -5.6846888307759968e-14 -2.0816681711721685e-17",
+                "Scale": "1.0806537866592407 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1577394200773884488",
+                "LocalPosition": "0.4364013671875 0.012298583984375 0.0009765625",
+                "LocalScale": "1.0806537866592407 1 1"
+            }
+        },
+        "1347201584549034579": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "hella_as_2000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26786"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.4364013671875 0.37183403968811035 -0.059906005859375",
+                "Rotation": "0.98768836259841919 -0.15643447637557983 -2.8071346110233528e-14 -4.4601159347550361e-15"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6259104657325652562",
+                "LocalPosition": "6.5142381709660212e-16 0.027099609375 0.01239013671875",
+                "LocalRotation": "0.98768836259841919 -0.15643447637557983 2.807240659548349e-14 4.4532579324975917e-15",
+                "LocalScale": "0.92536574602127075 1 1"
+            }
+        },
+        "17952099644047850067": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "spot_light000",
+                "Description": "Spot light",
+                "Tags": "light",
+                "Quality": "ULTRA_QUALITY"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.7215690016746521 0.78823500871658325 1",
+                "Texture": "18446744073709551615",
+                "Range": "25",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "60"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.4364013671875 0.40742525458335876 -0.14973312616348267",
+                "Rotation": "0.98768836259841919 -0.15643447637557983 -2.8071346110233528e-14 -4.4601159347550361e-15"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1347201584549034579",
+                "LocalPosition": "0 0.06160736083984375 -0.074432373046875"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "26766",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            }
+        },
+        "6870999478231595602": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "lamp_clamp000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.4402008056640625 0.34473443031311035 -0.072296142578125",
+                "Rotation": "1 2.9103830456733704e-11 -5.6846888307759968e-14 -2.0816681711721685e-17",
+                "Scale": "1.0806537866592407 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1577394200773884488",
+                "LocalPosition": "-0.4402008056640625 0.012298583984375 0.0009765625",
+                "LocalScale": "1.0806537866592407 1 1"
+            }
+        },
+        "12356804920142428754": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "hella_as_2000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26786"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.4402008056640625 0.37183403968811035 -0.059906005859375",
+                "Rotation": "0.98768836259841919 -0.15643447637557983 -2.8071346110233528e-14 -4.4601159347550361e-15"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6870999478231595602",
+                "LocalPosition": "6.5142381709660212e-16 0.027099609375 0.01239013671875",
+                "LocalRotation": "0.98768836259841919 -0.15643447637557983 2.807240659548349e-14 4.4532579324975917e-15",
+                "LocalScale": "0.92536574602127075 1 1"
+            }
+        },
+        "15459063878262159954": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "spot_light000",
+                "Description": "Spot light",
+                "Tags": "light",
+                "Quality": "ULTRA_QUALITY"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.7215690016746521 0.78823500871658325 1",
+                "Texture": "18446744073709551615",
+                "Range": "25",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "60"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.4402008056640625 0.40742525458335876 -0.14973312616348267",
+                "Rotation": "0.98768836259841919 -0.15643447637557983 -2.8071346110233528e-14 -4.4601159347550361e-15"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12356804920142428754",
+                "LocalPosition": "0 0.06160736083984375 -0.074432373046875"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "26766",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            }
+        },
+        "9710848858122320460": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "fireco_lightpole_lamp_holder000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26611"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-2.9537651621489025e-14 0.33243584632873535 0.07135009765625",
+                "Rotation": "-4.3711349206887462e-08 1.3241706596276492e-17 1 2.9157169734173038e-11"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1577394200773884488",
+                "LocalPosition": "8.2213441376976018e-15 4.2090710257458586e-12 0.144622802734375",
+                "LocalRotation": "-4.3711406050306323e-08 -6.3028056613340572e-18 1 5.3338410077596876e-14"
+            }
+        },
+        "2245687139186735697": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "lamp_clamp000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.4364013671875 0.34473443031311035 0.070373572409152985",
+                "Rotation": "-4.3711349206887462e-08 1.3241706596276492e-17 1 2.9157169734173038e-11",
+                "Scale": "1.0806537866592407 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9710848858122320460",
+                "LocalPosition": "0.4364013671875 0.012298583984375 0.0009765625",
+                "LocalScale": "1.0806537866592407 1 1"
+            }
+        },
+        "5928122142349818449": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "hella_as_2000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26786"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.4364013671875 0.37183403968811035 0.057983435690402985",
+                "Rotation": "-4.3337472277471534e-08 5.7054867497186024e-09 -0.99144488573074341 -0.13052619993686676"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "2245687139186735697",
+                "LocalPosition": "-1.0023377683410217e-09 0.027099609375 0.01239013671875",
+                "LocalRotation": "-0.99144488573074341 0.13052619993686676 8.6674866395242134e-08 1.1410962841296168e-08",
+                "LocalScale": "0.92536574602127075 1 1"
+            }
+        },
+        "16503419501663189585": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "spot_light000",
+                "Description": "Spot light",
+                "Tags": "light",
+                "Quality": "ULTRA_QUALITY"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.7215690016746521 0.78823500871658325 1",
+                "Texture": "18446744073709551615",
+                "Range": "25",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "60"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.4364013671875 0.41207766532897949 0.14582476019859314",
+                "Rotation": "-4.3337472277471534e-08 5.7054867497186024e-09 -0.99144488573074341 -0.13052619993686676"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5928122142349818449",
+                "LocalPosition": "0 0.06160736083984375 -0.074432373046875"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "26766",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            }
+        },
+        "5538486965569288781": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "lamp_clamp000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.2181396484375 0.34473443031311035 0.070373512804508209",
+                "Rotation": "-4.3711349206887462e-08 1.3241706596276492e-17 1 2.9157169734173038e-11",
+                "Scale": "1.0806537866592407 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9710848858122320460",
+                "LocalPosition": "-0.2181396484375 0.012298583984375 0.0009765625",
+                "LocalScale": "1.0806537866592407 1 1"
+            }
+        },
+        "10865069925343656525": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "hella_as_2000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26786"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.2181396484375 0.37183403968811035 0.057983376085758209",
+                "Rotation": "-4.3337472277471534e-08 5.7054867497186024e-09 -0.99144488573074341 -0.13052619993686676"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5538486965569288781",
+                "LocalPosition": "-1.0023377683410217e-09 0.027099609375 0.01239013671875",
+                "LocalRotation": "-0.99144488573074341 0.13052619993686676 8.6674866395242134e-08 1.1410962841296168e-08",
+                "LocalScale": "0.92536574602127075 1 1"
+            }
+        },
+        "7215881155917347405": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "spot_light000",
+                "Description": "Spot light",
+                "Tags": "light",
+                "Quality": "ULTRA_QUALITY"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.7215690016746521 0.78823500871658325 1",
+                "Texture": "18446744073709551615",
+                "Range": "25",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "60"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.21813963353633881 0.41207766532897949 0.14582470059394836",
+                "Rotation": "-4.3337472277471534e-08 5.7054867497186024e-09 -0.99144488573074341 -0.13052619993686676"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10865069925343656525",
+                "LocalPosition": "0 0.06160736083984375 -0.074432373046875"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "26766",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            }
+        },
+        "6316484943658842700": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "lamp_clamp000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.4402008056640625 0.34473443031311035 0.070373497903347015",
+                "Rotation": "-4.3711349206887462e-08 1.3241706596276492e-17 1 2.9157169734173038e-11",
+                "Scale": "1.0806537866592407 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9710848858122320460",
+                "LocalPosition": "-0.4402008056640625 0.012298583984375 0.0009765625",
+                "LocalScale": "1.0806537866592407 1 1"
+            }
+        },
+        "1732240523552586316": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "hella_as_2000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26786"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.4402008056640625 0.37183403968811035 0.057983361184597015",
+                "Rotation": "-4.3337472277471534e-08 5.7054867497186024e-09 -0.99144488573074341 -0.13052619993686676"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "6316484943658842700",
+                "LocalPosition": "-1.0023377683410217e-09 0.027099609375 0.01239013671875",
+                "LocalRotation": "-0.99144488573074341 0.13052619993686676 8.6674866395242134e-08 1.1410962841296168e-08",
+                "LocalScale": "0.92536574602127075 1 1"
+            }
+        },
+        "17551465275065596493": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "spot_light000",
+                "Description": "Spot light",
+                "Tags": "light",
+                "Quality": "ULTRA_QUALITY"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.7215690016746521 0.78823500871658325 1",
+                "Texture": "18446744073709551615",
+                "Range": "25",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "60"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.4402008056640625 0.41207766532897949 0.14582467079162598",
+                "Rotation": "-4.3337472277471534e-08 5.7054867497186024e-09 -0.99144488573074341 -0.13052619993686676"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1732240523552586316",
+                "LocalPosition": "0 0.06160736083984375 -0.074432373046875"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "26766",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            }
+        },
+        "10080548561946376783": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "lamp_clamp000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.322906494140625 0.31725335121154785 0.070373564958572388",
+                "Rotation": "-2.9155258068902512e-11 1 -4.3711388286737929e-08 -4.3711349206887462e-08",
+                "Scale": "1.0806537866592407 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9710848858122320460",
+                "LocalPosition": "0.322906494140625 -0.0151824951171875 0.0009765625",
+                "LocalRotation": "-4.3711388286737929e-08 0 0 1",
+                "LocalScale": "1.0806537866592407 1 1"
+            }
+        },
+        "5489986399566527055": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "hella_as_2000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26786"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.322906494140625 0.29015374183654785 0.057983428239822388",
+                "Rotation": "0.12410778552293777 -0.78358584642410278 -0.095231316983699799 -0.60126650333404541"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10080548561946376783",
+                "LocalPosition": "3.1946432166307659e-09 0.027099609375 0.01239013671875",
+                "LocalRotation": "-0.78358584642410278 -0.12410780787467957 -0.60126656293869019 0.095231354236602783",
+                "LocalScale": "0.92536574602127075 1 1"
+            }
+        },
+        "16973769633765227087": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "spot_light000",
+                "Description": "Spot light",
+                "Tags": "light",
+                "Quality": "ULTRA_QUALITY"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.7215690016746521 0.78823500871658325 1",
+                "Texture": "18446744073709551615",
+                "Range": "25",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "60"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.3728947639465332 0.20856079459190369 0.071377746760845184",
+                "Rotation": "0.12410778552293777 -0.78358584642410278 -0.095231316983699799 -0.60126650333404541"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5489986399566527055",
+                "LocalPosition": "0 0.06160736083984375 -0.074432373046875"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "26766",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            }
+        },
+        "12347295205419088464": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "lamp_clamp000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.331634521484375 0.31725335121154785 0.070373505353927612",
+                "Rotation": "-2.9155258068902512e-11 1 -4.3711388286737929e-08 -4.3711349206887462e-08",
+                "Scale": "1.0806537866592407 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9710848858122320460",
+                "LocalPosition": "-0.331634521484375 -0.0151824951171875 0.0009765625",
+                "LocalRotation": "-4.3711388286737929e-08 0 0 1",
+                "LocalScale": "1.0806537866592407 1 1"
+            }
+        },
+        "10986721137381309008": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "hella_as_2000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26786"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.331634521484375 0.29015374183654785 0.057983368635177612",
+                "Rotation": "-0.12410783767700195 0.78358584642410278 -0.095231227576732635 -0.60126662254333496"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12347295205419088464",
+                "LocalPosition": "3.1946432166307659e-09 0.027099609375 0.01239013671875",
+                "LocalRotation": "0.78358584642410278 0.12410781532526016 -0.60126656293869019 0.095231190323829651",
+                "LocalScale": "0.92536574602127075 1 1"
+            }
+        },
+        "8116743850399332944": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "spot_light000",
+                "Description": "Spot light",
+                "Tags": "light",
+                "Quality": "ULTRA_QUALITY"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.7215690016746521 0.78823500871658325 1",
+                "Texture": "18446744073709551615",
+                "Range": "25",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "60"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.3816227912902832 0.20856077969074249 0.071377679705619812",
+                "Rotation": "-0.12410783767700195 0.78358584642410278 -0.095231227576732635 -0.60126662254333496"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "10986721137381309008",
+                "LocalPosition": "0 0.06160736083984375 -0.074432373046875"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "26766",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            }
+        },
+        "12564967704213289550": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "lamp_clamp000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.2143402099609375 0.34473443031311035 0.070373557507991791",
+                "Rotation": "-4.3711349206887462e-08 1.3241706596276492e-17 1 2.9157169734173038e-11",
+                "Scale": "1.0806537866592407 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9710848858122320460",
+                "LocalPosition": "0.2143402099609375 0.012298583984375 0.0009765625",
+                "LocalScale": "1.0806537866592407 1 1"
+            }
+        },
+        "9401443043365845582": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "hella_as_2000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26786"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.2143402099609375 0.37183403968811035 0.057983420789241791",
+                "Rotation": "-4.3337472277471534e-08 5.7054867497186024e-09 -0.99144488573074341 -0.13052619993686676"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "12564967704213289550",
+                "LocalPosition": "-1.0023377683410217e-09 0.027099609375 0.01239013671875",
+                "LocalRotation": "-0.99144488573074341 0.13052619993686676 8.6674866395242134e-08 1.1410962841296168e-08",
+                "LocalScale": "0.92536574602127075 1 1"
+            }
+        },
+        "17907885176233622094": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "spot_light000",
+                "Description": "Spot light",
+                "Tags": "light",
+                "Quality": "ULTRA_QUALITY"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.7215690016746521 0.78823500871658325 1",
+                "Texture": "18446744073709551615",
+                "Range": "25",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "60"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.21434022486209869 0.41207766532897949 0.14582473039627075",
+                "Rotation": "-4.3337472277471534e-08 5.7054867497186024e-09 -0.99144488573074341 -0.13052619993686676"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9401443043365845582",
+                "LocalPosition": "0 0.06160736083984375 -0.074432373046875"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "26766",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            }
+        },
+        "9844870434965912138": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "lamp_clamp000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.322906494140625 0.31725335121154785 -0.072296142578125",
+                "Rotation": "-4.3711388286737929e-08 -5.6848162245312639e-14 -2.9103830456733704e-11 1",
+                "Scale": "1.0806537866592407 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1577394200773884488",
+                "LocalPosition": "0.322906494140625 -0.0151824951171875 0.0009765625",
+                "LocalRotation": "-4.3711388286737929e-08 0 0 1",
+                "LocalScale": "1.0806537866592407 1 1"
+            }
+        },
+        "5816916389560285770": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "hella_as_2000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26786"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.322906494140625 0.29015380144119263 -0.059906005859375",
+                "Rotation": "0.095231235027313232 -0.60126656293869019 0.12410783767700195 0.78358584642410278"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "9844870434965912138",
+                "LocalPosition": "2.1923027837544851e-09 0.027099557220935822 0.01239013671875",
+                "LocalRotation": "0.78358584642410278 0.12410786747932434 0.60126656293869019 -0.095231272280216217",
+                "LocalScale": "0.92536574602127075 1 1"
+            }
+        },
+        "10896335659465931338": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "spot_light000",
+                "Description": "Spot light",
+                "Tags": "light",
+                "Quality": "ULTRA_QUALITY"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.7215690016746521 0.78823500871658325 1",
+                "Texture": "18446744073709551615",
+                "Range": "25",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "60"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "0.3728947639465332 0.20856085419654846 -0.0733003169298172",
+                "Rotation": "0.095231235027313232 -0.60126656293869019 0.12410783767700195 0.78358584642410278"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "5816916389560285770",
+                "LocalPosition": "0 0.06160736083984375 -0.074432373046875"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "26766",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            }
+        },
+        "11980181548648594003": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "lamp_clamp000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.331634521484375 0.31725335121154785 -0.072296142578125",
+                "Rotation": "-4.3711388286737929e-08 -5.6848162245312639e-14 -2.9103830456733704e-11 1",
+                "Scale": "1.0806537866592407 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1577394200773884488",
+                "LocalPosition": "-0.331634521484375 -0.0151824951171875 0.0009765625",
+                "LocalRotation": "-4.3711388286737929e-08 0 0 1",
+                "LocalScale": "1.0806537866592407 1 1"
+            }
+        },
+        "15587969569235630676": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "hella_as_2000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26786"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.331634521484375 0.29015380144119263 -0.059906005859375",
+                "Rotation": "-0.095231302082538605 0.60126656293869019 0.12410778552293777 0.78358584642410278"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "11980181548648594003",
+                "LocalPosition": "2.1923027837544851e-09 0.027099557220935822 0.01239013671875",
+                "LocalRotation": "0.78358584642410278 0.12410775572061539 -0.60126656293869019 0.09523126482963562",
+                "LocalScale": "0.92536574602127075 1 1"
+            }
+        },
+        "4448415937902901844": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "spot_light000",
+                "Description": "Spot light",
+                "Tags": "light",
+                "Quality": "ULTRA_QUALITY"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.7215690016746521 0.78823500871658325 1",
+                "Texture": "18446744073709551615",
+                "Range": "25",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "60"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.3816227912902832 0.20856085419654846 -0.073300331830978394",
+                "Rotation": "-0.095231302082538605 0.60126656293869019 0.12410778552293777 0.78358584642410278"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "15587969569235630676",
+                "LocalPosition": "0 0.06160736083984375 -0.074432373046875"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "26766",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            }
+        },
+        "18195939536035609163": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "lamp_clamp000"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.2181396484375 0.34473443031311035 -0.072296142578125",
+                "Rotation": "1 2.9103830456733704e-11 -5.6846888307759968e-14 -2.0816681711721685e-17",
+                "Scale": "1.0806537866592407 1 1"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "1577394200773884488",
+                "LocalPosition": "-0.2181396484375 0.012298583984375 0.0009765625",
+                "LocalScale": "1.0806537866592407 1 1"
+            }
+        },
+        "4348978202230880843": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "hella_as_2000"
+            },
+            "qsf::MeshComponent": {
+                "Mesh": "26786"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.2181396484375 0.37183403968811035 -0.059906005859375",
+                "Rotation": "0.98768836259841919 -0.15643447637557983 -2.8071346110233528e-14 -4.4601159347550361e-15"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "18195939536035609163",
+                "LocalPosition": "6.5142381709660212e-16 0.027099609375 0.01239013671875",
+                "LocalRotation": "0.98768836259841919 -0.15643447637557983 2.807240659548349e-14 4.4532579324975917e-15",
+                "LocalScale": "0.92536574602127075 1 1"
+            }
+        },
+        "6117552645602507339": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "spot_light000",
+                "Description": "Spot light",
+                "Tags": "light",
+                "Quality": "ULTRA_QUALITY"
+            },
+            "qsf::LightComponent": {
+                "Active": "false",
+                "LightType": "SPOTLIGHT_LIGHT",
+                "DiffuseColor": "0.7215690016746521 0.78823500871658325 1",
+                "Texture": "18446744073709551615",
+                "Range": "25",
+                "SpotlightOuterAngle": "120",
+                "SpotlightInnerAngle": "60"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.2181396484375 0.40742525458335876 -0.14973312616348267",
+                "Rotation": "0.98768836259841919 -0.15643447637557983 -2.8071346110233528e-14 -4.4601159347550361e-15"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "4348978202230880843",
+                "LocalPosition": "0 0.06160736083984375 -0.074432373046875"
+            },
+            "qsf::game::LightControllerComponent": {
+                "LightMaterial": "26766",
+                "LightMaterialPosition": "LIGHTMATERIALPOSITION_PARENT"
+            }
+        },
+        "17962846335122242120": {
+            "qsf::MetadataComponent": {
+                "Prefab": "18446744073709551615",
+                "Name": "debug_box000",
+                "Description": "Debug box with the dimension 1x1x1 meter",
+                "Tags": "debug"
+            },
+            "qsf::DebugBoxComponent": {
+                "Color": "0.75 0.75 0.75 1",
+                "ShowDirection": "true",
+                "CenterAtPivot": "true",
+                "RenderQueueId": "90"
+            },
+            "qsf::TransformComponent": {
+                "Position": "-0.046783447265625 0.9668731689453125 0.017242431640625"
+            },
+            "qsf::LinkComponent": {
+                "ParentId": "4899081573462407751",
+                "LocalPosition": "-0.046783447265625 0.9668731689453125 0.017242431640625"
+            }
+        }
+    }
+}
